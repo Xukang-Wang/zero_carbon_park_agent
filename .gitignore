@@ -1,0 +1,43 @@
+# ── 环境 & 配置 ──
+.env
+*.log
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# ── 虚拟环境 ──
+venv/
+.venv/
+env/
+.env/
+
+# ── 数据库 & 数据 ──
+*.db
+*.sqlite3
+data/*.db
+
+# ── IDE ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Node / 前端 ──
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+
+# ── 模型文件（较大，建议单独管理） ──
+data/models/*.pth
+data/models/*.pt

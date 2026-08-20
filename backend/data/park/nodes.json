@@ -1,0 +1,106 @@
+{
+  "total_nodes": 12,
+  "nodes": [
+    {
+      "id": "PV-001",
+      "name": "1号光伏电站",
+      "type": "solar",
+      "category": "generation",
+      "capacity_kw": 5000,
+      "current_power_kw": 1165.5,
+      "status": "running"
+    },
+    {
+      "id": "WIND-001",
+      "name": "1号风力发电场",
+      "type": "wind",
+      "category": "generation",
+      "capacity_kw": 3000,
+      "current_power_kw": 900.0,
+      "status": "running"
+    },
+    {
+      "id": "BIO-001",
+      "name": "生物质CHP",
+      "type": "biomass_chp",
+      "category": "generation",
+      "capacity_kw": 3000,
+      "current_power_kw": 2100.0,
+      "status": "running"
+    },
+    {
+      "id": "GRID-001",
+      "name": "10kV市电馈线",
+      "type": "grid",
+      "category": "grid",
+      "capacity_kw": 10000,
+      "current_power_kw": 2800.0,
+      "status": "online"
+    },
+    {
+      "id": "BAT-001",
+      "name": "1号锂电池储能系统",
+      "type": "battery",
+      "category": "storage",
+      "capacity_kwh": 5000,
+      "current_soc": 62.5,
+      "status": "charging"
+    },
+    {
+      "id": "LOAD-001",
+      "name": "关键生产线",
+      "type": "critical",
+      "category": "load",
+      "current_power_kw": 1200.0,
+      "status": "running"
+    },
+    {
+      "id": "LOAD-002",
+      "name": "制造车间",
+      "type": "manufacturing",
+      "category": "load",
+      "current_power_kw": 950.0,
+      "status": "running"
+    },
+    {
+      "id": "LOAD-003",
+      "name": "HVAC系统",
+      "type": "hvac",
+      "category": "load",
+      "current_power_kw": 680.0,
+      "status": "running"
+    },
+    {
+      "id": "LOAD-004",
+      "name": "照明系统",
+      "type": "lighting",
+      "category": "load",
+      "current_power_kw": 320.0,
+      "status": "running"
+    },
+    {
+      "id": "LOAD-005",
+      "name": "充电桩",
+      "type": "ev_charging",
+      "category": "load",
+      "current_power_kw": 450.0,
+      "status": "running"
+    },
+    {
+      "id": "LOAD-006",
+      "name": "污水处理",
+      "type": "wastewater",
+      "category": "load",
+      "current_power_kw": 380.0,
+      "status": "running"
+    },
+    {
+      "id": "LOAD-007",
+      "name": "数据中心",
+      "type": "data_center",
+      "category": "load",
+      "current_power_kw": 520.0,
+      "status": "running"
+    }
+  ]
+}

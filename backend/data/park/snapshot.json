@@ -1,0 +1,191 @@
+{
+  "timestamp": "2026-08-17T16:38:42.740054",
+  "generation": {
+    "pv": {
+      "id": "PV-001",
+      "name": "1号光伏电站",
+      "capacity_kw": 5000,
+      "current_power_kw": 2924.7,
+      "status": "running",
+      "generation_today_kwh": 15200.0
+    },
+    "wind": {
+      "id": "WIND-001",
+      "name": "1号风力发电场",
+      "capacity_kw": 3000,
+      "current_power_kw": 155.1,
+      "status": "running",
+      "generation_today_kwh": 8500.0
+    },
+    "biomass_chp": {
+      "id": "BIO-001",
+      "name": "生物质CHP",
+      "capacity_kw": 3000,
+      "current_electric_kw": 2100.0,
+      "current_thermal_kw": 4200.0,
+      "total_efficiency": 80.5
+    },
+    "total_renewable_kw": 3079.8,
+    "total_generation_kw": 5179.8
+  },
+  "storage": {
+    "id": "BAT-001",
+    "name": "1号锂电池储能系统",
+    "capacity_kwh": 5000,
+    "rated_power_kw": 2500,
+    "current_soc": 62.5,
+    "current_power_kw": 850.0,
+    "mode": "charging",
+    "state_of_health": 95.2,
+    "temperature_c": 28.5,
+    "cycle_count": 1200,
+    "available_energy_kwh": 3125.0,
+    "remaining_charge_kwh": 1875.0,
+    "remaining_discharge_kwh": 2125.0
+  },
+  "grid": {
+    "id": "GRID-001",
+    "name": "10kV市电馈线",
+    "voltage_kv": 10.0,
+    "current_power_kw": 2800.0,
+    "is_importing": true,
+    "emission_factor": 0.581,
+    "max_import_kw": 10000,
+    "max_export_kw": 8000,
+    "current_emission_tco2_per_h": 1.627
+  },
+  "loads": {
+    "total_power_kw": 4800.0,
+    "breakdown": [
+      {
+        "id": "LOAD-001",
+        "name": "关键生产线",
+        "type": "critical",
+        "current_power_kw": 1200.0,
+        "flexibility": "fixed"
+      },
+      {
+        "id": "LOAD-002",
+        "name": "制造车间",
+        "type": "manufacturing",
+        "current_power_kw": 950.0,
+        "flexibility": "shiftable"
+      },
+      {
+        "id": "LOAD-003",
+        "name": "HVAC系统",
+        "type": "hvac",
+        "current_power_kw": 680.0,
+        "flexibility": "flexible"
+      },
+      {
+        "id": "LOAD-004",
+        "name": "照明系统",
+        "type": "lighting",
+        "current_power_kw": 320.0,
+        "flexibility": "flexible"
+      },
+      {
+        "id": "LOAD-005",
+        "name": "充电桩",
+        "type": "ev_charging",
+        "current_power_kw": 450.0,
+        "flexibility": "shiftable"
+      },
+      {
+        "id": "LOAD-006",
+        "name": "污水处理",
+        "type": "wastewater",
+        "current_power_kw": 380.0,
+        "flexibility": "shiftable"
+      },
+      {
+        "id": "LOAD-007",
+        "name": "数据中心",
+        "type": "data_center",
+        "current_power_kw": 520.0,
+        "flexibility": "flexible"
+      },
+      {
+        "id": "LOAD-008",
+        "name": "办公区",
+        "type": "office",
+        "current_power_kw": 300.0,
+        "flexibility": "flexible"
+      }
+    ],
+    "critical_load_kw": 1200.0,
+    "flexible_load_kw": 3600.0,
+    "demand_response_capacity_kw": 2160.0
+  },
+  "micro_grid": {
+    "id": "MG-001",
+    "name": "园区微电网",
+    "total_generation_kw": 5179.8,
+    "total_load_kw": 4800.0,
+    "total_storage_power_kw": 850.0,
+    "grid_power_kw": 2800.0,
+    "power_balance": 50.0,
+    "is_balanced": true,
+    "self_sufficiency_rate": 41.7,
+    "renewable_ratio": 41.0,
+    "status": "grid_connected"
+  },
+  "carbon": {
+    "current_emission_tco2_per_h": 2.85,
+    "carbon_offset_tco2_per_h": 1.68,
+    "net_emission_tco2_per_h": 1.17,
+    "renewable_ratio": 41.0,
+    "total_emission_today_tco2": 18.5,
+    "scope_breakdown": {
+      "scope_1": { "emission_tco2": 1.22, "name": "直接排放", "sources": ["锅炉", "工艺排放", "柴油发电机"] },
+      "scope_2": { "emission_tco2": 1.05, "name": "外购电力", "sources": ["电网购电"] },
+      "scope_3": { "emission_tco2": 0.58, "name": "其他间接", "sources": ["供应链运输", "员工通勤", "废弃物处理"] }
+    },
+    "carbon_offset_tco2": 1.68,
+    "assets": {
+      "total_value_yuan": 2985000.0,
+      "compliance": {
+        "carbon_quota_tco2": 5000,
+        "total_emission_tco2": 3432.49,
+        "compliance_gap_tco2": -1567.51,
+        "is_compliant": true
+      },
+      "recommendation": "配额充足，可出售盈余"
+    }
+  },
+  "alerts": {
+    "total_alerts": 2,
+    "critical": 0,
+    "warning": 2,
+    "info": 0,
+    "system_status": "warning",
+    "items": [
+      {
+        "node_id": "PV-001",
+        "node_type": "pv",
+        "level": "warning",
+        "message": "当前时刻光伏出力偏低（容量因子23.3%），建议检查",
+        "value": 23.3,
+        "threshold": 30.0,
+        "timestamp": "2026-08-17T16:38:42.740054",
+        "acknowledged": false
+      },
+      {
+        "node_id": "SYS-001",
+        "node_type": "system",
+        "level": "warning",
+        "message": "可再生能源占比41.0%，低于目标50%",
+        "value": 41.0,
+        "threshold": 50.0,
+        "timestamp": "2026-08-17T16:38:42.740054",
+        "acknowledged": false
+      }
+    ]
+  },
+  "economics": {
+    "current_electricity_price_yuan_per_kwh": 0.55,
+    "current_cost_yuan_per_h": 2640.0,
+    "renewable_saving_yuan_per_h": 2255.0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "vpp_id": "VPP-ZC-001",
+  "aggregated_capacity_mw": 12.18,
+  "breakdown": {
+    "renewable_generation_mw": 8.0,
+    "energy_storage_mw": 5.0,
+    "flexible_load_mw": 3.6,
+    "grid_connection_mw": 10.0
+  },
+  "current_operation": {
+    "total_power_mw": 6.5,
+    "renewable_ratio": 48.0,
+    "dispatchable_power_mw": 3.8,
+    "status": "online"
+  },
+  "market_participation": {
+    "spot_market": "active",
+    "ancillary_service": "registered",
+    "demand_response": "active",
+    "capacity_market": "pending"
+  },
+  "flexible_resources": {
+    "total_demand_response_capacity_kw": 2160.0,
+    "shiftable_load_kw": 1780.0,
+    "curtailable_load_kw": 380.0,
+    "storage_dispatchable_kw": 2500.0,
+    "estimated_annual_revenue_yuan": 648480.0
+  }
+}

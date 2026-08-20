@@ -1,0 +1,79 @@
+{
+  "target_certification": "零碳园区（三星级）",
+  "overall_progress": 62.5,
+  "estimated_completion": "2027-01-29",
+  "milestones": [
+    {
+      "name": "碳排放核算体系建立",
+      "progress": 100,
+      "status": "completed",
+      "completed_date": "2026-03-15",
+      "description": "完成Scope 1/2/3碳排放核算方法学建立"
+    },
+    {
+      "name": "能源管理体系认证",
+      "progress": 100,
+      "status": "completed",
+      "completed_date": "2026-05-20",
+      "description": "通过ISO 50001能源管理体系认证"
+    },
+    {
+      "name": "可再生能源占比提升",
+      "progress": 72,
+      "status": "in_progress",
+      "target_date": "2026-10-31",
+      "description": "光伏扩容至8MW，可再生能源占比提升至50%以上"
+    },
+    {
+      "name": "碳足迹抵消方案",
+      "progress": 40,
+      "status": "in_progress",
+      "target_date": "2026-12-31",
+      "description": "采购CCER/绿证实现100%碳抵消"
+    },
+    {
+      "name": "零碳数字化平台",
+      "progress": 85,
+      "status": "in_progress",
+      "target_date": "2026-09-30",
+      "description": "完成碳管理数字化平台部署与数据对接"
+    },
+    {
+      "name": "第三方核查",
+      "progress": 0,
+      "status": "pending",
+      "target_date": "2027-01-31",
+      "description": "委托第三方机构进行零碳园区核查"
+    },
+    {
+      "name": "认证申报",
+      "progress": 0,
+      "status": "pending",
+      "target_date": "2027-03-31",
+      "description": "向认证机构提交零碳园区认证申请"
+    }
+  ],
+  "key_gaps": [
+    {
+      "area": "可再生能源占比",
+      "current": "41%",
+      "target": "≥50%",
+      "gap": "9%",
+      "action": "推进屋顶光伏二期建设（3MW）"
+    },
+    {
+      "area": "碳抵消比例",
+      "current": "约35%",
+      "target": "100%",
+      "gap": "65%",
+      "action": "采购CCER和绿证，开发生物质能碳汇项目"
+    },
+    {
+      "area": "碳排放强度",
+      "current": "0.98 tCO2/万元",
+      "target": "≤0.5 tCO2/万元",
+      "gap": "约49%",
+      "action": "实施能效提升改造，优化生产工艺"
+    }
+  ]
+}

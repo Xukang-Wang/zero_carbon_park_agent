@@ -1,0 +1,81 @@
+{
+  "project": {
+    "name": "园区厌氧消化沼气工程",
+    "technology": "中温厌氧消化（CSTR）",
+    "feedstock": "有机废水、污泥、餐厨垃圾",
+    "capacity": {
+      "daily_feedstock_ton": 100.0,
+      "daily_biogas_production_nm3": 5000.0,
+      "methane_content": 60.0
+    }
+  },
+  "feedstock": {
+    "types": [
+      {
+        "name": "有机废水",
+        "ratio": 0.45,
+        "daily_ton": 45.0,
+        "ts_percent": 3
+      },
+      {
+        "name": "剩余污泥",
+        "ratio": 0.3,
+        "daily_ton": 30.0,
+        "ts_percent": 5
+      },
+      {
+        "name": "餐厨垃圾",
+        "ratio": 0.25,
+        "daily_ton": 25.0,
+        "ts_percent": 15
+      }
+    ],
+    "annual_total_ton": 36500
+  },
+  "biogas_utilization": {
+    "daily_biogas_nm3": 5000.0,
+    "chp_electricity_kwh_per_day": 10000.0,
+    "chp_heat_gj_per_day": 40.0,
+    "biogas_upgrading": {
+      "biomethane_nm3_per_day": 2500.0,
+      "biomethane_quality": "≥97% CH4",
+      "grid_injection": true
+    }
+  },
+  "digestate": {
+    "daily_production_ton": 85.0,
+    "utilization": "有机肥料",
+    "nutrient_content": {
+      "n_percent": 0.4,
+      "p_percent": 0.15,
+      "k_percent": 0.25
+    }
+  },
+  "economic": {
+    "total_investment_yuan": 28000000,
+    "annual_revenue": {
+      "electricity_yuan": 3000000,
+      "biomethane_yuan": 3500000,
+      "fertilizer_yuan": 650000,
+      "waste_treatment_fee_yuan": 1250000,
+      "total_yuan": 8400000
+    },
+    "annual_cost_yuan": 4000000,
+    "irr_percent": 9.5,
+    "payback_period_years": 8.5
+  },
+  "carbon_benefit": {
+    "methane_avoided_tco2e_per_year": 10000,
+    "fossil_fuel_displaced_tco2_per_year": 6000,
+    "fertilizer_displaced_tco2_per_year": 750,
+    "total_carbon_reduction_tco2e_per_year": 16750
+  },
+  "operational_parameters": {
+    "temperature_c": 37,
+    "hrt_days": 20,
+    "olr_kg_vs_per_m3_per_day": 3.0,
+    "ph": 7.0,
+    "vfa_mg_per_l": 1000,
+    "alkalinity_mg_per_l": 4000
+  }
+}

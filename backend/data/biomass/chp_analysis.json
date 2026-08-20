@@ -1,0 +1,69 @@
+{
+  "project": {
+    "name": "园区生物质热电联产（CHP）项目",
+    "technology": "直接燃烧 + 蒸汽轮机",
+    "feedstock": "农林废弃物、园区有机废弃物",
+    "capacity": {
+      "electric_power_kw": 3000,
+      "thermal_power_kw": 6000,
+      "total_efficiency": 80.5
+    }
+  },
+  "feedstock": {
+    "annual_consumption_ton": 30000,
+    "types": [
+      {
+        "name": "农林废弃物",
+        "ratio": 0.55,
+        "annual_ton": 16500
+      },
+      {
+        "name": "园区有机废弃物",
+        "ratio": 0.25,
+        "annual_ton": 7500
+      },
+      {
+        "name": "污泥",
+        "ratio": 0.2,
+        "annual_ton": 6000
+      }
+    ],
+    "cost_yuan_per_ton": 200,
+    "annual_feedstock_cost_yuan": 6000000
+  },
+  "production": {
+    "annual_electricity_mwh": 22500,
+    "annual_heat_gj": 58500,
+    "capacity_factor": 0.85,
+    "self_consumption_rate": 0.1
+  },
+  "economic": {
+    "total_investment_yuan": 45000000,
+    "annual_revenue": {
+      "electricity_yuan": 13000000,
+      "heat_yuan": 3500000,
+      "subsidy_yuan": 2500000,
+      "total_yuan": 19000000
+    },
+    "annual_cost": {
+      "feedstock_yuan": 6000000,
+      "om_yuan": 2500000,
+      "total_yuan": 8500000
+    },
+    "irr_percent": 10.5,
+    "payback_period_years": 7.5
+  },
+  "carbon_benefit": {
+    "annual_carbon_reduction_tco2": 17500,
+    "carbon_neutral": true,
+    "note": "生物质燃烧排放的CO2被视为碳中和"
+  },
+  "environmental": {
+    "ash_production_ton_per_year": 2000,
+    "ash_utilization": "农业肥料",
+    "emission_control": "布袋除尘 + SNCR脱硝",
+    "so2_emission_mg_per_nm3": 75.0,
+    "nox_emission_mg_per_nm3": 175.0,
+    "pm_emission_mg_per_nm3": 20.0
+  }
+}

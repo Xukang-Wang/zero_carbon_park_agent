@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-08-17T16:38:42.740054",
+  "pv_station": {
+    "id": "PV-001",
+    "name": "1号光伏电站",
+    "rated_capacity_kw": 5000,
+    "current_power_kw": 2802.2,
+    "status": "running",
+    "generation_today_kwh": 15200.0
+  },
+  "grid": {
+    "id": "GRID-001",
+    "current_power_kw": 2800.0,
+    "voltage_level_kv": 10,
+    "emission_factor": 0.581
+  },
+  "storage": {
+    "id": "BAT-001",
+    "name": "1号锂电池储能系统",
+    "capacity_kwh": 5000,
+    "current_soc": 62.5,
+    "charge_power_kw": 850.0,
+    "discharge_power_kw": 0.0,
+    "status": "charging"
+  },
+  "total_load": {
+    "current_power_kw": 4800.0,
+    "renewable_ratio": 0.41
+  },
+  "dispatch_strategy": "peak_shaving_and_valley_filling"
+}

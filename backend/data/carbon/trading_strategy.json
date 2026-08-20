@@ -1,0 +1,42 @@
+{
+  "market_overview": {
+    "cea_price_yuan": 60.5,
+    "ccer_price_yuan": 50.2,
+    "gec_price_yuan": 30.0,
+    "market_sentiment": "bullish",
+    "trading_volume_tco2": 650000
+  },
+  "strategies": [
+    {
+      "name": "配额盈余出售",
+      "action": "sell",
+      "asset_type": "CEA",
+      "volume_tco2": 500,
+      "target_price_yuan": 62,
+      "expected_revenue_yuan": 31000,
+      "timing": "2026年Q3",
+      "rationale": "碳价处于上升通道，建议分批出售锁定利润"
+    },
+    {
+      "name": "CCER 置换",
+      "action": "swap",
+      "asset_type": "CCER->CEA",
+      "volume_tco2": 1000,
+      "target_price_yuan": 50,
+      "expected_cost_yuan": 50000,
+      "timing": "2026年Q3-Q4",
+      "rationale": "CCER 价格低于 CEA，可置换降低成本"
+    },
+    {
+      "name": "绿证采购",
+      "action": "buy",
+      "asset_type": "GEC",
+      "volume_mwh": 5000,
+      "target_price_yuan": 28,
+      "expected_cost_yuan": 140000,
+      "timing": "2026年Q4",
+      "rationale": "满足可再生能源消纳责任权重，对冲碳成本"
+    }
+  ],
+  "recommendation": "建议优先执行配额盈余出售策略，在 Q3 碳价高位分批出售 500 tCO2 CEA，预计获利 3.1 万元"
+}

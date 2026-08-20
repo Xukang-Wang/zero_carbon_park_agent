@@ -1,0 +1,161 @@
+{
+  "standard": "T/CSTE 0042-2022 零碳园区评价规范",
+  "categories": [
+    {
+      "name": "能源结构",
+      "weight": 0.25,
+      "indicators": [
+        {
+          "name": "可再生能源占比",
+          "current_value": 41.0,
+          "unit": "%",
+          "target": 50,
+          "score": 82.0,
+          "status": "warning",
+          "trend": "up"
+        },
+        {
+          "name": "清洁能源装机占比",
+          "current_value": 64.5,
+          "unit": "%",
+          "target": 60,
+          "score": 92.0,
+          "status": "pass",
+          "trend": "up"
+        }
+      ]
+    },
+    {
+      "name": "碳排放",
+      "weight": 0.3,
+      "indicators": [
+        {
+          "name": "碳排放强度",
+          "current_value": 0.98,
+          "unit": "tCO2/万元",
+          "target": 0.5,
+          "score": 68.0,
+          "status": "warning",
+          "trend": "down"
+        },
+        {
+          "name": "碳排放总量下降率",
+          "current_value": 12.5,
+          "unit": "%",
+          "target": 10,
+          "score": 85.0,
+          "status": "pass",
+          "trend": "up"
+        },
+        {
+          "name": "碳抵消比例",
+          "current_value": 35.0,
+          "unit": "%",
+          "target": 100,
+          "score": 48.0,
+          "status": "critical",
+          "trend": "up"
+        }
+      ]
+    },
+    {
+      "name": "资源利用",
+      "weight": 0.2,
+      "indicators": [
+        {
+          "name": "能源综合利用率",
+          "current_value": 78.5,
+          "unit": "%",
+          "target": 75,
+          "score": 88.0,
+          "status": "pass",
+          "trend": "up"
+        },
+        {
+          "name": "余热回收利用率",
+          "current_value": 52.3,
+          "unit": "%",
+          "target": 50,
+          "score": 82.0,
+          "status": "pass",
+          "trend": "up"
+        },
+        {
+          "name": "水资源循环利用率",
+          "current_value": 91.2,
+          "unit": "%",
+          "target": 90,
+          "score": 95.0,
+          "status": "pass",
+          "trend": "stable"
+        }
+      ]
+    },
+    {
+      "name": "管理与创新",
+      "weight": 0.15,
+      "indicators": [
+        {
+          "name": "能源管理体系认证",
+          "current_value": "已认证",
+          "unit": "-",
+          "target": "已认证",
+          "score": 100,
+          "status": "pass",
+          "trend": "stable"
+        },
+        {
+          "name": "碳管理体系",
+          "current_value": "建设中",
+          "unit": "-",
+          "target": "已建立",
+          "score": 60,
+          "status": "warning",
+          "trend": "up"
+        },
+        {
+          "name": "数字化管理平台",
+          "current_value": "已部署",
+          "unit": "-",
+          "target": "已部署",
+          "score": 100,
+          "status": "pass",
+          "trend": "stable"
+        }
+      ]
+    },
+    {
+      "name": "生态与环境",
+      "weight": 0.1,
+      "indicators": [
+        {
+          "name": "绿化覆盖率",
+          "current_value": 35.5,
+          "unit": "%",
+          "target": 30,
+          "score": 95.0,
+          "status": "pass",
+          "trend": "stable"
+        },
+        {
+          "name": "固废综合利用率",
+          "current_value": 90.5,
+          "unit": "%",
+          "target": 90,
+          "score": 88.0,
+          "status": "pass",
+          "trend": "up"
+        }
+      ]
+    }
+  ],
+  "total_score": 78.5,
+  "grade": "二星（达标）",
+  "grade_levels": {
+    "一星": "60-70分",
+    "二星": "70-80分",
+    "三星": "80-90分",
+    "四星": "90-95分",
+    "五星": "95-100分"
+  }
+}

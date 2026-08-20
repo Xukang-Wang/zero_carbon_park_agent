@@ -1,0 +1,70 @@
+{
+  "project": {
+    "name": "零碳园区综合能源项目",
+    "components": [
+      "光伏发电",
+      "储能系统",
+      "能源管理系统",
+      "碳管理平台"
+    ],
+    "analysis_period_years": 20
+  },
+  "total_investment": {
+    "pv_system_yuan": 32000000,
+    "storage_system_yuan": 7500000,
+    "ems_platform_yuan": 2000000,
+    "carbon_platform_yuan": 1500000,
+    "other_yuan": 1000000,
+    "total_yuan": 44000000
+  },
+  "annual_revenue": {
+    "electricity_saving_yuan": 6600000,
+    "carbon_trading_yuan": 400000,
+    "ancillary_service_yuan": 200000,
+    "green_certificate_yuan": 250000,
+    "total_yuan": 7450000
+  },
+  "annual_cost": {
+    "om_cost_yuan": 800000,
+    "depreciation_yuan": 2200000,
+    "total_yuan": 3000000
+  },
+  "annual_net_profit_yuan": 4450000,
+  "financial_indicators": {
+    "irr_percent": 11.5,
+    "npv_yuan": 16000000,
+    "payback_period_years": 7.5,
+    "roi_percent": 12.8,
+    "benefit_cost_ratio": 1.45
+  },
+  "carbon_benefit": {
+    "annual_emission_reduction_tco2": 6000,
+    "lifetime_emission_reduction_tco2": 120000,
+    "carbon_cost_saving_yuan_per_year": 650000
+  },
+  "risk_assessment": {
+    "overall_risk_level": "中低",
+    "key_risks": [
+      {
+        "risk": "电价政策变化",
+        "level": "中",
+        "mitigation": "签订长期购电协议（PPA）"
+      },
+      {
+        "risk": "光伏出力波动",
+        "level": "低",
+        "mitigation": "配置储能平滑出力"
+      },
+      {
+        "risk": "碳价波动",
+        "level": "中",
+        "mitigation": "多元化碳资产管理策略"
+      },
+      {
+        "risk": "技术迭代",
+        "level": "低",
+        "mitigation": "预留升级空间，采用模块化设计"
+      }
+    ]
+  }
+}

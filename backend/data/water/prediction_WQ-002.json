@@ -1,0 +1,146 @@
+[
+  {
+    "target_timestamp": "2026-08-17T17:38:42.740054",
+    "cod": 178.3,
+    "ammonia_nitrogen": 18.65,
+    "nitrate_nitrogen": 1.76
+  },
+  {
+    "target_timestamp": "2026-08-17T18:38:42.740054",
+    "cod": 185.4,
+    "ammonia_nitrogen": 18.02,
+    "nitrate_nitrogen": 1.97
+  },
+  {
+    "target_timestamp": "2026-08-17T19:38:42.740054",
+    "cod": 183.3,
+    "ammonia_nitrogen": 18.84,
+    "nitrate_nitrogen": 2.01
+  },
+  {
+    "target_timestamp": "2026-08-17T20:38:42.740054",
+    "cod": 187.2,
+    "ammonia_nitrogen": 19.66,
+    "nitrate_nitrogen": 2.15
+  },
+  {
+    "target_timestamp": "2026-08-17T21:38:42.740054",
+    "cod": 186.0,
+    "ammonia_nitrogen": 20.65,
+    "nitrate_nitrogen": 2.21
+  },
+  {
+    "target_timestamp": "2026-08-17T22:38:42.740054",
+    "cod": 188.5,
+    "ammonia_nitrogen": 20.39,
+    "nitrate_nitrogen": 2.24
+  },
+  {
+    "target_timestamp": "2026-08-17T23:38:42.740054",
+    "cod": 190.7,
+    "ammonia_nitrogen": 21.73,
+    "nitrate_nitrogen": 2.3
+  },
+  {
+    "target_timestamp": "2026-08-18T00:38:42.740054",
+    "cod": 191.6,
+    "ammonia_nitrogen": 22.15,
+    "nitrate_nitrogen": 2.26
+  },
+  {
+    "target_timestamp": "2026-08-18T01:38:42.740054",
+    "cod": 189.2,
+    "ammonia_nitrogen": 20.69,
+    "nitrate_nitrogen": 2.14
+  },
+  {
+    "target_timestamp": "2026-08-18T02:38:42.740054",
+    "cod": 185.0,
+    "ammonia_nitrogen": 19.66,
+    "nitrate_nitrogen": 2.15
+  },
+  {
+    "target_timestamp": "2026-08-18T03:38:42.740054",
+    "cod": 184.0,
+    "ammonia_nitrogen": 19.42,
+    "nitrate_nitrogen": 2.08
+  },
+  {
+    "target_timestamp": "2026-08-18T04:38:42.740054",
+    "cod": 184.9,
+    "ammonia_nitrogen": 18.62,
+    "nitrate_nitrogen": 1.88
+  },
+  {
+    "target_timestamp": "2026-08-18T05:38:42.740054",
+    "cod": 183.4,
+    "ammonia_nitrogen": 18.39,
+    "nitrate_nitrogen": 1.72
+  },
+  {
+    "target_timestamp": "2026-08-18T06:38:42.740054",
+    "cod": 176.7,
+    "ammonia_nitrogen": 17.38,
+    "nitrate_nitrogen": 1.72
+  },
+  {
+    "target_timestamp": "2026-08-18T07:38:42.740054",
+    "cod": 178.2,
+    "ammonia_nitrogen": 16.79,
+    "nitrate_nitrogen": 1.6
+  },
+  {
+    "target_timestamp": "2026-08-18T08:38:42.740054",
+    "cod": 173.8,
+    "ammonia_nitrogen": 15.75,
+    "nitrate_nitrogen": 1.47
+  },
+  {
+    "target_timestamp": "2026-08-18T09:38:42.740054",
+    "cod": 172.3,
+    "ammonia_nitrogen": 15.64,
+    "nitrate_nitrogen": 1.32
+  },
+  {
+    "target_timestamp": "2026-08-18T10:38:42.740054",
+    "cod": 170.1,
+    "ammonia_nitrogen": 15.42,
+    "nitrate_nitrogen": 1.35
+  },
+  {
+    "target_timestamp": "2026-08-18T11:38:42.740054",
+    "cod": 170.3,
+    "ammonia_nitrogen": 15.54,
+    "nitrate_nitrogen": 1.3
+  },
+  {
+    "target_timestamp": "2026-08-18T12:38:42.740054",
+    "cod": 166.4,
+    "ammonia_nitrogen": 15.22,
+    "nitrate_nitrogen": 1.4
+  },
+  {
+    "target_timestamp": "2026-08-18T13:38:42.740054",
+    "cod": 177.3,
+    "ammonia_nitrogen": 16.05,
+    "nitrate_nitrogen": 1.34
+  },
+  {
+    "target_timestamp": "2026-08-18T14:38:42.740054",
+    "cod": 172.9,
+    "ammonia_nitrogen": 16.22,
+    "nitrate_nitrogen": 1.49
+  },
+  {
+    "target_timestamp": "2026-08-18T15:38:42.740054",
+    "cod": 177.1,
+    "ammonia_nitrogen": 16.19,
+    "nitrate_nitrogen": 1.58
+  },
+  {
+    "target_timestamp": "2026-08-18T16:38:42.740054",
+    "cod": 178.9,
+    "ammonia_nitrogen": 17.71,
+    "nitrate_nitrogen": 1.64
+  }
+]

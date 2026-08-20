@@ -1,0 +1,75 @@
+{
+  "period": "2026-08",
+  "scope_1": {
+    "label": "直接排放",
+    "total_tco2": 356.42,
+    "breakdown": [
+      {
+        "source": "工业过程排放",
+        "emission_tco2": 178.21,
+        "ratio": 0.5
+      },
+      {
+        "source": "化石燃料燃烧",
+        "emission_tco2": 124.75,
+        "ratio": 0.35
+      },
+      {
+        "source": "园区交通",
+        "emission_tco2": 35.64,
+        "ratio": 0.1
+      },
+      {
+        "source": "制冷剂泄漏",
+        "emission_tco2": 17.82,
+        "ratio": 0.05
+      }
+    ]
+  },
+  "scope_2": {
+    "label": "间接排放（外购电力）",
+    "total_tco2": 2088.72,
+    "breakdown": [
+      {
+        "source": "外购电力",
+        "consumption_mwh": 3595.04,
+        "emission_factor": 0.581,
+        "emission_tco2": 2088.72
+      }
+    ],
+    "grid_emission_factor": 0.581
+  },
+  "scope_3": {
+    "label": "其他间接排放",
+    "total_tco2": 987.35,
+    "breakdown": [
+      {
+        "source": "供应链上游",
+        "emission_tco2": 444.31,
+        "ratio": 0.45
+      },
+      {
+        "source": "产品运输",
+        "emission_tco2": 197.47,
+        "ratio": 0.2
+      },
+      {
+        "source": "员工通勤",
+        "emission_tco2": 98.74,
+        "ratio": 0.1
+      },
+      {
+        "source": "废弃物处理",
+        "emission_tco2": 148.1,
+        "ratio": 0.15
+      },
+      {
+        "source": "其他",
+        "emission_tco2": 98.73,
+        "ratio": 0.1
+      }
+    ]
+  },
+  "total_emission_tco2": 3432.49,
+  "carbon_intensity_tco2_per_million_yuan": 0.98
+}

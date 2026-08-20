@@ -1,0 +1,13 @@
+{
+  "device_id": "WQ-002",
+  "timestamp": "2026-08-17T16:38:42.740054",
+  "cod": 172.3,
+  "ammonia_nitrogen": 14.8,
+  "nitrate_nitrogen": 1.62,
+  "ph": 7.22,
+  "temperature": 25.1,
+  "dissolved_oxygen": 4.1,
+  "inflow_rate": 720.0,
+  "sludge_conc": 4380.0,
+  "source": "simulated"
+}

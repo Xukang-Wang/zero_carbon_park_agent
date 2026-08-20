@@ -1,0 +1,81 @@
+{
+  "project": {
+    "name": "园区屋顶光伏电站（一期+二期）",
+    "total_capacity_kw": 8000,
+    "annual_generation_mwh": 9200.0,
+    "lifetime_years": 25
+  },
+  "investment": {
+    "total_investment_yuan": 32000000,
+    "unit_cost_yuan_per_kw": 4000,
+    "subsidy_yuan": 800000,
+    "net_investment_yuan": 31200000
+  },
+  "revenue": {
+    "annual_electricity_saving_yuan": 6500000,
+    "annual_carbon_revenue_yuan": 300000,
+    "annual_total_revenue_yuan": 6800000
+  },
+  "costs": {
+    "annual_om_cost_yuan": 320000,
+    "annual_depreciation_yuan": 1248000,
+    "annual_total_cost_yuan": 1568000
+  },
+  "financial_indicators": {
+    "irr_percent": 12.8,
+    "npv_yuan": 11500000,
+    "payback_period_years": 6.5,
+    "roi_percent": 15.2,
+    "lcoe_yuan_per_kwh": 0.3
+  },
+  "carbon_benefit": {
+    "annual_carbon_reduction_tco2": 5300.0,
+    "lifetime_carbon_reduction_tco2": 132500
+  },
+  "sensitivity_analysis": {
+    "electricity_price": [
+      {
+        "change_percent": -20,
+        "irr_percent": 7.2
+      },
+      {
+        "change_percent": -10,
+        "irr_percent": 10.1
+      },
+      {
+        "change_percent": 0,
+        "irr_percent": 12.8
+      },
+      {
+        "change_percent": 10,
+        "irr_percent": 15.3
+      },
+      {
+        "change_percent": 20,
+        "irr_percent": 17.5
+      }
+    ],
+    "investment_cost": [
+      {
+        "change_percent": -20,
+        "irr_percent": 16.8
+      },
+      {
+        "change_percent": -10,
+        "irr_percent": 14.5
+      },
+      {
+        "change_percent": 0,
+        "irr_percent": 12.8
+      },
+      {
+        "change_percent": 10,
+        "irr_percent": 10.2
+      },
+      {
+        "change_percent": 20,
+        "irr_percent": 8.1
+      }
+    ]
+  }
+}

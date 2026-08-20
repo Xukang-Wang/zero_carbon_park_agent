@@ -1,0 +1,67 @@
+{
+  "project": {
+    "name": "园区碳捕集利用与封存（CCUS）项目",
+    "target_emission_source": "燃煤锅炉烟气",
+    "co2_concentration_percent": 12.5
+  },
+  "capture": {
+    "technology": "化学吸收法（胺法）",
+    "capture_rate_percent": 90.0,
+    "capture_capacity_tco2_per_year": 50000,
+    "energy_penalty_kwh_per_tco2": 280,
+    "amine_degradation_kg_per_tco2": 1.2,
+    "capture_cost_yuan_per_tco2": 280
+  },
+  "transport": {
+    "method": "管道输送",
+    "distance_km": 15,
+    "transport_cost_yuan_per_tco2": 25,
+    "pipeline_diameter_mm": 200,
+    "pressure_mpa": 10
+  },
+  "utilization": [
+    {
+      "path": "化工利用（合成甲醇）",
+      "capacity_tco2_per_year": 20000,
+      "product": "甲醇",
+      "revenue_yuan_per_tco2": 800,
+      "technology_readiness": "TRL 7"
+    },
+    {
+      "path": "矿化利用（建材）",
+      "capacity_tco2_per_year": 15000,
+      "product": "轻质碳酸钙",
+      "revenue_yuan_per_tco2": 500,
+      "technology_readiness": "TRL 8"
+    },
+    {
+      "path": "生物利用（微藻固碳）",
+      "capacity_tco2_per_year": 5000,
+      "product": "藻粉/生物柴油",
+      "revenue_yuan_per_tco2": 1200,
+      "technology_readiness": "TRL 6"
+    }
+  ],
+  "storage": {
+    "method": "咸水层封存",
+    "capacity_tco2_per_year": 10000,
+    "storage_cost_yuan_per_tco2": 80,
+    "monitoring": "4D地震 + 井下监测",
+    "leakage_risk": "低（<0.1%/年）"
+  },
+  "economic": {
+    "total_investment_yuan": 120000000,
+    "annual_capture_cost_yuan": 14000000,
+    "annual_transport_cost_yuan": 1250000,
+    "annual_utilization_revenue_yuan": 22000000,
+    "annual_storage_cost_yuan": 800000,
+    "annual_net_cost_yuan": -5950000,
+    "irr_percent": 8.5,
+    "payback_period_years": 9.5
+  },
+  "carbon_benefit": {
+    "net_carbon_reduction_tco2_per_year": 45000,
+    "carbon_credit_value_yuan_per_year": 2700000,
+    "contribution_to_zero_carbon_percent": 65
+  }
+}

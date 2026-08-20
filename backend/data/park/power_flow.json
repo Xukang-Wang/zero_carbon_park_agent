@@ -1,0 +1,52 @@
+{
+  "generation": {
+    "pv_kw": 2684.0,
+    "wind_kw": 326.3,
+    "biomass_chp_kw": 2100.0,
+    "grid_import_kw": 2800.0,
+    "total_kw": 7910.3
+  },
+  "consumption": {
+    "load_kw": 4800.0,
+    "storage_charge_kw": 850.0,
+    "grid_export_kw": 0.0,
+    "total_kw": 5650.0
+  },
+  "balance": {
+    "power_gap_kw": 2260.3,
+    "renewable_ratio": 62.7,
+    "self_sufficiency": 62.7
+  },
+  "flows": [
+    {
+      "from": "光伏",
+      "to": "负荷",
+      "power_kw": 2684.0,
+      "type": "renewable"
+    },
+    {
+      "from": "风电",
+      "to": "负荷",
+      "power_kw": 326.3,
+      "type": "renewable"
+    },
+    {
+      "from": "生物质CHP",
+      "to": "负荷",
+      "power_kw": 2100.0,
+      "type": "carbon_neutral"
+    },
+    {
+      "from": "电网",
+      "to": "负荷",
+      "power_kw": 2800.0,
+      "type": "grid"
+    },
+    {
+      "from": "电网",
+      "to": "储能",
+      "power_kw": 850.0,
+      "type": "charging"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "product": {
+    "type": "steel",
+    "name": "钢铁产品",
+    "cn_code": "7208"
+  },
+  "emissions": {
+    "direct_emission_tco2_per_ton": 1.8,
+    "indirect_emission_tco2_per_ton": 0.72,
+    "total_embedded_emission_tco2_per_ton": 2.52,
+    "annual_production_ton": 100000.0,
+    "annual_total_emission_tco2": 252000.0
+  },
+  "cbam_obligation": {
+    "eu_carbon_price_eur": 80.0,
+    "free_allocation_ratio": 0.0,
+    "cbam_certificate_cost_eur_per_ton": 201.6,
+    "estimated_annual_cost_eur": 20160000.0,
+    "estimated_annual_cost_cny": 157248000.0
+  },
+  "compliance_status": {
+    "reporting_ready": true,
+    "verification_status": "第三方核查中",
+    "next_reporting_deadline": "2026-10-31",
+    "risk_level": "medium",
+    "recommendations": [
+      "建立产品级碳排放核算体系",
+      "加快绿电采购，降低间接排放",
+      "评估碳捕集技术应用可行性",
+      "定期更新CBAM规则变化跟踪"
+    ]
+  }
+}

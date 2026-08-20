@@ -1,0 +1,445 @@
+{
+  "nodes": [
+    {
+      "id": "PV-001",
+      "type": "EnergySource",
+      "name": "1号光伏电站",
+      "source_type": "solar",
+      "capacity_kw": 5000,
+      "location": "园区A区屋顶"
+    },
+    {
+      "id": "GRID-001",
+      "type": "EnergySource",
+      "name": "市电馈线",
+      "source_type": "grid",
+      "capacity_kw": 10000,
+      "emission_factor": 0.581
+    },
+    {
+      "id": "TRANS-001",
+      "type": "GridNode",
+      "name": "1号主变压器",
+      "node_type": "transformer",
+      "voltage_level_kv": 10,
+      "capacity_kva": 8000
+    },
+    {
+      "id": "WWTP-001",
+      "type": "EnergyLoad",
+      "name": "集中式污水处理厂",
+      "load_type": "wastewater_treatment",
+      "rated_power_kw": 1500,
+      "department": "环保部",
+      "daily_capacity_m3": 20000
+    },
+    {
+      "id": "LOAD-001",
+      "type": "EnergyLoad",
+      "name": "1号生产线",
+      "load_type": "manufacturing",
+      "rated_power_kw": 2000,
+      "department": "制造一部",
+      "wastewater_discharge_m3h": 50
+    },
+    {
+      "id": "LOAD-002",
+      "type": "EnergyLoad",
+      "name": "2号生产线",
+      "load_type": "manufacturing",
+      "rated_power_kw": 1800,
+      "department": "制造二部",
+      "wastewater_discharge_m3h": 40
+    },
+    {
+      "id": "LOAD-003",
+      "type": "EnergyLoad",
+      "name": "空调系统",
+      "load_type": "hvac",
+      "rated_power_kw": 800,
+      "department": "设施部"
+    },
+    {
+      "id": "LOAD-004",
+      "type": "EnergyLoad",
+      "name": "充电桩集群",
+      "load_type": "ev_charging",
+      "rated_power_kw": 600,
+      "department": "后勤部"
+    },
+    {
+      "id": "BAT-001",
+      "type": "EnergyStorage",
+      "name": "1号锂电池储能系统",
+      "storage_type": "li_ion",
+      "capacity_kwh": 5000,
+      "rated_power_kw": 2500,
+      "soc_min": 20,
+      "soc_max": 90
+    },
+    {
+      "id": "CARBON-2026-08-20",
+      "type": "CarbonRecord",
+      "date": "2026-08-20",
+      "direct_emission_tco2": 12.5,
+      "indirect_emission_tco2": 45.3,
+      "offset_tco2": 23.1,
+      "net_emission_tco2": 34.7
+    },
+    {
+      "id": "GREEN-PV-001",
+      "type": "GreenPowerSupply",
+      "name": "光伏直供系统",
+      "supply_type": "solar_direct",
+      "capacity_kw": 5000,
+      "location": "园区A区"
+    },
+    {
+      "id": "GREEN-WIND-001",
+      "type": "GreenPowerSupply",
+      "name": "风电直供系统",
+      "supply_type": "wind_direct",
+      "capacity_kw": 3000,
+      "location": "园区B区"
+    },
+    {
+      "id": "GREEN-HYDRO-001",
+      "type": "GreenPowerSupply",
+      "name": "氢能站",
+      "supply_type": "hydrogen",
+      "capacity_kw": 1000,
+      "location": "园区C区"
+    },
+    {
+      "id": "IDG-001",
+      "type": "IncrementalDistGrid",
+      "name": "增量配电网",
+      "voltage_level_kv": 10,
+      "capacity_kva": 10000
+    },
+    {
+      "id": "CCUS-001",
+      "type": "CCUSNode",
+      "name": "碳捕集装置",
+      "capture_rate": 0.9,
+      "capture_cost": 200,
+      "technology": "chemical_absorption"
+    },
+    {
+      "id": "CCUS-UTIL-001",
+      "type": "CCUSNode",
+      "name": "碳利用装置",
+      "utilization_ratio": 0.6,
+      "product": "化工原料"
+    },
+    {
+      "id": "CCUS-STORAGE-001",
+      "type": "CCUSNode",
+      "name": "碳封存装置",
+      "storage_type": "地质封存",
+      "capacity_tco2": 100000
+    },
+    {
+      "id": "BIOCHP-001",
+      "type": "BiomassNode",
+      "name": "生物质CHP电厂",
+      "capacity_kw": 2000,
+      "feedstock": "秸秆/林业废弃物",
+      "heat_output_kw": 3000
+    },
+    {
+      "id": "BIOGAS-001",
+      "type": "BiomassNode",
+      "name": "沼气发酵罐",
+      "biogas_yield_m3_per_t": 120,
+      "methane_ratio": 0.6,
+      "feedstock_t_per_day": 50
+    },
+    {
+      "id": "MG-001",
+      "type": "MicroGrid",
+      "name": "园区微电网",
+      "voltage_level_kv": 10,
+      "frequency_hz": 50.0,
+      "total_generation_kw": 8500,
+      "total_load_kw": 8000
+    },
+    {
+      "id": "VPP-001",
+      "type": "VPPNode",
+      "name": "园区虚拟电厂",
+      "aggregated_capacity_mw": 10.5,
+      "response_time_ms": 200,
+      "market_participation": "spot+ancillary"
+    },
+    {
+      "id": "CEA-001",
+      "type": "CarbonAsset",
+      "name": "碳配额(CEA)",
+      "asset_type": "cea",
+      "amount_tco2": 5000,
+      "unit_price": 60.0
+    },
+    {
+      "id": "CCER-001",
+      "type": "CarbonAsset",
+      "name": "CCER-光伏项目",
+      "asset_type": "ccer",
+      "amount_tco2": 2000,
+      "unit_price": 50.0
+    },
+    {
+      "id": "GEC-001",
+      "type": "CarbonAsset",
+      "name": "绿证(GEC)",
+      "asset_type": "green_certificate",
+      "amount_mwh": 10000,
+      "unit_price": 25.0
+    },
+    {
+      "id": "DISPATCH-001",
+      "type": "DispatchPlan",
+      "name": "日前调度计划",
+      "strategy": "balanced",
+      "horizon_hours": 24,
+      "expected_renewable_ratio": 0.45
+    },
+    {
+      "id": "DISPATCH-002",
+      "type": "DispatchPlan",
+      "name": "实时调度计划",
+      "strategy": "real_time",
+      "horizon_hours": 1
+    },
+    {
+      "id": "MON-PV-001",
+      "type": "MonitoringPoint",
+      "name": "光伏出力监测点",
+      "metrics": "power/temperature/irradiance"
+    },
+    {
+      "id": "MON-WIND-001",
+      "type": "MonitoringPoint",
+      "name": "风电出力监测点",
+      "metrics": "power/wind_speed"
+    },
+    {
+      "id": "WIND-001"
+    },
+    {
+      "id": "MON-BAT-001",
+      "type": "MonitoringPoint",
+      "name": "储能状态监测点",
+      "metrics": "soc/soh/temperature"
+    },
+    {
+      "id": "MON-GRID-001",
+      "type": "MonitoringPoint",
+      "name": "电网交互监测点",
+      "metrics": "power/voltage/frequency"
+    },
+    {
+      "id": "MON-LOAD-001",
+      "type": "MonitoringPoint",
+      "name": "负荷监测点",
+      "metrics": "power/flexibility"
+    }
+  ],
+  "edges": [
+    {
+      "from": "PV-001",
+      "to": "TRANS-001",
+      "relation": "GENERATES",
+      "power_kw": 3500,
+      "renewable": true
+    },
+    {
+      "from": "PV-001",
+      "to": "VPP-001",
+      "relation": "AGGREGATES",
+      "capacity_mw": 5.0
+    },
+    {
+      "from": "GRID-001",
+      "to": "TRANS-001",
+      "relation": "GENERATES",
+      "power_kw": 5000,
+      "renewable": false
+    },
+    {
+      "from": "TRANS-001",
+      "to": "WWTP-001",
+      "relation": "TRANSMITS",
+      "power_kw": 1200
+    },
+    {
+      "from": "TRANS-001",
+      "to": "LOAD-001",
+      "relation": "TRANSMITS",
+      "power_kw": 1800
+    },
+    {
+      "from": "TRANS-001",
+      "to": "LOAD-002",
+      "relation": "TRANSMITS",
+      "power_kw": 1600
+    },
+    {
+      "from": "TRANS-001",
+      "to": "LOAD-003",
+      "relation": "TRANSMITS",
+      "power_kw": 700
+    },
+    {
+      "from": "TRANS-001",
+      "to": "LOAD-004",
+      "relation": "TRANSMITS",
+      "power_kw": 500
+    },
+    {
+      "from": "TRANS-001",
+      "to": "BAT-001",
+      "relation": "STORES",
+      "power_kw": 2000,
+      "direction": "charge"
+    },
+    {
+      "from": "WWTP-001",
+      "to": "CARBON-2026-08-20",
+      "relation": "EMITS",
+      "amount_tco2": 1.8
+    },
+    {
+      "from": "LOAD-001",
+      "to": "CARBON-2026-08-20",
+      "relation": "EMITS",
+      "amount_tco2": 2.5
+    },
+    {
+      "from": "LOAD-002",
+      "to": "CARBON-2026-08-20",
+      "relation": "EMITS",
+      "amount_tco2": 2.0
+    },
+    {
+      "from": "BAT-001",
+      "to": "TRANS-001",
+      "relation": "STORES",
+      "power_kw": 1500,
+      "direction": "discharge"
+    },
+    {
+      "from": "BAT-001",
+      "to": "VPP-001",
+      "relation": "AGGREGATES",
+      "capacity_mw": 2.5
+    },
+    {
+      "from": "GREEN-PV-001",
+      "to": "IDG-001",
+      "relation": "GENERATES",
+      "power_kw": 3500,
+      "renewable": true
+    },
+    {
+      "from": "GREEN-WIND-001",
+      "to": "IDG-001",
+      "relation": "GENERATES",
+      "power_kw": 2000,
+      "renewable": true
+    },
+    {
+      "from": "GREEN-HYDRO-001",
+      "to": "IDG-001",
+      "relation": "GENERATES",
+      "power_kw": 800,
+      "renewable": true
+    },
+    {
+      "from": "IDG-001",
+      "to": "TRANS-001",
+      "relation": "TRANSMITS",
+      "power_kw": 6000
+    },
+    {
+      "from": "CCUS-001",
+      "to": "CCUS-UTIL-001",
+      "relation": "TRANSMITS",
+      "co2_flow_tph": 5.0
+    },
+    {
+      "from": "CCUS-001",
+      "to": "CCUS-STORAGE-001",
+      "relation": "TRANSMITS",
+      "co2_flow_tph": 3.0
+    },
+    {
+      "from": "BIOCHP-001",
+      "to": "TRANS-001",
+      "relation": "GENERATES",
+      "power_kw": 1500,
+      "renewable": true
+    },
+    {
+      "from": "BIOGAS-001",
+      "to": "BIOCHP-001",
+      "relation": "FEEDS",
+      "feedstock_t_per_day": 50
+    },
+    {
+      "from": "MG-001",
+      "to": "VPP-001",
+      "relation": "AGGREGATES",
+      "capacity_mw": 10.5
+    },
+    {
+      "from": "CCER-001",
+      "to": "CARBON-2026-08-20",
+      "relation": "OFFSETS",
+      "amount_tco2": 2000
+    },
+    {
+      "from": "DISPATCH-001",
+      "to": "BAT-001",
+      "relation": "DISPATCHES",
+      "charge_schedule": "valley",
+      "discharge_schedule": "peak"
+    },
+    {
+      "from": "DISPATCH-001",
+      "to": "MG-001",
+      "relation": "DISPATCHES",
+      "target_power_balance": 0
+    },
+    {
+      "from": "MON-PV-001",
+      "to": "PV-001",
+      "relation": "MONITORS",
+      "metrics": "power/temperature/irradiance"
+    },
+    {
+      "from": "MON-WIND-001",
+      "to": "WIND-001",
+      "relation": "MONITORS",
+      "metrics": "power/wind_speed"
+    },
+    {
+      "from": "MON-BAT-001",
+      "to": "BAT-001",
+      "relation": "MONITORS",
+      "metrics": "soc/soh/temperature"
+    },
+    {
+      "from": "MON-GRID-001",
+      "to": "GRID-001",
+      "relation": "MONITORS",
+      "metrics": "power/voltage/frequency"
+    },
+    {
+      "from": "MON-LOAD-001",
+      "to": "LOAD-001",
+      "relation": "MONITORS",
+      "metrics": "power/flexibility"
+    }
+  ]
+}

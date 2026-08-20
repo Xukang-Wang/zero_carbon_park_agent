@@ -1,0 +1,41 @@
+{
+  "market_analysis": {
+    "total_shared_capacity_kwh": 20000,
+    "subscribed_users": 8,
+    "utilization_rate": 0.75,
+    "monthly_revenue_yuan": 120000
+  },
+  "business_models": [
+    {
+      "model": "容量租赁",
+      "description": "园区企业按需租赁储能容量",
+      "unit_price_yuan_per_kwh_month": 80,
+      "estimated_annual_revenue_yuan": 960000,
+      "pros": "收入稳定，客户粘性高",
+      "cons": "需要较大初始投资"
+    },
+    {
+      "model": "辅助服务",
+      "description": "参与电网调频、调峰辅助服务",
+      "unit_price_yuan_per_kw": 150,
+      "estimated_annual_revenue_yuan": 540000,
+      "pros": "利润空间大，政策支持",
+      "cons": "技术要求高，调度复杂"
+    },
+    {
+      "model": "峰谷套利",
+      "description": "利用峰谷电价差充放电套利",
+      "daily_cycles": 2,
+      "estimated_annual_revenue_yuan": 720000,
+      "pros": "模式成熟，风险可控",
+      "cons": "依赖电价差，政策风险"
+    }
+  ],
+  "recommendation": {
+    "best_model": "容量租赁 + 峰谷套利",
+    "expected_roi_years": 4.5,
+    "irr_percent": 15.2,
+    "payback_period_years": 5.2,
+    "carbon_benefit_tco2_per_year": 1200
+  }
+}

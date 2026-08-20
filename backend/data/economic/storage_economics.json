@@ -1,0 +1,63 @@
+{
+  "project": {
+    "name": "园区锂电池储能系统",
+    "capacity_kwh": 5000,
+    "rated_power_kw": 2500,
+    "lifetime_years": 15,
+    "cycle_life": 6000
+  },
+  "investment": {
+    "total_investment_yuan": 7500000,
+    "unit_cost_yuan_per_kwh": 1500,
+    "battery_replacement_yuan": 2500000,
+    "total_lifetime_investment_yuan": 10000000
+  },
+  "revenue_streams": [
+    {
+      "name": "峰谷套利",
+      "annual_revenue_yuan": 720000,
+      "description": "利用峰谷电价差（0.85 vs 0.30元/kWh）充放电"
+    },
+    {
+      "name": "需量管理",
+      "annual_revenue_yuan": 240000,
+      "description": "削减峰值负荷降低基本电费"
+    },
+    {
+      "name": "辅助服务",
+      "annual_revenue_yuan": 180000,
+      "description": "参与电网调频辅助服务"
+    },
+    {
+      "name": "碳减排收益",
+      "annual_revenue_yuan": 60000,
+      "description": "减少弃光，增加绿电消纳"
+    }
+  ],
+  "total_annual_revenue_yuan": 1200000,
+  "annual_om_cost_yuan": 150000,
+  "financial_indicators": {
+    "irr_percent": 10.2,
+    "npv_yuan": 2200000,
+    "payback_period_years": 7.2,
+    "roi_percent": 10.5,
+    "lcos_yuan_per_kwh": 0.4
+  },
+  "scenario_analysis": {
+    "optimistic": {
+      "irr_percent": 14.5,
+      "payback_years": 4.8,
+      "assumption": "电价差扩大至1.0元/kWh"
+    },
+    "baseline": {
+      "irr_percent": 10.2,
+      "payback_years": 7.2,
+      "assumption": "当前电价差和政策环境"
+    },
+    "pessimistic": {
+      "irr_percent": 4.5,
+      "payback_years": 10.5,
+      "assumption": "电价差缩小至0.3元/kWh"
+    }
+  }
+}
