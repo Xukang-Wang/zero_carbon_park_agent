@@ -1,161 +1,28 @@
 <template>
-  <div id="app-container">
-    <el-container>
-      <!-- 侧边栏 -->
-      <el-aside width="220px">
-        <div class="logo">
-          <span class="logo-icon">⚡</span>
-          <span class="logo-text">zero_carbon_park_agent</span>
-        </div>
-        <el-menu
-          :default-active="activeMenu"
-          router
-          background-color="transparent"
-          text-color="#ffffffb3"
-          active-text-color="#4FC3F7"
-        >
-          <el-menu-item index="/">
-            <span>📊 驾驶舱大屏</span>
-          </el-menu-item>
-          <el-menu-item index="/park">
-            <span>🏗️ 园区智能监测</span>
-          </el-menu-item>
-          <el-menu-item index="/water">
-            <span>💧 水质监测</span>
-          </el-menu-item>
-          <el-menu-item index="/carbon">
-            <span>🌿 碳足迹追踪</span>
-          </el-menu-item>
-          <el-menu-item index="/graph">
-            <span>🔗 知识图谱</span>
-          </el-menu-item>
-          <el-menu-item index="/alert">
-            <span>🚨 告警中心</span>
-          </el-menu-item>
-          <el-menu-item index="/agent">
-            <span>🤖 Agent 工作流</span>
-          </el-menu-item>
-          <el-divider style="border-color:rgba(255,255,255,0.15);margin:8px 0" />
-          <el-menu-item index="/energy">
-            <span>⚡ 能源调度</span>
-          </el-menu-item>
-          <el-menu-item index="/storage">
-            <span>🔋 储能管理</span>
-          </el-menu-item>
-          <el-menu-item index="/vpp">
-            <span>🏭 虚拟电厂</span>
-          </el-menu-item>
-          <el-menu-item index="/carbon-asset">
-            <el-tooltip content="碳资产管理" placement="right">
-              <span>💰 碳资产管理</span>
-            </el-tooltip>
-          </el-menu-item>
-          <el-menu-item index="/evaluation">
-            <span>📋 零碳评价</span>
-          </el-menu-item>
-          <el-menu-item index="/economic">
-            <span>📈 经济性分析</span>
-          </el-menu-item>
-          <el-menu-item index="/biomass">
-            <span>🌱 生物质能</span>
-          </el-menu-item>
-        </el-menu>
-        <div class="sidebar-version">v1.0.0</div>
-      </el-aside>
-
-      <!-- 主内容 -->
-      <el-container>
-        <el-header>
-          <h2>零碳园区智慧能源与水务智能体系统</h2>
-          <div class="header-right">
-            <el-tag :type="store.llmConfigured ? 'success' : 'warning'" size="small">
-              {{ store.llmConfigured ? 'LLM 已连接' : 'LLM 模拟模式' }}
-            </el-tag>
-          </div>
-        </el-header>
-        <el-main>
-          <router-view />
-        </el-main>
-      </el-container>
-    </el-container>
+  <div class="app-shell">
+    <aside class="app-sidebar">
+      <router-link to="/" class="brand"><span class="brand-symbol">◈</span><span>青屿 · ZERO<span class="brand-caption">CARBON INTELLIGENCE</span></span></router-link>
+      <div class="workspace-label">园区智能运营平台 <span>V2.0</span></div>
+      <nav aria-label="主导航">
+        <p class="nav-section">工作空间</p>
+        <router-link v-for="item in primary" :key="item.path" :to="item.path" :class="['nav-link', { active: route.path === item.path }]" ><span class="nav-icon">{{ item.icon }}</span>{{ item.label }}<span v-if="item.path === '/agents'" class="nav-count">07</span></router-link>
+        <p class="nav-section">专业应用</p>
+        <router-link v-for="item in specialist" :key="item.path" :to="item.path" :class="['nav-link', { active: route.path === item.path }]" ><span class="nav-icon">{{ item.icon }}</span>{{ item.label }}</router-link>
+      </nav>
+      <div class="sidebar-bottom"><span class="status-dot"></span> 本地模拟环境 <span class="small-muted">DEMO</span><p>让每一度能源，都有迹可循。</p></div>
+    </aside>
+    <div class="app-body">
+      <header class="app-topbar"><div><span class="small-muted">WORKSPACE</span><span class="breadcrumb">青屿示范园区 <span>/</span> {{ title }}</span></div><div class="topbar-right"><span class="demo-chip">模拟数据</span><span class="user-avatar">QY</span></div></header>
+      <main class="app-main"><router-view /></main>
+    </div>
   </div>
 </template>
-
 <script setup>
-import { computed, onMounted } from 'vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { useApiStore } from './stores/api'
-
+import './styles/operations.css'
 const route = useRoute()
-const store = useApiStore()
-const activeMenu = computed(() => route.path)
-
-onMounted(() => store.checkHealth())
+const primary = [{ path: '/', label: '园区总览', icon: '◫' }, { path: '/agents', label: 'Agent 协作中心', icon: '⌘' }, { path: '/scenarios', label: '策略推演', icon: '◇' }, { path: '/carbon-analysis', label: '碳与资源分析', icon: '◌' }, { path: '/data-center', label: '数据与资产', icon: '▤' }]
+const specialist = [{ path: '/park', label: '综合能源监测', icon: '⌁' }, { path: '/energy', label: '能源调度', icon: 'ϟ' }, { path: '/storage', label: '储能管理', icon: '▱' }, { path: '/vpp', label: '虚拟电厂', icon: '⌂' }, { path: '/water', label: '水务监测', icon: '≈' }, { path: '/graph', label: '能源知识图谱', icon: '⋈' }, { path: '/alert', label: '告警中心', icon: '△' }, { path: '/carbon', label: '碳足迹追踪', icon: '♧' }, { path: '/carbon-asset', label: '碳资产管理', icon: '◎' }, { path: '/economic', label: '项目经济性', icon: '↗' }, { path: '/evaluation', label: '零碳评价', icon: '▧' }, { path: '/biomass', label: '生物质能', icon: '♧' }, { path: '/agent', label: '经典工作流', icon: '⇢' }]
+const title = computed(() => [...primary, ...specialist].find(i => i.path === route.path)?.label || '工作台')
 </script>
-
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Microsoft YaHei', sans-serif; background: #f0f2f5; }
-#app-container { height: 100vh; }
-
-.el-aside {
-  background: linear-gradient(180deg, #001529 0%, #002140 50%, #001529 100%);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.logo {
-  padding: 20px 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: linear-gradient(135deg, rgba(79,195,247,0.2) 0%, rgba(0,21,41,0) 100%);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-.logo-icon { font-size: 22px; flex-shrink: 0; }
-.logo-text {
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  word-break: break-all;
-  line-height: 1.4;
-}
-
-.sidebar-version {
-  margin-top: auto;
-  padding: 12px 16px;
-  color: rgba(255,255,255,0.3);
-  font-size: 12px;
-  text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.08);
-}
-
-.el-header {
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 24px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-  z-index: 10;
-}
-.el-header h2 {
-  font-size: 18px;
-  color: #303133;
-}
-
-.el-main {
-  padding: 20px;
-  overflow-y: auto;
-}
-
-.el-menu {
-  border-right: none;
-  flex: 1;
-  overflow-y: auto;
-}
-.el-menu .el-menu-item:hover {
-  background-color: rgba(255,255,255,0.06) !important;
-}
-</style>

@@ -1,0 +1,7262 @@
+{
+  "schema_version": 1,
+  "is_simulated": true,
+  "seed": 42,
+  "park_name": "青屿 · 零碳示范园区",
+  "timezone": "Asia/Shanghai",
+  "interval_hours": 1,
+  "assumptions": {
+    "grid_kgco2_kwh": 0.58,
+    "gas_kgco2_m3": 2.16,
+    "factor_note": "演示情景假设，非官方核算因子；不含 Scope 3、抵消和绿证减排。",
+    "battery_capacity_kwh": 5000,
+    "battery_power_kw": 2000,
+    "charge_efficiency": 0.95,
+    "discharge_efficiency": 0.95,
+    "soc_min": 0.2,
+    "soc_max": 0.9,
+    "soc_initial": 0.5,
+    "degradation_cny_kwh": 0.05,
+    "export_cny_kwh": 0.25,
+    "grid_limit_kw": 5000
+  },
+  "assets": [
+    {
+      "id": "PV-01",
+      "name": "屋顶光伏阵列",
+      "type": "光伏",
+      "capacity": "5.0 MW",
+      "zone": "制造片区"
+    },
+    {
+      "id": "WT-01",
+      "name": "分散式风电",
+      "type": "风电",
+      "capacity": "3.0 MW",
+      "zone": "北部能源站"
+    },
+    {
+      "id": "ESS-01",
+      "name": "共享储能电站",
+      "type": "储能",
+      "capacity": "2 MW / 5 MWh",
+      "zone": "综合能源站"
+    },
+    {
+      "id": "LOAD-01",
+      "name": "园区综合负荷",
+      "type": "负荷",
+      "capacity": "5.0 MW 接入",
+      "zone": "全园区"
+    },
+    {
+      "id": "WATER-01",
+      "name": "中水回用系统",
+      "type": "水务",
+      "capacity": "150 m³/h",
+      "zone": "生态处理站"
+    }
+  ],
+  "records": [
+    {
+      "timestamp": "2026-09-09T00:00:00+08:00",
+      "load_kw": 2794.62,
+      "pv_kw": 0.0,
+      "wind_kw": 832.51,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.23,
+      "water_m3": 104.73,
+      "reused_water_m3": 67.47
+    },
+    {
+      "timestamp": "2026-09-09T01:00:00+08:00",
+      "load_kw": 2958.32,
+      "pv_kw": 0.0,
+      "wind_kw": 923.15,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 80.3,
+      "water_m3": 94.37,
+      "reused_water_m3": 65.07
+    },
+    {
+      "timestamp": "2026-09-09T02:00:00+08:00",
+      "load_kw": 2758.49,
+      "pv_kw": 0.0,
+      "wind_kw": 1037.53,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.45,
+      "water_m3": 94.41,
+      "reused_water_m3": 66.25
+    },
+    {
+      "timestamp": "2026-09-09T03:00:00+08:00",
+      "load_kw": 3075.29,
+      "pv_kw": 0.0,
+      "wind_kw": 1129.17,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.98,
+      "water_m3": 96.81,
+      "reused_water_m3": 60.18
+    },
+    {
+      "timestamp": "2026-09-09T04:00:00+08:00",
+      "load_kw": 3173.44,
+      "pv_kw": 0.0,
+      "wind_kw": 958.41,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 80.97,
+      "water_m3": 106.95,
+      "reused_water_m3": 66.45
+    },
+    {
+      "timestamp": "2026-09-09T05:00:00+08:00",
+      "load_kw": 3157.38,
+      "pv_kw": 0.0,
+      "wind_kw": 1132.38,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.73,
+      "water_m3": 97.57,
+      "reused_water_m3": 65.73
+    },
+    {
+      "timestamp": "2026-09-09T06:00:00+08:00",
+      "load_kw": 3175.41,
+      "pv_kw": 0.0,
+      "wind_kw": 1268.23,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.77,
+      "water_m3": 104.09,
+      "reused_water_m3": 58.64
+    },
+    {
+      "timestamp": "2026-09-09T07:00:00+08:00",
+      "load_kw": 2972.02,
+      "pv_kw": 997.85,
+      "wind_kw": 1068.65,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 82.33,
+      "water_m3": 92.02,
+      "reused_water_m3": 61.89
+    },
+    {
+      "timestamp": "2026-09-09T08:00:00+08:00",
+      "load_kw": 4470.55,
+      "pv_kw": 1983.15,
+      "wind_kw": 1187.13,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.1,
+      "water_m3": 130.34,
+      "reused_water_m3": 71.11
+    },
+    {
+      "timestamp": "2026-09-09T09:00:00+08:00",
+      "load_kw": 4423.65,
+      "pv_kw": 3058.54,
+      "wind_kw": 1154.76,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.29,
+      "water_m3": 128.27,
+      "reused_water_m3": 63.31
+    },
+    {
+      "timestamp": "2026-09-09T10:00:00+08:00",
+      "load_kw": 4466.65,
+      "pv_kw": 3785.22,
+      "wind_kw": 1293.49,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.85,
+      "water_m3": 141.86,
+      "reused_water_m3": 68.86
+    },
+    {
+      "timestamp": "2026-09-09T11:00:00+08:00",
+      "load_kw": 4146.12,
+      "pv_kw": 3358.71,
+      "wind_kw": 1239.38,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.68,
+      "water_m3": 129.22,
+      "reused_water_m3": 71.2
+    },
+    {
+      "timestamp": "2026-09-09T12:00:00+08:00",
+      "load_kw": 4270.44,
+      "pv_kw": 3892.58,
+      "wind_kw": 1354.85,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.96,
+      "water_m3": 143.29,
+      "reused_water_m3": 64.42
+    },
+    {
+      "timestamp": "2026-09-09T13:00:00+08:00",
+      "load_kw": 3991.94,
+      "pv_kw": 3663.31,
+      "wind_kw": 1335.06,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.63,
+      "water_m3": 136.69,
+      "reused_water_m3": 70.57
+    },
+    {
+      "timestamp": "2026-09-09T14:00:00+08:00",
+      "load_kw": 3957.81,
+      "pv_kw": 3249.68,
+      "wind_kw": 1469.21,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.1,
+      "water_m3": 126.82,
+      "reused_water_m3": 58.66
+    },
+    {
+      "timestamp": "2026-09-09T15:00:00+08:00",
+      "load_kw": 3798.81,
+      "pv_kw": 3077.57,
+      "wind_kw": 1405.7,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.22,
+      "water_m3": 126.27,
+      "reused_water_m3": 63.34
+    },
+    {
+      "timestamp": "2026-09-09T16:00:00+08:00",
+      "load_kw": 4031.63,
+      "pv_kw": 2103.9,
+      "wind_kw": 1452.36,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.61,
+      "water_m3": 125.23,
+      "reused_water_m3": 68.09
+    },
+    {
+      "timestamp": "2026-09-09T17:00:00+08:00",
+      "load_kw": 3899.05,
+      "pv_kw": 1092.05,
+      "wind_kw": 1228.98,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.41,
+      "water_m3": 127.23,
+      "reused_water_m3": 64.09
+    },
+    {
+      "timestamp": "2026-09-09T18:00:00+08:00",
+      "load_kw": 3815.19,
+      "pv_kw": 0.0,
+      "wind_kw": 1394.66,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.63,
+      "water_m3": 135.01,
+      "reused_water_m3": 60.5
+    },
+    {
+      "timestamp": "2026-09-09T19:00:00+08:00",
+      "load_kw": 3972.94,
+      "pv_kw": 0.0,
+      "wind_kw": 1199.7,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.39,
+      "water_m3": 137.18,
+      "reused_water_m3": 60.14
+    },
+    {
+      "timestamp": "2026-09-09T20:00:00+08:00",
+      "load_kw": 3956.88,
+      "pv_kw": 0.0,
+      "wind_kw": 1317.58,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.3,
+      "water_m3": 125.01,
+      "reused_water_m3": 62.54
+    },
+    {
+      "timestamp": "2026-09-09T21:00:00+08:00",
+      "load_kw": 2369.96,
+      "pv_kw": 0.0,
+      "wind_kw": 1317.31,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 88.32,
+      "water_m3": 96.15,
+      "reused_water_m3": 58.81
+    },
+    {
+      "timestamp": "2026-09-09T22:00:00+08:00",
+      "load_kw": 2710.96,
+      "pv_kw": 0.0,
+      "wind_kw": 1045.35,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 84.86,
+      "water_m3": 91.38,
+      "reused_water_m3": 68.65
+    },
+    {
+      "timestamp": "2026-09-09T23:00:00+08:00",
+      "load_kw": 2752.24,
+      "pv_kw": 0.0,
+      "wind_kw": 1124.87,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 85.5,
+      "water_m3": 95.3,
+      "reused_water_m3": 70.21
+    },
+    {
+      "timestamp": "2026-09-10T00:00:00+08:00",
+      "load_kw": 2725.4,
+      "pv_kw": 0.0,
+      "wind_kw": 1103.84,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.3,
+      "water_m3": 94.02,
+      "reused_water_m3": 62.36
+    },
+    {
+      "timestamp": "2026-09-10T01:00:00+08:00",
+      "load_kw": 2991.27,
+      "pv_kw": 0.0,
+      "wind_kw": 1030.88,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.18,
+      "water_m3": 92.42,
+      "reused_water_m3": 61.15
+    },
+    {
+      "timestamp": "2026-09-10T02:00:00+08:00",
+      "load_kw": 2858.19,
+      "pv_kw": 0.0,
+      "wind_kw": 924.04,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.2,
+      "water_m3": 91.42,
+      "reused_water_m3": 66.84
+    },
+    {
+      "timestamp": "2026-09-10T03:00:00+08:00",
+      "load_kw": 2889.54,
+      "pv_kw": 0.0,
+      "wind_kw": 1067.16,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 80.71,
+      "water_m3": 94.76,
+      "reused_water_m3": 67.37
+    },
+    {
+      "timestamp": "2026-09-10T04:00:00+08:00",
+      "load_kw": 2935.68,
+      "pv_kw": 0.0,
+      "wind_kw": 1043.45,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.71,
+      "water_m3": 99.45,
+      "reused_water_m3": 68.98
+    },
+    {
+      "timestamp": "2026-09-10T05:00:00+08:00",
+      "load_kw": 3157.5,
+      "pv_kw": 0.0,
+      "wind_kw": 745.25,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 84.31,
+      "water_m3": 98.47,
+      "reused_water_m3": 64.54
+    },
+    {
+      "timestamp": "2026-09-10T06:00:00+08:00",
+      "load_kw": 3143.3,
+      "pv_kw": 0.0,
+      "wind_kw": 965.21,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 80.98,
+      "water_m3": 98.05,
+      "reused_water_m3": 62.75
+    },
+    {
+      "timestamp": "2026-09-10T07:00:00+08:00",
+      "load_kw": 3174.83,
+      "pv_kw": 982.35,
+      "wind_kw": 681.8,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 84.49,
+      "water_m3": 98.44,
+      "reused_water_m3": 61.9
+    },
+    {
+      "timestamp": "2026-09-10T08:00:00+08:00",
+      "load_kw": 4347.07,
+      "pv_kw": 2393.6,
+      "wind_kw": 714.0,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.61,
+      "water_m3": 136.01,
+      "reused_water_m3": 58.71
+    },
+    {
+      "timestamp": "2026-09-10T09:00:00+08:00",
+      "load_kw": 4536.04,
+      "pv_kw": 3294.38,
+      "wind_kw": 830.16,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.26,
+      "water_m3": 141.97,
+      "reused_water_m3": 60.33
+    },
+    {
+      "timestamp": "2026-09-10T10:00:00+08:00",
+      "load_kw": 4305.41,
+      "pv_kw": 3242.58,
+      "wind_kw": 620.78,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.59,
+      "water_m3": 132.58,
+      "reused_water_m3": 71.79
+    },
+    {
+      "timestamp": "2026-09-10T11:00:00+08:00",
+      "load_kw": 4157.69,
+      "pv_kw": 4426.44,
+      "wind_kw": 601.05,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 104.23,
+      "water_m3": 144.15,
+      "reused_water_m3": 71.94
+    },
+    {
+      "timestamp": "2026-09-10T12:00:00+08:00",
+      "load_kw": 4167.85,
+      "pv_kw": 4486.06,
+      "wind_kw": 478.58,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.97,
+      "water_m3": 144.37,
+      "reused_water_m3": 66.11
+    },
+    {
+      "timestamp": "2026-09-10T13:00:00+08:00",
+      "load_kw": 4080.68,
+      "pv_kw": 4375.18,
+      "wind_kw": 420.81,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.84,
+      "water_m3": 135.06,
+      "reused_water_m3": 69.94
+    },
+    {
+      "timestamp": "2026-09-10T14:00:00+08:00",
+      "load_kw": 3880.38,
+      "pv_kw": 4193.59,
+      "wind_kw": 403.49,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.86,
+      "water_m3": 136.9,
+      "reused_water_m3": 67.45
+    },
+    {
+      "timestamp": "2026-09-10T15:00:00+08:00",
+      "load_kw": 3838.99,
+      "pv_kw": 2549.99,
+      "wind_kw": 626.9,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.46,
+      "water_m3": 136.89,
+      "reused_water_m3": 66.67
+    },
+    {
+      "timestamp": "2026-09-10T16:00:00+08:00",
+      "load_kw": 3847.02,
+      "pv_kw": 2144.0,
+      "wind_kw": 501.82,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.35,
+      "water_m3": 129.09,
+      "reused_water_m3": 68.03
+    },
+    {
+      "timestamp": "2026-09-10T17:00:00+08:00",
+      "load_kw": 3757.28,
+      "pv_kw": 1038.33,
+      "wind_kw": 536.66,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.0,
+      "water_m3": 131.32,
+      "reused_water_m3": 68.53
+    },
+    {
+      "timestamp": "2026-09-10T18:00:00+08:00",
+      "load_kw": 3693.21,
+      "pv_kw": 0.0,
+      "wind_kw": 629.98,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 109.96,
+      "water_m3": 126.47,
+      "reused_water_m3": 60.98
+    },
+    {
+      "timestamp": "2026-09-10T19:00:00+08:00",
+      "load_kw": 3765.77,
+      "pv_kw": 0.0,
+      "wind_kw": 595.16,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.79,
+      "water_m3": 132.39,
+      "reused_water_m3": 60.21
+    },
+    {
+      "timestamp": "2026-09-10T20:00:00+08:00",
+      "load_kw": 3979.67,
+      "pv_kw": 0.0,
+      "wind_kw": 520.03,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 109.87,
+      "water_m3": 138.08,
+      "reused_water_m3": 58.11
+    },
+    {
+      "timestamp": "2026-09-10T21:00:00+08:00",
+      "load_kw": 2625.2,
+      "pv_kw": 0.0,
+      "wind_kw": 546.27,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 89.39,
+      "water_m3": 92.69,
+      "reused_water_m3": 59.62
+    },
+    {
+      "timestamp": "2026-09-10T22:00:00+08:00",
+      "load_kw": 2464.25,
+      "pv_kw": 0.0,
+      "wind_kw": 444.65,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 86.05,
+      "water_m3": 104.35,
+      "reused_water_m3": 60.85
+    },
+    {
+      "timestamp": "2026-09-10T23:00:00+08:00",
+      "load_kw": 2710.13,
+      "pv_kw": 0.0,
+      "wind_kw": 529.97,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 89.05,
+      "water_m3": 106.92,
+      "reused_water_m3": 59.29
+    },
+    {
+      "timestamp": "2026-09-11T00:00:00+08:00",
+      "load_kw": 2725.54,
+      "pv_kw": 0.0,
+      "wind_kw": 409.47,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.71,
+      "water_m3": 102.74,
+      "reused_water_m3": 61.67
+    },
+    {
+      "timestamp": "2026-09-11T01:00:00+08:00",
+      "load_kw": 2910.02,
+      "pv_kw": 0.0,
+      "wind_kw": 565.91,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 80.1,
+      "water_m3": 91.5,
+      "reused_water_m3": 70.36
+    },
+    {
+      "timestamp": "2026-09-11T02:00:00+08:00",
+      "load_kw": 3039.26,
+      "pv_kw": 0.0,
+      "wind_kw": 721.04,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.83,
+      "water_m3": 92.96,
+      "reused_water_m3": 59.78
+    },
+    {
+      "timestamp": "2026-09-11T03:00:00+08:00",
+      "load_kw": 2914.92,
+      "pv_kw": 0.0,
+      "wind_kw": 745.99,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 88.61,
+      "water_m3": 107.98,
+      "reused_water_m3": 60.94
+    },
+    {
+      "timestamp": "2026-09-11T04:00:00+08:00",
+      "load_kw": 2946.98,
+      "pv_kw": 0.0,
+      "wind_kw": 780.69,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 88.84,
+      "water_m3": 98.13,
+      "reused_water_m3": 66.69
+    },
+    {
+      "timestamp": "2026-09-11T05:00:00+08:00",
+      "load_kw": 2948.55,
+      "pv_kw": 0.0,
+      "wind_kw": 848.04,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.76,
+      "water_m3": 106.22,
+      "reused_water_m3": 70.34
+    },
+    {
+      "timestamp": "2026-09-11T06:00:00+08:00",
+      "load_kw": 2917.93,
+      "pv_kw": 0.0,
+      "wind_kw": 732.3,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.31,
+      "water_m3": 106.04,
+      "reused_water_m3": 70.1
+    },
+    {
+      "timestamp": "2026-09-11T07:00:00+08:00",
+      "load_kw": 3158.54,
+      "pv_kw": 989.26,
+      "wind_kw": 914.3,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 81.08,
+      "water_m3": 107.44,
+      "reused_water_m3": 70.02
+    },
+    {
+      "timestamp": "2026-09-11T08:00:00+08:00",
+      "load_kw": 4338.31,
+      "pv_kw": 2315.19,
+      "wind_kw": 862.5,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.05,
+      "water_m3": 140.91,
+      "reused_water_m3": 61.19
+    },
+    {
+      "timestamp": "2026-09-11T09:00:00+08:00",
+      "load_kw": 4223.85,
+      "pv_kw": 2626.12,
+      "wind_kw": 869.53,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.64,
+      "water_m3": 144.34,
+      "reused_water_m3": 61.91
+    },
+    {
+      "timestamp": "2026-09-11T10:00:00+08:00",
+      "load_kw": 4355.27,
+      "pv_kw": 3479.28,
+      "wind_kw": 1111.78,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.36,
+      "water_m3": 143.78,
+      "reused_water_m3": 59.61
+    },
+    {
+      "timestamp": "2026-09-11T11:00:00+08:00",
+      "load_kw": 4383.35,
+      "pv_kw": 3566.68,
+      "wind_kw": 1151.75,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.65,
+      "water_m3": 127.17,
+      "reused_water_m3": 64.08
+    },
+    {
+      "timestamp": "2026-09-11T12:00:00+08:00",
+      "load_kw": 4223.13,
+      "pv_kw": 3891.11,
+      "wind_kw": 1089.01,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.11,
+      "water_m3": 132.7,
+      "reused_water_m3": 66.07
+    },
+    {
+      "timestamp": "2026-09-11T13:00:00+08:00",
+      "load_kw": 3988.69,
+      "pv_kw": 4319.54,
+      "wind_kw": 949.87,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.26,
+      "water_m3": 135.77,
+      "reused_water_m3": 68.07
+    },
+    {
+      "timestamp": "2026-09-11T14:00:00+08:00",
+      "load_kw": 4067.42,
+      "pv_kw": 3824.22,
+      "wind_kw": 1098.39,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 100.7,
+      "water_m3": 138.28,
+      "reused_water_m3": 62.62
+    },
+    {
+      "timestamp": "2026-09-11T15:00:00+08:00",
+      "load_kw": 3864.18,
+      "pv_kw": 3306.84,
+      "wind_kw": 1241.86,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.0,
+      "water_m3": 131.19,
+      "reused_water_m3": 63.72
+    },
+    {
+      "timestamp": "2026-09-11T16:00:00+08:00",
+      "load_kw": 3841.64,
+      "pv_kw": 1932.31,
+      "wind_kw": 1097.53,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.2,
+      "water_m3": 143.81,
+      "reused_water_m3": 67.48
+    },
+    {
+      "timestamp": "2026-09-11T17:00:00+08:00",
+      "load_kw": 3969.8,
+      "pv_kw": 1121.93,
+      "wind_kw": 1179.22,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.48,
+      "water_m3": 125.01,
+      "reused_water_m3": 62.02
+    },
+    {
+      "timestamp": "2026-09-11T18:00:00+08:00",
+      "load_kw": 3807.56,
+      "pv_kw": 0.0,
+      "wind_kw": 1310.76,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 104.65,
+      "water_m3": 133.84,
+      "reused_water_m3": 60.99
+    },
+    {
+      "timestamp": "2026-09-11T19:00:00+08:00",
+      "load_kw": 3832.32,
+      "pv_kw": 0.0,
+      "wind_kw": 1374.08,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 101.7,
+      "water_m3": 126.7,
+      "reused_water_m3": 65.22
+    },
+    {
+      "timestamp": "2026-09-11T20:00:00+08:00",
+      "load_kw": 3915.41,
+      "pv_kw": 0.0,
+      "wind_kw": 1396.96,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 107.51,
+      "water_m3": 138.46,
+      "reused_water_m3": 61.14
+    },
+    {
+      "timestamp": "2026-09-11T21:00:00+08:00",
+      "load_kw": 2427.45,
+      "pv_kw": 0.0,
+      "wind_kw": 1236.11,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 84.75,
+      "water_m3": 106.99,
+      "reused_water_m3": 59.02
+    },
+    {
+      "timestamp": "2026-09-11T22:00:00+08:00",
+      "load_kw": 2562.62,
+      "pv_kw": 0.0,
+      "wind_kw": 1227.11,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 86.96,
+      "water_m3": 99.89,
+      "reused_water_m3": 61.42
+    },
+    {
+      "timestamp": "2026-09-11T23:00:00+08:00",
+      "load_kw": 2717.12,
+      "pv_kw": 0.0,
+      "wind_kw": 1395.03,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 87.7,
+      "water_m3": 92.13,
+      "reused_water_m3": 63.95
+    },
+    {
+      "timestamp": "2026-09-12T00:00:00+08:00",
+      "load_kw": 2646.28,
+      "pv_kw": 0.0,
+      "wind_kw": 1320.92,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 80.5,
+      "water_m3": 94.98,
+      "reused_water_m3": 69.88
+    },
+    {
+      "timestamp": "2026-09-12T01:00:00+08:00",
+      "load_kw": 2818.89,
+      "pv_kw": 0.0,
+      "wind_kw": 1356.47,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.88,
+      "water_m3": 101.91,
+      "reused_water_m3": 71.3
+    },
+    {
+      "timestamp": "2026-09-12T02:00:00+08:00",
+      "load_kw": 3035.26,
+      "pv_kw": 0.0,
+      "wind_kw": 1357.63,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.05,
+      "water_m3": 106.61,
+      "reused_water_m3": 65.67
+    },
+    {
+      "timestamp": "2026-09-12T03:00:00+08:00",
+      "load_kw": 3103.38,
+      "pv_kw": 0.0,
+      "wind_kw": 1265.07,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.59,
+      "water_m3": 94.94,
+      "reused_water_m3": 66.93
+    },
+    {
+      "timestamp": "2026-09-12T04:00:00+08:00",
+      "load_kw": 3112.19,
+      "pv_kw": 0.0,
+      "wind_kw": 1286.91,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.75,
+      "water_m3": 91.55,
+      "reused_water_m3": 62.0
+    },
+    {
+      "timestamp": "2026-09-12T05:00:00+08:00",
+      "load_kw": 2986.05,
+      "pv_kw": 0.0,
+      "wind_kw": 1232.85,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.38,
+      "water_m3": 94.63,
+      "reused_water_m3": 67.72
+    },
+    {
+      "timestamp": "2026-09-12T06:00:00+08:00",
+      "load_kw": 3136.05,
+      "pv_kw": 0.0,
+      "wind_kw": 1161.05,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.43,
+      "water_m3": 98.32,
+      "reused_water_m3": 60.9
+    },
+    {
+      "timestamp": "2026-09-12T07:00:00+08:00",
+      "load_kw": 3033.54,
+      "pv_kw": 1232.01,
+      "wind_kw": 1178.4,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 86.96,
+      "water_m3": 107.13,
+      "reused_water_m3": 68.72
+    },
+    {
+      "timestamp": "2026-09-12T08:00:00+08:00",
+      "load_kw": 4388.85,
+      "pv_kw": 1719.33,
+      "wind_kw": 1069.98,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.53,
+      "water_m3": 142.07,
+      "reused_water_m3": 71.35
+    },
+    {
+      "timestamp": "2026-09-12T09:00:00+08:00",
+      "load_kw": 4350.36,
+      "pv_kw": 3202.38,
+      "wind_kw": 1086.93,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.03,
+      "water_m3": 129.41,
+      "reused_water_m3": 61.07
+    },
+    {
+      "timestamp": "2026-09-12T10:00:00+08:00",
+      "load_kw": 4289.47,
+      "pv_kw": 3007.42,
+      "wind_kw": 980.43,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.79,
+      "water_m3": 133.09,
+      "reused_water_m3": 60.31
+    },
+    {
+      "timestamp": "2026-09-12T11:00:00+08:00",
+      "load_kw": 4222.39,
+      "pv_kw": 3494.35,
+      "wind_kw": 1021.17,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.27,
+      "water_m3": 132.88,
+      "reused_water_m3": 65.9
+    },
+    {
+      "timestamp": "2026-09-12T12:00:00+08:00",
+      "load_kw": 3998.67,
+      "pv_kw": 4374.84,
+      "wind_kw": 829.06,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.62,
+      "water_m3": 126.01,
+      "reused_water_m3": 63.31
+    },
+    {
+      "timestamp": "2026-09-12T13:00:00+08:00",
+      "load_kw": 3974.91,
+      "pv_kw": 3777.22,
+      "wind_kw": 970.11,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.79,
+      "water_m3": 140.04,
+      "reused_water_m3": 69.65
+    },
+    {
+      "timestamp": "2026-09-12T14:00:00+08:00",
+      "load_kw": 3910.73,
+      "pv_kw": 3074.74,
+      "wind_kw": 701.04,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.39,
+      "water_m3": 145.0,
+      "reused_water_m3": 62.9
+    },
+    {
+      "timestamp": "2026-09-12T15:00:00+08:00",
+      "load_kw": 3971.77,
+      "pv_kw": 3237.43,
+      "wind_kw": 844.92,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.54,
+      "water_m3": 143.99,
+      "reused_water_m3": 60.79
+    },
+    {
+      "timestamp": "2026-09-12T16:00:00+08:00",
+      "load_kw": 3719.39,
+      "pv_kw": 1827.0,
+      "wind_kw": 642.67,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.69,
+      "water_m3": 136.28,
+      "reused_water_m3": 61.05
+    },
+    {
+      "timestamp": "2026-09-12T17:00:00+08:00",
+      "load_kw": 3904.73,
+      "pv_kw": 1179.53,
+      "wind_kw": 612.33,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.07,
+      "water_m3": 139.96,
+      "reused_water_m3": 59.6
+    },
+    {
+      "timestamp": "2026-09-12T18:00:00+08:00",
+      "load_kw": 3932.18,
+      "pv_kw": 0.0,
+      "wind_kw": 553.94,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.26,
+      "water_m3": 131.24,
+      "reused_water_m3": 67.48
+    },
+    {
+      "timestamp": "2026-09-12T19:00:00+08:00",
+      "load_kw": 3987.52,
+      "pv_kw": 0.0,
+      "wind_kw": 698.35,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.76,
+      "water_m3": 138.81,
+      "reused_water_m3": 66.78
+    },
+    {
+      "timestamp": "2026-09-12T20:00:00+08:00",
+      "load_kw": 3745.48,
+      "pv_kw": 0.0,
+      "wind_kw": 704.55,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.0,
+      "water_m3": 127.42,
+      "reused_water_m3": 71.77
+    },
+    {
+      "timestamp": "2026-09-12T21:00:00+08:00",
+      "load_kw": 2614.17,
+      "pv_kw": 0.0,
+      "wind_kw": 547.29,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 83.71,
+      "water_m3": 100.12,
+      "reused_water_m3": 62.78
+    },
+    {
+      "timestamp": "2026-09-12T22:00:00+08:00",
+      "load_kw": 2701.86,
+      "pv_kw": 0.0,
+      "wind_kw": 423.85,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 89.61,
+      "water_m3": 102.71,
+      "reused_water_m3": 69.6
+    },
+    {
+      "timestamp": "2026-09-12T23:00:00+08:00",
+      "load_kw": 2733.52,
+      "pv_kw": 0.0,
+      "wind_kw": 590.15,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 89.65,
+      "water_m3": 95.4,
+      "reused_water_m3": 69.31
+    },
+    {
+      "timestamp": "2026-09-13T00:00:00+08:00",
+      "load_kw": 2762.22,
+      "pv_kw": 0.0,
+      "wind_kw": 483.19,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.31,
+      "water_m3": 95.37,
+      "reused_water_m3": 69.92
+    },
+    {
+      "timestamp": "2026-09-13T01:00:00+08:00",
+      "load_kw": 2938.66,
+      "pv_kw": 0.0,
+      "wind_kw": 604.41,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.44,
+      "water_m3": 99.29,
+      "reused_water_m3": 66.54
+    },
+    {
+      "timestamp": "2026-09-13T02:00:00+08:00",
+      "load_kw": 2871.28,
+      "pv_kw": 0.0,
+      "wind_kw": 587.67,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.82,
+      "water_m3": 94.24,
+      "reused_water_m3": 69.17
+    },
+    {
+      "timestamp": "2026-09-13T03:00:00+08:00",
+      "load_kw": 2925.18,
+      "pv_kw": 0.0,
+      "wind_kw": 540.36,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.76,
+      "water_m3": 90.2,
+      "reused_water_m3": 71.27
+    },
+    {
+      "timestamp": "2026-09-13T04:00:00+08:00",
+      "load_kw": 2894.52,
+      "pv_kw": 0.0,
+      "wind_kw": 479.37,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.58,
+      "water_m3": 103.81,
+      "reused_water_m3": 67.04
+    },
+    {
+      "timestamp": "2026-09-13T05:00:00+08:00",
+      "load_kw": 3056.16,
+      "pv_kw": 0.0,
+      "wind_kw": 368.66,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.22,
+      "water_m3": 103.84,
+      "reused_water_m3": 62.29
+    },
+    {
+      "timestamp": "2026-09-13T06:00:00+08:00",
+      "load_kw": 3096.1,
+      "pv_kw": 0.0,
+      "wind_kw": 513.01,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 84.26,
+      "water_m3": 104.92,
+      "reused_water_m3": 62.63
+    },
+    {
+      "timestamp": "2026-09-13T07:00:00+08:00",
+      "load_kw": 3124.01,
+      "pv_kw": 990.82,
+      "wind_kw": 447.03,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 81.21,
+      "water_m3": 93.85,
+      "reused_water_m3": 59.67
+    },
+    {
+      "timestamp": "2026-09-13T08:00:00+08:00",
+      "load_kw": 4438.6,
+      "pv_kw": 2275.21,
+      "wind_kw": 449.69,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.16,
+      "water_m3": 134.68,
+      "reused_water_m3": 68.14
+    },
+    {
+      "timestamp": "2026-09-13T09:00:00+08:00",
+      "load_kw": 4528.79,
+      "pv_kw": 2970.71,
+      "wind_kw": 505.98,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.01,
+      "water_m3": 128.88,
+      "reused_water_m3": 61.18
+    },
+    {
+      "timestamp": "2026-09-13T10:00:00+08:00",
+      "load_kw": 4207.42,
+      "pv_kw": 2988.48,
+      "wind_kw": 612.31,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.74,
+      "water_m3": 144.49,
+      "reused_water_m3": 65.75
+    },
+    {
+      "timestamp": "2026-09-13T11:00:00+08:00",
+      "load_kw": 4296.0,
+      "pv_kw": 3492.43,
+      "wind_kw": 747.27,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 104.91,
+      "water_m3": 142.45,
+      "reused_water_m3": 66.04
+    },
+    {
+      "timestamp": "2026-09-13T12:00:00+08:00",
+      "load_kw": 4140.21,
+      "pv_kw": 4077.49,
+      "wind_kw": 579.95,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 100.51,
+      "water_m3": 143.82,
+      "reused_water_m3": 64.69
+    },
+    {
+      "timestamp": "2026-09-13T13:00:00+08:00",
+      "load_kw": 4170.25,
+      "pv_kw": 3882.09,
+      "wind_kw": 587.55,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.29,
+      "water_m3": 126.07,
+      "reused_water_m3": 60.09
+    },
+    {
+      "timestamp": "2026-09-13T14:00:00+08:00",
+      "load_kw": 4010.11,
+      "pv_kw": 3357.27,
+      "wind_kw": 906.47,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.18,
+      "water_m3": 140.29,
+      "reused_water_m3": 66.49
+    },
+    {
+      "timestamp": "2026-09-13T15:00:00+08:00",
+      "load_kw": 4016.76,
+      "pv_kw": 2659.97,
+      "wind_kw": 809.78,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.51,
+      "water_m3": 133.85,
+      "reused_water_m3": 70.04
+    },
+    {
+      "timestamp": "2026-09-13T16:00:00+08:00",
+      "load_kw": 4029.68,
+      "pv_kw": 1939.45,
+      "wind_kw": 885.23,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.1,
+      "water_m3": 139.8,
+      "reused_water_m3": 71.27
+    },
+    {
+      "timestamp": "2026-09-13T17:00:00+08:00",
+      "load_kw": 3747.4,
+      "pv_kw": 968.04,
+      "wind_kw": 943.59,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.57,
+      "water_m3": 128.48,
+      "reused_water_m3": 59.05
+    },
+    {
+      "timestamp": "2026-09-13T18:00:00+08:00",
+      "load_kw": 3670.86,
+      "pv_kw": 0.0,
+      "wind_kw": 970.2,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.91,
+      "water_m3": 129.63,
+      "reused_water_m3": 67.9
+    },
+    {
+      "timestamp": "2026-09-13T19:00:00+08:00",
+      "load_kw": 3905.86,
+      "pv_kw": 0.0,
+      "wind_kw": 1044.35,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 109.24,
+      "water_m3": 140.76,
+      "reused_water_m3": 66.75
+    },
+    {
+      "timestamp": "2026-09-13T20:00:00+08:00",
+      "load_kw": 3924.45,
+      "pv_kw": 0.0,
+      "wind_kw": 1010.66,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.45,
+      "water_m3": 137.95,
+      "reused_water_m3": 70.72
+    },
+    {
+      "timestamp": "2026-09-13T21:00:00+08:00",
+      "load_kw": 2628.25,
+      "pv_kw": 0.0,
+      "wind_kw": 976.25,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 83.08,
+      "water_m3": 104.98,
+      "reused_water_m3": 65.97
+    },
+    {
+      "timestamp": "2026-09-13T22:00:00+08:00",
+      "load_kw": 2522.36,
+      "pv_kw": 0.0,
+      "wind_kw": 1174.25,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 87.0,
+      "water_m3": 108.85,
+      "reused_water_m3": 65.01
+    },
+    {
+      "timestamp": "2026-09-13T23:00:00+08:00",
+      "load_kw": 2665.19,
+      "pv_kw": 0.0,
+      "wind_kw": 1018.09,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 84.32,
+      "water_m3": 96.45,
+      "reused_water_m3": 61.51
+    },
+    {
+      "timestamp": "2026-09-14T00:00:00+08:00",
+      "load_kw": 2619.22,
+      "pv_kw": 0.0,
+      "wind_kw": 1292.25,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.75,
+      "water_m3": 109.02,
+      "reused_water_m3": 71.99
+    },
+    {
+      "timestamp": "2026-09-14T01:00:00+08:00",
+      "load_kw": 2887.95,
+      "pv_kw": 0.0,
+      "wind_kw": 1085.26,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.56,
+      "water_m3": 99.41,
+      "reused_water_m3": 67.12
+    },
+    {
+      "timestamp": "2026-09-14T02:00:00+08:00",
+      "load_kw": 3043.14,
+      "pv_kw": 0.0,
+      "wind_kw": 1276.54,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.35,
+      "water_m3": 99.83,
+      "reused_water_m3": 59.28
+    },
+    {
+      "timestamp": "2026-09-14T03:00:00+08:00",
+      "load_kw": 2927.62,
+      "pv_kw": 0.0,
+      "wind_kw": 1325.4,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 88.58,
+      "water_m3": 96.6,
+      "reused_water_m3": 67.71
+    },
+    {
+      "timestamp": "2026-09-14T04:00:00+08:00",
+      "load_kw": 2959.36,
+      "pv_kw": 0.0,
+      "wind_kw": 1387.24,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.5,
+      "water_m3": 99.1,
+      "reused_water_m3": 62.4
+    },
+    {
+      "timestamp": "2026-09-14T05:00:00+08:00",
+      "load_kw": 3002.54,
+      "pv_kw": 0.0,
+      "wind_kw": 1278.37,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.15,
+      "water_m3": 109.76,
+      "reused_water_m3": 67.21
+    },
+    {
+      "timestamp": "2026-09-14T06:00:00+08:00",
+      "load_kw": 3083.63,
+      "pv_kw": 0.0,
+      "wind_kw": 1222.33,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.62,
+      "water_m3": 105.13,
+      "reused_water_m3": 66.76
+    },
+    {
+      "timestamp": "2026-09-14T07:00:00+08:00",
+      "load_kw": 3142.29,
+      "pv_kw": 965.2,
+      "wind_kw": 1334.62,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 89.28,
+      "water_m3": 98.76,
+      "reused_water_m3": 67.78
+    },
+    {
+      "timestamp": "2026-09-14T08:00:00+08:00",
+      "load_kw": 4305.98,
+      "pv_kw": 2430.26,
+      "wind_kw": 1351.14,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.39,
+      "water_m3": 128.17,
+      "reused_water_m3": 65.71
+    },
+    {
+      "timestamp": "2026-09-14T09:00:00+08:00",
+      "load_kw": 4392.99,
+      "pv_kw": 2522.26,
+      "wind_kw": 1459.62,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.13,
+      "water_m3": 134.23,
+      "reused_water_m3": 59.64
+    },
+    {
+      "timestamp": "2026-09-14T10:00:00+08:00",
+      "load_kw": 4416.29,
+      "pv_kw": 3604.93,
+      "wind_kw": 1365.31,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.09,
+      "water_m3": 130.47,
+      "reused_water_m3": 69.69
+    },
+    {
+      "timestamp": "2026-09-14T11:00:00+08:00",
+      "load_kw": 4386.5,
+      "pv_kw": 3659.2,
+      "wind_kw": 1299.15,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.84,
+      "water_m3": 143.44,
+      "reused_water_m3": 65.12
+    },
+    {
+      "timestamp": "2026-09-14T12:00:00+08:00",
+      "load_kw": 4271.38,
+      "pv_kw": 4700.12,
+      "wind_kw": 1195.36,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.9,
+      "water_m3": 133.3,
+      "reused_water_m3": 71.08
+    },
+    {
+      "timestamp": "2026-09-14T13:00:00+08:00",
+      "load_kw": 4069.65,
+      "pv_kw": 4478.23,
+      "wind_kw": 1171.58,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.99,
+      "water_m3": 136.74,
+      "reused_water_m3": 71.98
+    },
+    {
+      "timestamp": "2026-09-14T14:00:00+08:00",
+      "load_kw": 3986.68,
+      "pv_kw": 3159.64,
+      "wind_kw": 1218.39,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.45,
+      "water_m3": 136.04,
+      "reused_water_m3": 65.61
+    },
+    {
+      "timestamp": "2026-09-14T15:00:00+08:00",
+      "load_kw": 3909.44,
+      "pv_kw": 2759.85,
+      "wind_kw": 1079.72,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.97,
+      "water_m3": 136.44,
+      "reused_water_m3": 61.27
+    },
+    {
+      "timestamp": "2026-09-14T16:00:00+08:00",
+      "load_kw": 3961.05,
+      "pv_kw": 1747.08,
+      "wind_kw": 1209.47,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.05,
+      "water_m3": 141.23,
+      "reused_water_m3": 63.41
+    },
+    {
+      "timestamp": "2026-09-14T17:00:00+08:00",
+      "load_kw": 3893.28,
+      "pv_kw": 1200.01,
+      "wind_kw": 1240.33,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.95,
+      "water_m3": 125.74,
+      "reused_water_m3": 65.03
+    },
+    {
+      "timestamp": "2026-09-14T18:00:00+08:00",
+      "load_kw": 3858.86,
+      "pv_kw": 0.0,
+      "wind_kw": 1165.95,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 104.4,
+      "water_m3": 135.52,
+      "reused_water_m3": 64.4
+    },
+    {
+      "timestamp": "2026-09-14T19:00:00+08:00",
+      "load_kw": 3912.09,
+      "pv_kw": 0.0,
+      "wind_kw": 1055.84,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 101.54,
+      "water_m3": 134.39,
+      "reused_water_m3": 71.57
+    },
+    {
+      "timestamp": "2026-09-14T20:00:00+08:00",
+      "load_kw": 3821.21,
+      "pv_kw": 0.0,
+      "wind_kw": 1008.71,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.52,
+      "water_m3": 142.05,
+      "reused_water_m3": 70.03
+    },
+    {
+      "timestamp": "2026-09-14T21:00:00+08:00",
+      "load_kw": 2485.33,
+      "pv_kw": 0.0,
+      "wind_kw": 982.95,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 87.59,
+      "water_m3": 107.45,
+      "reused_water_m3": 58.5
+    },
+    {
+      "timestamp": "2026-09-14T22:00:00+08:00",
+      "load_kw": 2451.89,
+      "pv_kw": 0.0,
+      "wind_kw": 996.98,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 89.97,
+      "water_m3": 104.94,
+      "reused_water_m3": 64.08
+    },
+    {
+      "timestamp": "2026-09-14T23:00:00+08:00",
+      "load_kw": 2538.68,
+      "pv_kw": 0.0,
+      "wind_kw": 936.2,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 84.44,
+      "water_m3": 103.88,
+      "reused_water_m3": 70.65
+    },
+    {
+      "timestamp": "2026-09-15T00:00:00+08:00",
+      "load_kw": 2604.72,
+      "pv_kw": 0.0,
+      "wind_kw": 717.09,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.75,
+      "water_m3": 92.91,
+      "reused_water_m3": 65.44
+    },
+    {
+      "timestamp": "2026-09-15T01:00:00+08:00",
+      "load_kw": 2853.92,
+      "pv_kw": 0.0,
+      "wind_kw": 636.22,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 80.79,
+      "water_m3": 107.42,
+      "reused_water_m3": 66.68
+    },
+    {
+      "timestamp": "2026-09-15T02:00:00+08:00",
+      "load_kw": 2827.07,
+      "pv_kw": 0.0,
+      "wind_kw": 586.34,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 84.61,
+      "water_m3": 95.08,
+      "reused_water_m3": 61.57
+    },
+    {
+      "timestamp": "2026-09-15T03:00:00+08:00",
+      "load_kw": 2819.28,
+      "pv_kw": 0.0,
+      "wind_kw": 774.5,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.78,
+      "water_m3": 93.16,
+      "reused_water_m3": 64.18
+    },
+    {
+      "timestamp": "2026-09-15T04:00:00+08:00",
+      "load_kw": 2977.71,
+      "pv_kw": 0.0,
+      "wind_kw": 659.57,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 84.24,
+      "water_m3": 95.0,
+      "reused_water_m3": 69.83
+    },
+    {
+      "timestamp": "2026-09-15T05:00:00+08:00",
+      "load_kw": 2962.85,
+      "pv_kw": 0.0,
+      "wind_kw": 580.09,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.37,
+      "water_m3": 101.44,
+      "reused_water_m3": 66.05
+    },
+    {
+      "timestamp": "2026-09-15T06:00:00+08:00",
+      "load_kw": 3227.66,
+      "pv_kw": 0.0,
+      "wind_kw": 699.64,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.58,
+      "water_m3": 95.49,
+      "reused_water_m3": 65.92
+    },
+    {
+      "timestamp": "2026-09-15T07:00:00+08:00",
+      "load_kw": 3118.55,
+      "pv_kw": 1171.07,
+      "wind_kw": 396.33,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 86.06,
+      "water_m3": 99.93,
+      "reused_water_m3": 70.66
+    },
+    {
+      "timestamp": "2026-09-15T08:00:00+08:00",
+      "load_kw": 4358.71,
+      "pv_kw": 2302.16,
+      "wind_kw": 543.64,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.52,
+      "water_m3": 137.73,
+      "reused_water_m3": 66.69
+    },
+    {
+      "timestamp": "2026-09-15T09:00:00+08:00",
+      "load_kw": 4433.16,
+      "pv_kw": 3174.74,
+      "wind_kw": 543.97,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.38,
+      "water_m3": 137.56,
+      "reused_water_m3": 70.65
+    },
+    {
+      "timestamp": "2026-09-15T10:00:00+08:00",
+      "load_kw": 4356.83,
+      "pv_kw": 3363.76,
+      "wind_kw": 468.14,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.8,
+      "water_m3": 139.65,
+      "reused_water_m3": 59.26
+    },
+    {
+      "timestamp": "2026-09-15T11:00:00+08:00",
+      "load_kw": 4167.26,
+      "pv_kw": 4374.48,
+      "wind_kw": 383.36,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 101.32,
+      "water_m3": 135.79,
+      "reused_water_m3": 71.6
+    },
+    {
+      "timestamp": "2026-09-15T12:00:00+08:00",
+      "load_kw": 4159.87,
+      "pv_kw": 4772.83,
+      "wind_kw": 579.77,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.57,
+      "water_m3": 141.49,
+      "reused_water_m3": 64.75
+    },
+    {
+      "timestamp": "2026-09-15T13:00:00+08:00",
+      "load_kw": 4165.25,
+      "pv_kw": 4373.17,
+      "wind_kw": 437.37,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.15,
+      "water_m3": 144.26,
+      "reused_water_m3": 59.97
+    },
+    {
+      "timestamp": "2026-09-15T14:00:00+08:00",
+      "load_kw": 4139.28,
+      "pv_kw": 4065.48,
+      "wind_kw": 563.25,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.8,
+      "water_m3": 144.35,
+      "reused_water_m3": 69.26
+    },
+    {
+      "timestamp": "2026-09-15T15:00:00+08:00",
+      "load_kw": 3880.77,
+      "pv_kw": 3247.25,
+      "wind_kw": 365.38,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.37,
+      "water_m3": 134.1,
+      "reused_water_m3": 67.42
+    },
+    {
+      "timestamp": "2026-09-15T16:00:00+08:00",
+      "load_kw": 3928.02,
+      "pv_kw": 2144.65,
+      "wind_kw": 627.94,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.4,
+      "water_m3": 127.17,
+      "reused_water_m3": 61.27
+    },
+    {
+      "timestamp": "2026-09-15T17:00:00+08:00",
+      "load_kw": 3688.91,
+      "pv_kw": 1224.17,
+      "wind_kw": 574.2,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.15,
+      "water_m3": 129.43,
+      "reused_water_m3": 58.89
+    },
+    {
+      "timestamp": "2026-09-15T18:00:00+08:00",
+      "load_kw": 3933.63,
+      "pv_kw": 0.0,
+      "wind_kw": 525.24,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 104.08,
+      "water_m3": 127.8,
+      "reused_water_m3": 71.25
+    },
+    {
+      "timestamp": "2026-09-15T19:00:00+08:00",
+      "load_kw": 3778.3,
+      "pv_kw": 0.0,
+      "wind_kw": 496.44,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.87,
+      "water_m3": 127.71,
+      "reused_water_m3": 64.35
+    },
+    {
+      "timestamp": "2026-09-15T20:00:00+08:00",
+      "load_kw": 3927.43,
+      "pv_kw": 0.0,
+      "wind_kw": 787.26,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 104.19,
+      "water_m3": 139.85,
+      "reused_water_m3": 60.16
+    },
+    {
+      "timestamp": "2026-09-15T21:00:00+08:00",
+      "load_kw": 2496.49,
+      "pv_kw": 0.0,
+      "wind_kw": 689.49,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 84.08,
+      "water_m3": 109.03,
+      "reused_water_m3": 58.46
+    },
+    {
+      "timestamp": "2026-09-15T22:00:00+08:00",
+      "load_kw": 2548.57,
+      "pv_kw": 0.0,
+      "wind_kw": 869.64,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 88.55,
+      "water_m3": 91.99,
+      "reused_water_m3": 67.6
+    },
+    {
+      "timestamp": "2026-09-15T23:00:00+08:00",
+      "load_kw": 2681.41,
+      "pv_kw": 0.0,
+      "wind_kw": 735.89,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 83.98,
+      "water_m3": 93.8,
+      "reused_water_m3": 59.71
+    },
+    {
+      "timestamp": "2026-09-16T00:00:00+08:00",
+      "load_kw": 2861.37,
+      "pv_kw": 0.0,
+      "wind_kw": 872.44,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.42,
+      "water_m3": 101.94,
+      "reused_water_m3": 58.3
+    },
+    {
+      "timestamp": "2026-09-16T01:00:00+08:00",
+      "load_kw": 2924.6,
+      "pv_kw": 0.0,
+      "wind_kw": 757.66,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.65,
+      "water_m3": 91.37,
+      "reused_water_m3": 68.71
+    },
+    {
+      "timestamp": "2026-09-16T02:00:00+08:00",
+      "load_kw": 2816.29,
+      "pv_kw": 0.0,
+      "wind_kw": 1027.42,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.29,
+      "water_m3": 92.95,
+      "reused_water_m3": 70.61
+    },
+    {
+      "timestamp": "2026-09-16T03:00:00+08:00",
+      "load_kw": 2817.18,
+      "pv_kw": 0.0,
+      "wind_kw": 856.35,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.3,
+      "water_m3": 95.01,
+      "reused_water_m3": 60.44
+    },
+    {
+      "timestamp": "2026-09-16T04:00:00+08:00",
+      "load_kw": 3078.67,
+      "pv_kw": 0.0,
+      "wind_kw": 863.06,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.9,
+      "water_m3": 94.76,
+      "reused_water_m3": 62.53
+    },
+    {
+      "timestamp": "2026-09-16T05:00:00+08:00",
+      "load_kw": 2954.86,
+      "pv_kw": 0.0,
+      "wind_kw": 1125.44,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.26,
+      "water_m3": 104.91,
+      "reused_water_m3": 64.67
+    },
+    {
+      "timestamp": "2026-09-16T06:00:00+08:00",
+      "load_kw": 3158.97,
+      "pv_kw": 0.0,
+      "wind_kw": 978.07,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.04,
+      "water_m3": 108.91,
+      "reused_water_m3": 58.61
+    },
+    {
+      "timestamp": "2026-09-16T07:00:00+08:00",
+      "load_kw": 3149.73,
+      "pv_kw": 1217.6,
+      "wind_kw": 1141.81,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 84.58,
+      "water_m3": 109.28,
+      "reused_water_m3": 58.85
+    },
+    {
+      "timestamp": "2026-09-16T08:00:00+08:00",
+      "load_kw": 4420.4,
+      "pv_kw": 2010.19,
+      "wind_kw": 1228.32,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.9,
+      "water_m3": 143.19,
+      "reused_water_m3": 59.03
+    },
+    {
+      "timestamp": "2026-09-16T09:00:00+08:00",
+      "load_kw": 4242.13,
+      "pv_kw": 3057.67,
+      "wind_kw": 1075.96,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.75,
+      "water_m3": 137.66,
+      "reused_water_m3": 65.68
+    },
+    {
+      "timestamp": "2026-09-16T10:00:00+08:00",
+      "load_kw": 4254.06,
+      "pv_kw": 4236.69,
+      "wind_kw": 1245.4,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 104.54,
+      "water_m3": 137.11,
+      "reused_water_m3": 59.39
+    },
+    {
+      "timestamp": "2026-09-16T11:00:00+08:00",
+      "load_kw": 4297.39,
+      "pv_kw": 4524.02,
+      "wind_kw": 1307.34,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 107.69,
+      "water_m3": 139.42,
+      "reused_water_m3": 61.01
+    },
+    {
+      "timestamp": "2026-09-16T12:00:00+08:00",
+      "load_kw": 4134.5,
+      "pv_kw": 3765.89,
+      "wind_kw": 1235.12,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.53,
+      "water_m3": 133.32,
+      "reused_water_m3": 59.33
+    },
+    {
+      "timestamp": "2026-09-16T13:00:00+08:00",
+      "load_kw": 4043.74,
+      "pv_kw": 4257.52,
+      "wind_kw": 1262.37,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.53,
+      "water_m3": 143.46,
+      "reused_water_m3": 58.94
+    },
+    {
+      "timestamp": "2026-09-16T14:00:00+08:00",
+      "load_kw": 4096.17,
+      "pv_kw": 3089.15,
+      "wind_kw": 1190.75,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.39,
+      "water_m3": 141.24,
+      "reused_water_m3": 65.79
+    },
+    {
+      "timestamp": "2026-09-16T15:00:00+08:00",
+      "load_kw": 3951.39,
+      "pv_kw": 3009.12,
+      "wind_kw": 1267.3,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.22,
+      "water_m3": 132.07,
+      "reused_water_m3": 67.31
+    },
+    {
+      "timestamp": "2026-09-16T16:00:00+08:00",
+      "load_kw": 3952.96,
+      "pv_kw": 2353.05,
+      "wind_kw": 1386.2,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.68,
+      "water_m3": 137.01,
+      "reused_water_m3": 62.92
+    },
+    {
+      "timestamp": "2026-09-16T17:00:00+08:00",
+      "load_kw": 3865.84,
+      "pv_kw": 968.69,
+      "wind_kw": 1363.19,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.24,
+      "water_m3": 127.16,
+      "reused_water_m3": 69.84
+    },
+    {
+      "timestamp": "2026-09-16T18:00:00+08:00",
+      "load_kw": 3787.62,
+      "pv_kw": 0.0,
+      "wind_kw": 1329.55,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.07,
+      "water_m3": 141.9,
+      "reused_water_m3": 71.64
+    },
+    {
+      "timestamp": "2026-09-16T19:00:00+08:00",
+      "load_kw": 3942.8,
+      "pv_kw": 0.0,
+      "wind_kw": 1336.27,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.26,
+      "water_m3": 143.58,
+      "reused_water_m3": 69.61
+    },
+    {
+      "timestamp": "2026-09-16T20:00:00+08:00",
+      "load_kw": 3798.46,
+      "pv_kw": 0.0,
+      "wind_kw": 1335.55,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.09,
+      "water_m3": 131.8,
+      "reused_water_m3": 58.09
+    },
+    {
+      "timestamp": "2026-09-16T21:00:00+08:00",
+      "load_kw": 2642.08,
+      "pv_kw": 0.0,
+      "wind_kw": 1221.63,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 81.42,
+      "water_m3": 102.66,
+      "reused_water_m3": 58.43
+    },
+    {
+      "timestamp": "2026-09-16T22:00:00+08:00",
+      "load_kw": 2668.76,
+      "pv_kw": 0.0,
+      "wind_kw": 1199.67,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 83.41,
+      "water_m3": 97.4,
+      "reused_water_m3": 68.1
+    },
+    {
+      "timestamp": "2026-09-16T23:00:00+08:00",
+      "load_kw": 2755.77,
+      "pv_kw": 0.0,
+      "wind_kw": 1067.54,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 80.53,
+      "water_m3": 93.15,
+      "reused_water_m3": 66.65
+    },
+    {
+      "timestamp": "2026-09-17T00:00:00+08:00",
+      "load_kw": 2805.67,
+      "pv_kw": 0.0,
+      "wind_kw": 1205.37,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 84.86,
+      "water_m3": 98.84,
+      "reused_water_m3": 61.82
+    },
+    {
+      "timestamp": "2026-09-17T01:00:00+08:00",
+      "load_kw": 2914.4,
+      "pv_kw": 0.0,
+      "wind_kw": 1097.32,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.83,
+      "water_m3": 103.57,
+      "reused_water_m3": 64.81
+    },
+    {
+      "timestamp": "2026-09-17T02:00:00+08:00",
+      "load_kw": 2963.48,
+      "pv_kw": 0.0,
+      "wind_kw": 1045.8,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.99,
+      "water_m3": 90.15,
+      "reused_water_m3": 62.22
+    },
+    {
+      "timestamp": "2026-09-17T03:00:00+08:00",
+      "load_kw": 2883.87,
+      "pv_kw": 0.0,
+      "wind_kw": 960.56,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.28,
+      "water_m3": 90.15,
+      "reused_water_m3": 68.46
+    },
+    {
+      "timestamp": "2026-09-17T04:00:00+08:00",
+      "load_kw": 2923.35,
+      "pv_kw": 0.0,
+      "wind_kw": 1050.04,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.0,
+      "water_m3": 106.67,
+      "reused_water_m3": 69.29
+    },
+    {
+      "timestamp": "2026-09-17T05:00:00+08:00",
+      "load_kw": 2922.16,
+      "pv_kw": 0.0,
+      "wind_kw": 805.56,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 80.19,
+      "water_m3": 108.42,
+      "reused_water_m3": 70.07
+    },
+    {
+      "timestamp": "2026-09-17T06:00:00+08:00",
+      "load_kw": 3094.24,
+      "pv_kw": 0.0,
+      "wind_kw": 959.13,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 84.18,
+      "water_m3": 92.3,
+      "reused_water_m3": 58.29
+    },
+    {
+      "timestamp": "2026-09-17T07:00:00+08:00",
+      "load_kw": 3003.02,
+      "pv_kw": 1192.62,
+      "wind_kw": 885.17,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 88.32,
+      "water_m3": 108.4,
+      "reused_water_m3": 59.23
+    },
+    {
+      "timestamp": "2026-09-17T08:00:00+08:00",
+      "load_kw": 4537.36,
+      "pv_kw": 1893.84,
+      "wind_kw": 830.47,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.24,
+      "water_m3": 132.92,
+      "reused_water_m3": 62.34
+    },
+    {
+      "timestamp": "2026-09-17T09:00:00+08:00",
+      "load_kw": 4324.92,
+      "pv_kw": 2771.58,
+      "wind_kw": 659.51,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.1,
+      "water_m3": 127.28,
+      "reused_water_m3": 65.14
+    },
+    {
+      "timestamp": "2026-09-17T10:00:00+08:00",
+      "load_kw": 4439.9,
+      "pv_kw": 3415.24,
+      "wind_kw": 784.28,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.19,
+      "water_m3": 141.3,
+      "reused_water_m3": 61.31
+    },
+    {
+      "timestamp": "2026-09-17T11:00:00+08:00",
+      "load_kw": 4119.68,
+      "pv_kw": 3593.23,
+      "wind_kw": 706.06,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 107.6,
+      "water_m3": 138.11,
+      "reused_water_m3": 60.48
+    },
+    {
+      "timestamp": "2026-09-17T12:00:00+08:00",
+      "load_kw": 4237.31,
+      "pv_kw": 4156.35,
+      "wind_kw": 713.71,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.6,
+      "water_m3": 133.98,
+      "reused_water_m3": 70.94
+    },
+    {
+      "timestamp": "2026-09-17T13:00:00+08:00",
+      "load_kw": 4087.82,
+      "pv_kw": 4215.19,
+      "wind_kw": 640.01,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.64,
+      "water_m3": 137.54,
+      "reused_water_m3": 60.11
+    },
+    {
+      "timestamp": "2026-09-17T14:00:00+08:00",
+      "load_kw": 3851.85,
+      "pv_kw": 3533.42,
+      "wind_kw": 512.44,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.75,
+      "water_m3": 126.12,
+      "reused_water_m3": 65.1
+    },
+    {
+      "timestamp": "2026-09-17T15:00:00+08:00",
+      "load_kw": 3863.06,
+      "pv_kw": 2895.12,
+      "wind_kw": 411.65,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.32,
+      "water_m3": 126.53,
+      "reused_water_m3": 70.1
+    },
+    {
+      "timestamp": "2026-09-17T16:00:00+08:00",
+      "load_kw": 3986.57,
+      "pv_kw": 2167.03,
+      "wind_kw": 524.09,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.63,
+      "water_m3": 136.09,
+      "reused_water_m3": 69.09
+    },
+    {
+      "timestamp": "2026-09-17T17:00:00+08:00",
+      "load_kw": 3967.58,
+      "pv_kw": 1058.86,
+      "wind_kw": 596.95,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.52,
+      "water_m3": 131.43,
+      "reused_water_m3": 64.66
+    },
+    {
+      "timestamp": "2026-09-17T18:00:00+08:00",
+      "load_kw": 3718.28,
+      "pv_kw": 0.0,
+      "wind_kw": 371.98,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.99,
+      "water_m3": 131.87,
+      "reused_water_m3": 68.0
+    },
+    {
+      "timestamp": "2026-09-17T19:00:00+08:00",
+      "load_kw": 3842.36,
+      "pv_kw": 0.0,
+      "wind_kw": 407.22,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 104.38,
+      "water_m3": 133.79,
+      "reused_water_m3": 65.32
+    },
+    {
+      "timestamp": "2026-09-17T20:00:00+08:00",
+      "load_kw": 3763.67,
+      "pv_kw": 0.0,
+      "wind_kw": 414.88,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 104.09,
+      "water_m3": 131.77,
+      "reused_water_m3": 66.37
+    },
+    {
+      "timestamp": "2026-09-17T21:00:00+08:00",
+      "load_kw": 2616.28,
+      "pv_kw": 0.0,
+      "wind_kw": 352.07,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 80.95,
+      "water_m3": 103.57,
+      "reused_water_m3": 61.98
+    },
+    {
+      "timestamp": "2026-09-17T22:00:00+08:00",
+      "load_kw": 2661.59,
+      "pv_kw": 0.0,
+      "wind_kw": 611.65,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 88.73,
+      "water_m3": 96.67,
+      "reused_water_m3": 66.16
+    },
+    {
+      "timestamp": "2026-09-17T23:00:00+08:00",
+      "load_kw": 2552.43,
+      "pv_kw": 0.0,
+      "wind_kw": 642.56,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 86.98,
+      "water_m3": 97.84,
+      "reused_water_m3": 66.33
+    },
+    {
+      "timestamp": "2026-09-18T00:00:00+08:00",
+      "load_kw": 2890.16,
+      "pv_kw": 0.0,
+      "wind_kw": 482.66,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.92,
+      "water_m3": 106.26,
+      "reused_water_m3": 67.38
+    },
+    {
+      "timestamp": "2026-09-18T01:00:00+08:00",
+      "load_kw": 2938.09,
+      "pv_kw": 0.0,
+      "wind_kw": 597.38,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.26,
+      "water_m3": 102.92,
+      "reused_water_m3": 63.93
+    },
+    {
+      "timestamp": "2026-09-18T02:00:00+08:00",
+      "load_kw": 2865.78,
+      "pv_kw": 0.0,
+      "wind_kw": 472.35,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.14,
+      "water_m3": 108.95,
+      "reused_water_m3": 64.81
+    },
+    {
+      "timestamp": "2026-09-18T03:00:00+08:00",
+      "load_kw": 2888.77,
+      "pv_kw": 0.0,
+      "wind_kw": 472.03,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 88.44,
+      "water_m3": 92.02,
+      "reused_water_m3": 68.79
+    },
+    {
+      "timestamp": "2026-09-18T04:00:00+08:00",
+      "load_kw": 3134.37,
+      "pv_kw": 0.0,
+      "wind_kw": 494.53,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.37,
+      "water_m3": 105.33,
+      "reused_water_m3": 59.83
+    },
+    {
+      "timestamp": "2026-09-18T05:00:00+08:00",
+      "load_kw": 3019.65,
+      "pv_kw": 0.0,
+      "wind_kw": 770.22,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.71,
+      "water_m3": 106.18,
+      "reused_water_m3": 60.32
+    },
+    {
+      "timestamp": "2026-09-18T06:00:00+08:00",
+      "load_kw": 3050.06,
+      "pv_kw": 0.0,
+      "wind_kw": 764.17,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.38,
+      "water_m3": 98.88,
+      "reused_water_m3": 61.99
+    },
+    {
+      "timestamp": "2026-09-18T07:00:00+08:00",
+      "load_kw": 3138.63,
+      "pv_kw": 1058.55,
+      "wind_kw": 764.23,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 83.09,
+      "water_m3": 106.17,
+      "reused_water_m3": 64.57
+    },
+    {
+      "timestamp": "2026-09-18T08:00:00+08:00",
+      "load_kw": 4534.36,
+      "pv_kw": 1985.36,
+      "wind_kw": 932.73,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.84,
+      "water_m3": 134.23,
+      "reused_water_m3": 61.94
+    },
+    {
+      "timestamp": "2026-09-18T09:00:00+08:00",
+      "load_kw": 4338.47,
+      "pv_kw": 2973.64,
+      "wind_kw": 984.29,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.17,
+      "water_m3": 141.03,
+      "reused_water_m3": 59.94
+    },
+    {
+      "timestamp": "2026-09-18T10:00:00+08:00",
+      "load_kw": 4230.0,
+      "pv_kw": 3786.72,
+      "wind_kw": 1003.15,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.55,
+      "water_m3": 127.05,
+      "reused_water_m3": 69.84
+    },
+    {
+      "timestamp": "2026-09-18T11:00:00+08:00",
+      "load_kw": 4345.2,
+      "pv_kw": 3717.89,
+      "wind_kw": 1016.47,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.73,
+      "water_m3": 143.11,
+      "reused_water_m3": 60.06
+    },
+    {
+      "timestamp": "2026-09-18T12:00:00+08:00",
+      "load_kw": 4129.99,
+      "pv_kw": 4821.23,
+      "wind_kw": 900.3,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.51,
+      "water_m3": 131.99,
+      "reused_water_m3": 58.37
+    },
+    {
+      "timestamp": "2026-09-18T13:00:00+08:00",
+      "load_kw": 3924.22,
+      "pv_kw": 4025.93,
+      "wind_kw": 949.54,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.95,
+      "water_m3": 132.5,
+      "reused_water_m3": 58.39
+    },
+    {
+      "timestamp": "2026-09-18T14:00:00+08:00",
+      "load_kw": 4127.86,
+      "pv_kw": 4038.79,
+      "wind_kw": 1117.33,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.91,
+      "water_m3": 127.75,
+      "reused_water_m3": 62.02
+    },
+    {
+      "timestamp": "2026-09-18T15:00:00+08:00",
+      "load_kw": 4029.25,
+      "pv_kw": 3148.91,
+      "wind_kw": 1005.38,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.06,
+      "water_m3": 133.97,
+      "reused_water_m3": 58.07
+    },
+    {
+      "timestamp": "2026-09-18T16:00:00+08:00",
+      "load_kw": 3738.22,
+      "pv_kw": 1903.1,
+      "wind_kw": 1253.0,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.49,
+      "water_m3": 139.54,
+      "reused_water_m3": 65.39
+    },
+    {
+      "timestamp": "2026-09-18T17:00:00+08:00",
+      "load_kw": 3716.48,
+      "pv_kw": 997.36,
+      "wind_kw": 1128.52,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 100.48,
+      "water_m3": 133.4,
+      "reused_water_m3": 69.11
+    },
+    {
+      "timestamp": "2026-09-18T18:00:00+08:00",
+      "load_kw": 3816.28,
+      "pv_kw": 0.0,
+      "wind_kw": 1341.82,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.97,
+      "water_m3": 125.33,
+      "reused_water_m3": 65.22
+    },
+    {
+      "timestamp": "2026-09-18T19:00:00+08:00",
+      "load_kw": 3758.32,
+      "pv_kw": 0.0,
+      "wind_kw": 1227.2,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.15,
+      "water_m3": 129.81,
+      "reused_water_m3": 63.83
+    },
+    {
+      "timestamp": "2026-09-18T20:00:00+08:00",
+      "load_kw": 3925.47,
+      "pv_kw": 0.0,
+      "wind_kw": 1414.68,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.68,
+      "water_m3": 135.52,
+      "reused_water_m3": 65.1
+    },
+    {
+      "timestamp": "2026-09-18T21:00:00+08:00",
+      "load_kw": 2679.99,
+      "pv_kw": 0.0,
+      "wind_kw": 1258.68,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 84.7,
+      "water_m3": 102.71,
+      "reused_water_m3": 71.73
+    },
+    {
+      "timestamp": "2026-09-18T22:00:00+08:00",
+      "load_kw": 2511.17,
+      "pv_kw": 0.0,
+      "wind_kw": 1392.54,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 83.45,
+      "water_m3": 104.66,
+      "reused_water_m3": 66.8
+    },
+    {
+      "timestamp": "2026-09-18T23:00:00+08:00",
+      "load_kw": 2754.06,
+      "pv_kw": 0.0,
+      "wind_kw": 1265.17,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 80.44,
+      "water_m3": 100.92,
+      "reused_water_m3": 69.39
+    },
+    {
+      "timestamp": "2026-09-19T00:00:00+08:00",
+      "load_kw": 2646.03,
+      "pv_kw": 0.0,
+      "wind_kw": 1309.1,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.95,
+      "water_m3": 102.63,
+      "reused_water_m3": 69.36
+    },
+    {
+      "timestamp": "2026-09-19T01:00:00+08:00",
+      "load_kw": 2693.01,
+      "pv_kw": 0.0,
+      "wind_kw": 1306.15,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.93,
+      "water_m3": 90.88,
+      "reused_water_m3": 60.79
+    },
+    {
+      "timestamp": "2026-09-19T02:00:00+08:00",
+      "load_kw": 2763.41,
+      "pv_kw": 0.0,
+      "wind_kw": 1317.42,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.89,
+      "water_m3": 100.86,
+      "reused_water_m3": 61.55
+    },
+    {
+      "timestamp": "2026-09-19T03:00:00+08:00",
+      "load_kw": 3057.33,
+      "pv_kw": 0.0,
+      "wind_kw": 1258.77,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.81,
+      "water_m3": 107.32,
+      "reused_water_m3": 62.65
+    },
+    {
+      "timestamp": "2026-09-19T04:00:00+08:00",
+      "load_kw": 2906.96,
+      "pv_kw": 0.0,
+      "wind_kw": 1402.44,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.43,
+      "water_m3": 107.89,
+      "reused_water_m3": 63.41
+    },
+    {
+      "timestamp": "2026-09-19T05:00:00+08:00",
+      "load_kw": 3210.69,
+      "pv_kw": 0.0,
+      "wind_kw": 1264.02,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.24,
+      "water_m3": 100.39,
+      "reused_water_m3": 69.22
+    },
+    {
+      "timestamp": "2026-09-19T06:00:00+08:00",
+      "load_kw": 3142.67,
+      "pv_kw": 0.0,
+      "wind_kw": 1270.16,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 88.22,
+      "water_m3": 100.91,
+      "reused_water_m3": 62.5
+    },
+    {
+      "timestamp": "2026-09-19T07:00:00+08:00",
+      "load_kw": 2924.72,
+      "pv_kw": 1139.21,
+      "wind_kw": 1151.85,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 86.03,
+      "water_m3": 98.52,
+      "reused_water_m3": 67.66
+    },
+    {
+      "timestamp": "2026-09-19T08:00:00+08:00",
+      "load_kw": 4379.62,
+      "pv_kw": 1746.13,
+      "wind_kw": 1287.57,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.53,
+      "water_m3": 144.96,
+      "reused_water_m3": 61.84
+    },
+    {
+      "timestamp": "2026-09-19T09:00:00+08:00",
+      "load_kw": 4529.88,
+      "pv_kw": 3410.67,
+      "wind_kw": 1012.31,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.38,
+      "water_m3": 132.27,
+      "reused_water_m3": 69.22
+    },
+    {
+      "timestamp": "2026-09-19T10:00:00+08:00",
+      "load_kw": 4367.41,
+      "pv_kw": 4183.42,
+      "wind_kw": 992.92,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.08,
+      "water_m3": 140.63,
+      "reused_water_m3": 58.49
+    },
+    {
+      "timestamp": "2026-09-19T11:00:00+08:00",
+      "load_kw": 4094.34,
+      "pv_kw": 4418.55,
+      "wind_kw": 1017.81,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.83,
+      "water_m3": 136.34,
+      "reused_water_m3": 66.47
+    },
+    {
+      "timestamp": "2026-09-19T12:00:00+08:00",
+      "load_kw": 4207.3,
+      "pv_kw": 4824.77,
+      "wind_kw": 975.38,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.63,
+      "water_m3": 136.48,
+      "reused_water_m3": 65.41
+    },
+    {
+      "timestamp": "2026-09-19T13:00:00+08:00",
+      "load_kw": 4034.55,
+      "pv_kw": 4235.44,
+      "wind_kw": 893.13,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.13,
+      "water_m3": 139.71,
+      "reused_water_m3": 64.99
+    },
+    {
+      "timestamp": "2026-09-19T14:00:00+08:00",
+      "load_kw": 3953.84,
+      "pv_kw": 3685.51,
+      "wind_kw": 850.41,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.6,
+      "water_m3": 133.93,
+      "reused_water_m3": 71.95
+    },
+    {
+      "timestamp": "2026-09-19T15:00:00+08:00",
+      "load_kw": 3855.11,
+      "pv_kw": 3378.01,
+      "wind_kw": 872.59,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.23,
+      "water_m3": 142.06,
+      "reused_water_m3": 64.33
+    },
+    {
+      "timestamp": "2026-09-19T16:00:00+08:00",
+      "load_kw": 4000.45,
+      "pv_kw": 2042.16,
+      "wind_kw": 705.23,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.82,
+      "water_m3": 141.91,
+      "reused_water_m3": 62.47
+    },
+    {
+      "timestamp": "2026-09-19T17:00:00+08:00",
+      "load_kw": 3792.08,
+      "pv_kw": 912.46,
+      "wind_kw": 796.09,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.91,
+      "water_m3": 142.03,
+      "reused_water_m3": 67.97
+    },
+    {
+      "timestamp": "2026-09-19T18:00:00+08:00",
+      "load_kw": 3966.74,
+      "pv_kw": 0.0,
+      "wind_kw": 827.52,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.09,
+      "water_m3": 127.43,
+      "reused_water_m3": 60.81
+    },
+    {
+      "timestamp": "2026-09-19T19:00:00+08:00",
+      "load_kw": 3725.34,
+      "pv_kw": 0.0,
+      "wind_kw": 555.26,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.54,
+      "water_m3": 132.38,
+      "reused_water_m3": 69.25
+    },
+    {
+      "timestamp": "2026-09-19T20:00:00+08:00",
+      "load_kw": 3889.4,
+      "pv_kw": 0.0,
+      "wind_kw": 533.69,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.09,
+      "water_m3": 144.99,
+      "reused_water_m3": 68.06
+    },
+    {
+      "timestamp": "2026-09-19T21:00:00+08:00",
+      "load_kw": 2531.95,
+      "pv_kw": 0.0,
+      "wind_kw": 718.28,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 80.74,
+      "water_m3": 109.45,
+      "reused_water_m3": 66.99
+    },
+    {
+      "timestamp": "2026-09-19T22:00:00+08:00",
+      "load_kw": 2573.99,
+      "pv_kw": 0.0,
+      "wind_kw": 541.51,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 88.78,
+      "water_m3": 105.61,
+      "reused_water_m3": 66.96
+    },
+    {
+      "timestamp": "2026-09-19T23:00:00+08:00",
+      "load_kw": 2565.41,
+      "pv_kw": 0.0,
+      "wind_kw": 538.67,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 89.11,
+      "water_m3": 91.11,
+      "reused_water_m3": 59.74
+    },
+    {
+      "timestamp": "2026-09-20T00:00:00+08:00",
+      "load_kw": 2638.96,
+      "pv_kw": 0.0,
+      "wind_kw": 480.61,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.09,
+      "water_m3": 96.92,
+      "reused_water_m3": 71.17
+    },
+    {
+      "timestamp": "2026-09-20T01:00:00+08:00",
+      "load_kw": 2959.2,
+      "pv_kw": 0.0,
+      "wind_kw": 438.45,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.35,
+      "water_m3": 101.02,
+      "reused_water_m3": 59.75
+    },
+    {
+      "timestamp": "2026-09-20T02:00:00+08:00",
+      "load_kw": 2846.9,
+      "pv_kw": 0.0,
+      "wind_kw": 498.26,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.69,
+      "water_m3": 108.83,
+      "reused_water_m3": 60.16
+    },
+    {
+      "timestamp": "2026-09-20T03:00:00+08:00",
+      "load_kw": 3027.07,
+      "pv_kw": 0.0,
+      "wind_kw": 518.21,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 88.43,
+      "water_m3": 101.27,
+      "reused_water_m3": 69.55
+    },
+    {
+      "timestamp": "2026-09-20T04:00:00+08:00",
+      "load_kw": 2876.21,
+      "pv_kw": 0.0,
+      "wind_kw": 523.39,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.77,
+      "water_m3": 103.02,
+      "reused_water_m3": 68.74
+    },
+    {
+      "timestamp": "2026-09-20T05:00:00+08:00",
+      "load_kw": 3032.4,
+      "pv_kw": 0.0,
+      "wind_kw": 479.81,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.27,
+      "water_m3": 95.79,
+      "reused_water_m3": 71.39
+    },
+    {
+      "timestamp": "2026-09-20T06:00:00+08:00",
+      "load_kw": 3064.54,
+      "pv_kw": 0.0,
+      "wind_kw": 540.52,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.97,
+      "water_m3": 91.46,
+      "reused_water_m3": 58.84
+    },
+    {
+      "timestamp": "2026-09-20T07:00:00+08:00",
+      "load_kw": 3039.77,
+      "pv_kw": 1071.99,
+      "wind_kw": 405.98,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 86.07,
+      "water_m3": 96.25,
+      "reused_water_m3": 68.06
+    },
+    {
+      "timestamp": "2026-09-20T08:00:00+08:00",
+      "load_kw": 4502.07,
+      "pv_kw": 2347.67,
+      "wind_kw": 652.12,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.31,
+      "water_m3": 132.41,
+      "reused_water_m3": 65.86
+    },
+    {
+      "timestamp": "2026-09-20T09:00:00+08:00",
+      "load_kw": 4318.39,
+      "pv_kw": 2910.25,
+      "wind_kw": 459.31,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.48,
+      "water_m3": 126.94,
+      "reused_water_m3": 62.06
+    },
+    {
+      "timestamp": "2026-09-20T10:00:00+08:00",
+      "load_kw": 4272.93,
+      "pv_kw": 3753.88,
+      "wind_kw": 477.68,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.65,
+      "water_m3": 128.19,
+      "reused_water_m3": 62.58
+    },
+    {
+      "timestamp": "2026-09-20T11:00:00+08:00",
+      "load_kw": 4257.68,
+      "pv_kw": 3757.15,
+      "wind_kw": 660.54,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 104.98,
+      "water_m3": 135.29,
+      "reused_water_m3": 64.98
+    },
+    {
+      "timestamp": "2026-09-20T12:00:00+08:00",
+      "load_kw": 4088.73,
+      "pv_kw": 3464.07,
+      "wind_kw": 747.51,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.05,
+      "water_m3": 144.33,
+      "reused_water_m3": 61.01
+    },
+    {
+      "timestamp": "2026-09-20T13:00:00+08:00",
+      "load_kw": 4020.1,
+      "pv_kw": 3384.89,
+      "wind_kw": 648.27,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.82,
+      "water_m3": 138.09,
+      "reused_water_m3": 64.59
+    },
+    {
+      "timestamp": "2026-09-20T14:00:00+08:00",
+      "load_kw": 4001.74,
+      "pv_kw": 4048.97,
+      "wind_kw": 668.03,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.82,
+      "water_m3": 139.55,
+      "reused_water_m3": 68.69
+    },
+    {
+      "timestamp": "2026-09-20T15:00:00+08:00",
+      "load_kw": 3880.83,
+      "pv_kw": 2841.76,
+      "wind_kw": 751.39,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.95,
+      "water_m3": 136.06,
+      "reused_water_m3": 59.03
+    },
+    {
+      "timestamp": "2026-09-20T16:00:00+08:00",
+      "load_kw": 3874.23,
+      "pv_kw": 2276.84,
+      "wind_kw": 707.87,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.89,
+      "water_m3": 138.61,
+      "reused_water_m3": 59.66
+    },
+    {
+      "timestamp": "2026-09-20T17:00:00+08:00",
+      "load_kw": 3992.93,
+      "pv_kw": 1037.62,
+      "wind_kw": 907.62,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.39,
+      "water_m3": 143.78,
+      "reused_water_m3": 68.57
+    },
+    {
+      "timestamp": "2026-09-20T18:00:00+08:00",
+      "load_kw": 3733.7,
+      "pv_kw": 0.0,
+      "wind_kw": 865.37,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.45,
+      "water_m3": 127.74,
+      "reused_water_m3": 62.66
+    },
+    {
+      "timestamp": "2026-09-20T19:00:00+08:00",
+      "load_kw": 3832.5,
+      "pv_kw": 0.0,
+      "wind_kw": 943.85,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.16,
+      "water_m3": 131.56,
+      "reused_water_m3": 66.58
+    },
+    {
+      "timestamp": "2026-09-20T20:00:00+08:00",
+      "load_kw": 3764.87,
+      "pv_kw": 0.0,
+      "wind_kw": 1030.25,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.99,
+      "water_m3": 131.73,
+      "reused_water_m3": 69.6
+    },
+    {
+      "timestamp": "2026-09-20T21:00:00+08:00",
+      "load_kw": 2534.07,
+      "pv_kw": 0.0,
+      "wind_kw": 944.15,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 88.16,
+      "water_m3": 97.37,
+      "reused_water_m3": 67.43
+    },
+    {
+      "timestamp": "2026-09-20T22:00:00+08:00",
+      "load_kw": 2743.57,
+      "pv_kw": 0.0,
+      "wind_kw": 1137.71,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 87.25,
+      "water_m3": 103.76,
+      "reused_water_m3": 58.37
+    },
+    {
+      "timestamp": "2026-09-20T23:00:00+08:00",
+      "load_kw": 2659.05,
+      "pv_kw": 0.0,
+      "wind_kw": 1176.19,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 87.76,
+      "water_m3": 101.55,
+      "reused_water_m3": 68.1
+    },
+    {
+      "timestamp": "2026-09-21T00:00:00+08:00",
+      "load_kw": 2776.73,
+      "pv_kw": 0.0,
+      "wind_kw": 1170.31,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.2,
+      "water_m3": 106.82,
+      "reused_water_m3": 60.07
+    },
+    {
+      "timestamp": "2026-09-21T01:00:00+08:00",
+      "load_kw": 2890.65,
+      "pv_kw": 0.0,
+      "wind_kw": 1303.48,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.1,
+      "water_m3": 90.38,
+      "reused_water_m3": 62.39
+    },
+    {
+      "timestamp": "2026-09-21T02:00:00+08:00",
+      "load_kw": 2798.46,
+      "pv_kw": 0.0,
+      "wind_kw": 1176.24,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.75,
+      "water_m3": 108.41,
+      "reused_water_m3": 70.22
+    },
+    {
+      "timestamp": "2026-09-21T03:00:00+08:00",
+      "load_kw": 3051.74,
+      "pv_kw": 0.0,
+      "wind_kw": 1124.92,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.07,
+      "water_m3": 96.5,
+      "reused_water_m3": 67.27
+    },
+    {
+      "timestamp": "2026-09-21T04:00:00+08:00",
+      "load_kw": 3035.28,
+      "pv_kw": 0.0,
+      "wind_kw": 1161.7,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.12,
+      "water_m3": 96.85,
+      "reused_water_m3": 62.96
+    },
+    {
+      "timestamp": "2026-09-21T05:00:00+08:00",
+      "load_kw": 3146.13,
+      "pv_kw": 0.0,
+      "wind_kw": 1324.55,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.93,
+      "water_m3": 102.2,
+      "reused_water_m3": 60.69
+    },
+    {
+      "timestamp": "2026-09-21T06:00:00+08:00",
+      "load_kw": 2988.89,
+      "pv_kw": 0.0,
+      "wind_kw": 1216.13,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.73,
+      "water_m3": 95.95,
+      "reused_water_m3": 62.05
+    },
+    {
+      "timestamp": "2026-09-21T07:00:00+08:00",
+      "load_kw": 2965.43,
+      "pv_kw": 1155.97,
+      "wind_kw": 1255.98,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 83.49,
+      "water_m3": 108.67,
+      "reused_water_m3": 69.14
+    },
+    {
+      "timestamp": "2026-09-21T08:00:00+08:00",
+      "load_kw": 4354.63,
+      "pv_kw": 1804.58,
+      "wind_kw": 1370.98,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.8,
+      "water_m3": 144.6,
+      "reused_water_m3": 69.46
+    },
+    {
+      "timestamp": "2026-09-21T09:00:00+08:00",
+      "load_kw": 4521.75,
+      "pv_kw": 3261.73,
+      "wind_kw": 1257.1,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.88,
+      "water_m3": 139.28,
+      "reused_water_m3": 62.85
+    },
+    {
+      "timestamp": "2026-09-21T10:00:00+08:00",
+      "load_kw": 4291.56,
+      "pv_kw": 3296.94,
+      "wind_kw": 1310.48,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.02,
+      "water_m3": 135.77,
+      "reused_water_m3": 71.06
+    },
+    {
+      "timestamp": "2026-09-21T11:00:00+08:00",
+      "load_kw": 4295.6,
+      "pv_kw": 3508.04,
+      "wind_kw": 1343.11,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.87,
+      "water_m3": 129.85,
+      "reused_water_m3": 67.38
+    },
+    {
+      "timestamp": "2026-09-21T12:00:00+08:00",
+      "load_kw": 4159.93,
+      "pv_kw": 4367.78,
+      "wind_kw": 1160.77,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.13,
+      "water_m3": 139.35,
+      "reused_water_m3": 59.41
+    },
+    {
+      "timestamp": "2026-09-21T13:00:00+08:00",
+      "load_kw": 4153.82,
+      "pv_kw": 3320.48,
+      "wind_kw": 1291.87,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.29,
+      "water_m3": 133.14,
+      "reused_water_m3": 71.09
+    },
+    {
+      "timestamp": "2026-09-21T14:00:00+08:00",
+      "load_kw": 4111.09,
+      "pv_kw": 3578.29,
+      "wind_kw": 1163.7,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.64,
+      "water_m3": 131.42,
+      "reused_water_m3": 67.04
+    },
+    {
+      "timestamp": "2026-09-21T15:00:00+08:00",
+      "load_kw": 4054.27,
+      "pv_kw": 2518.37,
+      "wind_kw": 1248.84,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.35,
+      "water_m3": 139.46,
+      "reused_water_m3": 71.11
+    },
+    {
+      "timestamp": "2026-09-21T16:00:00+08:00",
+      "load_kw": 4005.11,
+      "pv_kw": 1843.67,
+      "wind_kw": 1309.97,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.76,
+      "water_m3": 143.39,
+      "reused_water_m3": 71.96
+    },
+    {
+      "timestamp": "2026-09-21T17:00:00+08:00",
+      "load_kw": 3807.94,
+      "pv_kw": 1076.23,
+      "wind_kw": 1291.35,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.62,
+      "water_m3": 143.52,
+      "reused_water_m3": 70.27
+    },
+    {
+      "timestamp": "2026-09-21T18:00:00+08:00",
+      "load_kw": 3672.97,
+      "pv_kw": 0.0,
+      "wind_kw": 1004.4,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 109.83,
+      "water_m3": 130.69,
+      "reused_water_m3": 71.85
+    },
+    {
+      "timestamp": "2026-09-21T19:00:00+08:00",
+      "load_kw": 3854.76,
+      "pv_kw": 0.0,
+      "wind_kw": 1212.89,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.51,
+      "water_m3": 134.36,
+      "reused_water_m3": 60.7
+    },
+    {
+      "timestamp": "2026-09-21T20:00:00+08:00",
+      "load_kw": 3748.92,
+      "pv_kw": 0.0,
+      "wind_kw": 1025.88,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.57,
+      "water_m3": 128.72,
+      "reused_water_m3": 68.31
+    },
+    {
+      "timestamp": "2026-09-21T21:00:00+08:00",
+      "load_kw": 2616.77,
+      "pv_kw": 0.0,
+      "wind_kw": 1070.56,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 81.75,
+      "water_m3": 107.12,
+      "reused_water_m3": 70.56
+    },
+    {
+      "timestamp": "2026-09-21T22:00:00+08:00",
+      "load_kw": 2694.64,
+      "pv_kw": 0.0,
+      "wind_kw": 823.41,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 86.69,
+      "water_m3": 93.7,
+      "reused_water_m3": 59.97
+    },
+    {
+      "timestamp": "2026-09-21T23:00:00+08:00",
+      "load_kw": 2610.73,
+      "pv_kw": 0.0,
+      "wind_kw": 829.06,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 82.36,
+      "water_m3": 105.08,
+      "reused_water_m3": 71.36
+    },
+    {
+      "timestamp": "2026-09-22T00:00:00+08:00",
+      "load_kw": 2686.62,
+      "pv_kw": 0.0,
+      "wind_kw": 707.68,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.54,
+      "water_m3": 103.86,
+      "reused_water_m3": 58.87
+    },
+    {
+      "timestamp": "2026-09-22T01:00:00+08:00",
+      "load_kw": 2710.65,
+      "pv_kw": 0.0,
+      "wind_kw": 779.86,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.03,
+      "water_m3": 107.9,
+      "reused_water_m3": 67.85
+    },
+    {
+      "timestamp": "2026-09-22T02:00:00+08:00",
+      "load_kw": 2849.51,
+      "pv_kw": 0.0,
+      "wind_kw": 888.2,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.95,
+      "water_m3": 102.29,
+      "reused_water_m3": 61.07
+    },
+    {
+      "timestamp": "2026-09-22T03:00:00+08:00",
+      "load_kw": 2859.02,
+      "pv_kw": 0.0,
+      "wind_kw": 794.48,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.06,
+      "water_m3": 98.32,
+      "reused_water_m3": 65.69
+    },
+    {
+      "timestamp": "2026-09-22T04:00:00+08:00",
+      "load_kw": 3017.79,
+      "pv_kw": 0.0,
+      "wind_kw": 728.41,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.18,
+      "water_m3": 94.95,
+      "reused_water_m3": 68.57
+    },
+    {
+      "timestamp": "2026-09-22T05:00:00+08:00",
+      "load_kw": 3178.5,
+      "pv_kw": 0.0,
+      "wind_kw": 624.96,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.04,
+      "water_m3": 91.56,
+      "reused_water_m3": 65.9
+    },
+    {
+      "timestamp": "2026-09-22T06:00:00+08:00",
+      "load_kw": 2929.76,
+      "pv_kw": 0.0,
+      "wind_kw": 607.52,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.73,
+      "water_m3": 93.0,
+      "reused_water_m3": 62.59
+    },
+    {
+      "timestamp": "2026-09-22T07:00:00+08:00",
+      "load_kw": 3065.61,
+      "pv_kw": 931.97,
+      "wind_kw": 486.06,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 85.83,
+      "water_m3": 91.82,
+      "reused_water_m3": 65.15
+    },
+    {
+      "timestamp": "2026-09-22T08:00:00+08:00",
+      "load_kw": 4525.91,
+      "pv_kw": 2048.27,
+      "wind_kw": 551.0,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.57,
+      "water_m3": 126.15,
+      "reused_water_m3": 64.47
+    },
+    {
+      "timestamp": "2026-09-22T09:00:00+08:00",
+      "load_kw": 4474.49,
+      "pv_kw": 3177.19,
+      "wind_kw": 492.75,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.16,
+      "water_m3": 139.92,
+      "reused_water_m3": 66.1
+    },
+    {
+      "timestamp": "2026-09-22T10:00:00+08:00",
+      "load_kw": 4164.49,
+      "pv_kw": 3409.07,
+      "wind_kw": 374.67,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 109.94,
+      "water_m3": 143.69,
+      "reused_water_m3": 58.97
+    },
+    {
+      "timestamp": "2026-09-22T11:00:00+08:00",
+      "load_kw": 4371.63,
+      "pv_kw": 3358.19,
+      "wind_kw": 464.64,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 107.69,
+      "water_m3": 140.32,
+      "reused_water_m3": 71.7
+    },
+    {
+      "timestamp": "2026-09-22T12:00:00+08:00",
+      "load_kw": 4196.68,
+      "pv_kw": 4047.93,
+      "wind_kw": 631.31,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.82,
+      "water_m3": 142.39,
+      "reused_water_m3": 70.69
+    },
+    {
+      "timestamp": "2026-09-22T13:00:00+08:00",
+      "load_kw": 4027.38,
+      "pv_kw": 4282.54,
+      "wind_kw": 528.6,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.39,
+      "water_m3": 138.07,
+      "reused_water_m3": 62.87
+    },
+    {
+      "timestamp": "2026-09-22T14:00:00+08:00",
+      "load_kw": 3887.11,
+      "pv_kw": 3654.43,
+      "wind_kw": 490.5,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.28,
+      "water_m3": 129.45,
+      "reused_water_m3": 58.05
+    },
+    {
+      "timestamp": "2026-09-22T15:00:00+08:00",
+      "load_kw": 3771.0,
+      "pv_kw": 2735.51,
+      "wind_kw": 540.85,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.44,
+      "water_m3": 135.64,
+      "reused_water_m3": 69.53
+    },
+    {
+      "timestamp": "2026-09-22T16:00:00+08:00",
+      "load_kw": 3792.08,
+      "pv_kw": 1969.43,
+      "wind_kw": 433.51,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.37,
+      "water_m3": 139.5,
+      "reused_water_m3": 59.58
+    },
+    {
+      "timestamp": "2026-09-22T17:00:00+08:00",
+      "load_kw": 3939.94,
+      "pv_kw": 1047.26,
+      "wind_kw": 597.57,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.84,
+      "water_m3": 125.31,
+      "reused_water_m3": 60.89
+    },
+    {
+      "timestamp": "2026-09-22T18:00:00+08:00",
+      "load_kw": 3702.29,
+      "pv_kw": 0.0,
+      "wind_kw": 568.74,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 107.03,
+      "water_m3": 125.97,
+      "reused_water_m3": 68.37
+    },
+    {
+      "timestamp": "2026-09-22T19:00:00+08:00",
+      "load_kw": 3809.63,
+      "pv_kw": 0.0,
+      "wind_kw": 480.69,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.64,
+      "water_m3": 126.13,
+      "reused_water_m3": 65.05
+    },
+    {
+      "timestamp": "2026-09-22T20:00:00+08:00",
+      "load_kw": 3805.44,
+      "pv_kw": 0.0,
+      "wind_kw": 665.19,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.19,
+      "water_m3": 136.96,
+      "reused_water_m3": 67.42
+    },
+    {
+      "timestamp": "2026-09-22T21:00:00+08:00",
+      "load_kw": 2466.34,
+      "pv_kw": 0.0,
+      "wind_kw": 522.69,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 86.6,
+      "water_m3": 94.42,
+      "reused_water_m3": 62.21
+    },
+    {
+      "timestamp": "2026-09-22T22:00:00+08:00",
+      "load_kw": 2449.51,
+      "pv_kw": 0.0,
+      "wind_kw": 780.94,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 89.12,
+      "water_m3": 102.52,
+      "reused_water_m3": 63.98
+    },
+    {
+      "timestamp": "2026-09-22T23:00:00+08:00",
+      "load_kw": 2665.78,
+      "pv_kw": 0.0,
+      "wind_kw": 839.69,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 86.71,
+      "water_m3": 105.72,
+      "reused_water_m3": 62.46
+    },
+    {
+      "timestamp": "2026-09-23T00:00:00+08:00",
+      "load_kw": 2723.22,
+      "pv_kw": 0.0,
+      "wind_kw": 712.71,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.54,
+      "water_m3": 99.47,
+      "reused_water_m3": 69.89
+    },
+    {
+      "timestamp": "2026-09-23T01:00:00+08:00",
+      "load_kw": 2769.06,
+      "pv_kw": 0.0,
+      "wind_kw": 885.92,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.15,
+      "water_m3": 101.25,
+      "reused_water_m3": 71.55
+    },
+    {
+      "timestamp": "2026-09-23T02:00:00+08:00",
+      "load_kw": 2928.33,
+      "pv_kw": 0.0,
+      "wind_kw": 762.77,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.03,
+      "water_m3": 102.93,
+      "reused_water_m3": 70.91
+    },
+    {
+      "timestamp": "2026-09-23T03:00:00+08:00",
+      "load_kw": 3087.36,
+      "pv_kw": 0.0,
+      "wind_kw": 953.75,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.9,
+      "water_m3": 95.37,
+      "reused_water_m3": 67.43
+    },
+    {
+      "timestamp": "2026-09-23T04:00:00+08:00",
+      "load_kw": 3060.06,
+      "pv_kw": 0.0,
+      "wind_kw": 839.45,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.62,
+      "water_m3": 104.49,
+      "reused_water_m3": 65.82
+    },
+    {
+      "timestamp": "2026-09-23T05:00:00+08:00",
+      "load_kw": 3052.5,
+      "pv_kw": 0.0,
+      "wind_kw": 929.12,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.57,
+      "water_m3": 90.31,
+      "reused_water_m3": 71.12
+    },
+    {
+      "timestamp": "2026-09-23T06:00:00+08:00",
+      "load_kw": 3217.86,
+      "pv_kw": 0.0,
+      "wind_kw": 1174.35,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 84.79,
+      "water_m3": 94.85,
+      "reused_water_m3": 66.46
+    },
+    {
+      "timestamp": "2026-09-23T07:00:00+08:00",
+      "load_kw": 2964.54,
+      "pv_kw": 1235.92,
+      "wind_kw": 1083.81,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 87.76,
+      "water_m3": 97.61,
+      "reused_water_m3": 65.47
+    },
+    {
+      "timestamp": "2026-09-23T08:00:00+08:00",
+      "load_kw": 4382.09,
+      "pv_kw": 1907.25,
+      "wind_kw": 1113.67,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.97,
+      "water_m3": 126.97,
+      "reused_water_m3": 71.74
+    },
+    {
+      "timestamp": "2026-09-23T09:00:00+08:00",
+      "load_kw": 4366.51,
+      "pv_kw": 3298.23,
+      "wind_kw": 1273.17,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.71,
+      "water_m3": 133.28,
+      "reused_water_m3": 65.88
+    },
+    {
+      "timestamp": "2026-09-23T10:00:00+08:00",
+      "load_kw": 4220.81,
+      "pv_kw": 3156.24,
+      "wind_kw": 1113.08,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 109.35,
+      "water_m3": 136.58,
+      "reused_water_m3": 63.85
+    },
+    {
+      "timestamp": "2026-09-23T11:00:00+08:00",
+      "load_kw": 4121.59,
+      "pv_kw": 3781.5,
+      "wind_kw": 1181.27,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.33,
+      "water_m3": 134.99,
+      "reused_water_m3": 67.16
+    },
+    {
+      "timestamp": "2026-09-23T12:00:00+08:00",
+      "load_kw": 4209.15,
+      "pv_kw": 3808.27,
+      "wind_kw": 1342.35,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.67,
+      "water_m3": 137.83,
+      "reused_water_m3": 64.87
+    },
+    {
+      "timestamp": "2026-09-23T13:00:00+08:00",
+      "load_kw": 3961.01,
+      "pv_kw": 4441.92,
+      "wind_kw": 1170.94,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.2,
+      "water_m3": 134.77,
+      "reused_water_m3": 70.84
+    },
+    {
+      "timestamp": "2026-09-23T14:00:00+08:00",
+      "load_kw": 4003.48,
+      "pv_kw": 3787.53,
+      "wind_kw": 1157.5,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 100.34,
+      "water_m3": 141.93,
+      "reused_water_m3": 71.23
+    },
+    {
+      "timestamp": "2026-09-23T15:00:00+08:00",
+      "load_kw": 3977.55,
+      "pv_kw": 3219.87,
+      "wind_kw": 1278.51,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.43,
+      "water_m3": 129.63,
+      "reused_water_m3": 67.9
+    },
+    {
+      "timestamp": "2026-09-23T16:00:00+08:00",
+      "load_kw": 3715.8,
+      "pv_kw": 2086.71,
+      "wind_kw": 1276.68,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.18,
+      "water_m3": 138.34,
+      "reused_water_m3": 66.63
+    },
+    {
+      "timestamp": "2026-09-23T17:00:00+08:00",
+      "load_kw": 3835.53,
+      "pv_kw": 1073.36,
+      "wind_kw": 1171.51,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.52,
+      "water_m3": 125.24,
+      "reused_water_m3": 65.41
+    },
+    {
+      "timestamp": "2026-09-23T18:00:00+08:00",
+      "load_kw": 3757.92,
+      "pv_kw": 0.0,
+      "wind_kw": 1174.3,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.13,
+      "water_m3": 138.48,
+      "reused_water_m3": 69.29
+    },
+    {
+      "timestamp": "2026-09-23T19:00:00+08:00",
+      "load_kw": 3972.03,
+      "pv_kw": 0.0,
+      "wind_kw": 1192.51,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 101.49,
+      "water_m3": 128.84,
+      "reused_water_m3": 65.37
+    },
+    {
+      "timestamp": "2026-09-23T20:00:00+08:00",
+      "load_kw": 3973.74,
+      "pv_kw": 0.0,
+      "wind_kw": 1272.05,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.73,
+      "water_m3": 133.12,
+      "reused_water_m3": 65.91
+    },
+    {
+      "timestamp": "2026-09-23T21:00:00+08:00",
+      "load_kw": 2680.6,
+      "pv_kw": 0.0,
+      "wind_kw": 1342.59,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 88.48,
+      "water_m3": 103.07,
+      "reused_water_m3": 70.02
+    },
+    {
+      "timestamp": "2026-09-23T22:00:00+08:00",
+      "load_kw": 2673.07,
+      "pv_kw": 0.0,
+      "wind_kw": 1230.77,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 85.53,
+      "water_m3": 91.12,
+      "reused_water_m3": 58.13
+    },
+    {
+      "timestamp": "2026-09-23T23:00:00+08:00",
+      "load_kw": 2562.02,
+      "pv_kw": 0.0,
+      "wind_kw": 1222.25,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 87.84,
+      "water_m3": 101.32,
+      "reused_water_m3": 70.01
+    },
+    {
+      "timestamp": "2026-09-24T00:00:00+08:00",
+      "load_kw": 2620.52,
+      "pv_kw": 0.0,
+      "wind_kw": 1075.71,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.11,
+      "water_m3": 107.36,
+      "reused_water_m3": 70.43
+    },
+    {
+      "timestamp": "2026-09-24T01:00:00+08:00",
+      "load_kw": 2824.98,
+      "pv_kw": 0.0,
+      "wind_kw": 1052.26,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.26,
+      "water_m3": 107.99,
+      "reused_water_m3": 65.89
+    },
+    {
+      "timestamp": "2026-09-24T02:00:00+08:00",
+      "load_kw": 2760.53,
+      "pv_kw": 0.0,
+      "wind_kw": 1087.86,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.61,
+      "water_m3": 101.74,
+      "reused_water_m3": 68.53
+    },
+    {
+      "timestamp": "2026-09-24T03:00:00+08:00",
+      "load_kw": 3044.34,
+      "pv_kw": 0.0,
+      "wind_kw": 977.15,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.62,
+      "water_m3": 94.81,
+      "reused_water_m3": 69.69
+    },
+    {
+      "timestamp": "2026-09-24T04:00:00+08:00",
+      "load_kw": 2991.66,
+      "pv_kw": 0.0,
+      "wind_kw": 1011.63,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.56,
+      "water_m3": 92.8,
+      "reused_water_m3": 71.84
+    },
+    {
+      "timestamp": "2026-09-24T05:00:00+08:00",
+      "load_kw": 3130.83,
+      "pv_kw": 0.0,
+      "wind_kw": 1160.44,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 80.54,
+      "water_m3": 98.74,
+      "reused_water_m3": 69.74
+    },
+    {
+      "timestamp": "2026-09-24T06:00:00+08:00",
+      "load_kw": 3018.99,
+      "pv_kw": 0.0,
+      "wind_kw": 1109.18,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.97,
+      "water_m3": 105.47,
+      "reused_water_m3": 58.41
+    },
+    {
+      "timestamp": "2026-09-24T07:00:00+08:00",
+      "load_kw": 2986.56,
+      "pv_kw": 1265.39,
+      "wind_kw": 923.59,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 83.56,
+      "water_m3": 108.82,
+      "reused_water_m3": 64.05
+    },
+    {
+      "timestamp": "2026-09-24T08:00:00+08:00",
+      "load_kw": 4484.63,
+      "pv_kw": 2200.59,
+      "wind_kw": 755.48,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.19,
+      "water_m3": 140.96,
+      "reused_water_m3": 67.98
+    },
+    {
+      "timestamp": "2026-09-24T09:00:00+08:00",
+      "load_kw": 4242.53,
+      "pv_kw": 2585.68,
+      "wind_kw": 896.88,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.34,
+      "water_m3": 139.79,
+      "reused_water_m3": 62.43
+    },
+    {
+      "timestamp": "2026-09-24T10:00:00+08:00",
+      "load_kw": 4184.1,
+      "pv_kw": 2977.08,
+      "wind_kw": 730.29,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.6,
+      "water_m3": 130.4,
+      "reused_water_m3": 59.86
+    },
+    {
+      "timestamp": "2026-09-24T11:00:00+08:00",
+      "load_kw": 4132.79,
+      "pv_kw": 3950.44,
+      "wind_kw": 760.04,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 104.08,
+      "water_m3": 125.53,
+      "reused_water_m3": 62.95
+    },
+    {
+      "timestamp": "2026-09-24T12:00:00+08:00",
+      "load_kw": 4019.78,
+      "pv_kw": 4309.12,
+      "wind_kw": 648.69,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.85,
+      "water_m3": 130.84,
+      "reused_water_m3": 63.43
+    },
+    {
+      "timestamp": "2026-09-24T13:00:00+08:00",
+      "load_kw": 3934.28,
+      "pv_kw": 4592.66,
+      "wind_kw": 783.12,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.78,
+      "water_m3": 136.44,
+      "reused_water_m3": 60.37
+    },
+    {
+      "timestamp": "2026-09-24T14:00:00+08:00",
+      "load_kw": 3951.83,
+      "pv_kw": 3147.22,
+      "wind_kw": 565.03,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.93,
+      "water_m3": 126.27,
+      "reused_water_m3": 64.09
+    },
+    {
+      "timestamp": "2026-09-24T15:00:00+08:00",
+      "load_kw": 3898.48,
+      "pv_kw": 2928.71,
+      "wind_kw": 464.29,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.52,
+      "water_m3": 129.93,
+      "reused_water_m3": 66.75
+    },
+    {
+      "timestamp": "2026-09-24T16:00:00+08:00",
+      "load_kw": 3902.89,
+      "pv_kw": 1858.73,
+      "wind_kw": 443.64,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.05,
+      "water_m3": 143.98,
+      "reused_water_m3": 62.65
+    },
+    {
+      "timestamp": "2026-09-24T17:00:00+08:00",
+      "load_kw": 3879.37,
+      "pv_kw": 1193.67,
+      "wind_kw": 484.92,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.35,
+      "water_m3": 141.31,
+      "reused_water_m3": 70.03
+    },
+    {
+      "timestamp": "2026-09-24T18:00:00+08:00",
+      "load_kw": 3981.75,
+      "pv_kw": 0.0,
+      "wind_kw": 461.26,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 109.47,
+      "water_m3": 129.02,
+      "reused_water_m3": 62.4
+    },
+    {
+      "timestamp": "2026-09-24T19:00:00+08:00",
+      "load_kw": 3989.57,
+      "pv_kw": 0.0,
+      "wind_kw": 436.24,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.95,
+      "water_m3": 134.82,
+      "reused_water_m3": 66.06
+    },
+    {
+      "timestamp": "2026-09-24T20:00:00+08:00",
+      "load_kw": 3790.45,
+      "pv_kw": 0.0,
+      "wind_kw": 582.45,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.93,
+      "water_m3": 127.28,
+      "reused_water_m3": 65.89
+    },
+    {
+      "timestamp": "2026-09-24T21:00:00+08:00",
+      "load_kw": 2553.24,
+      "pv_kw": 0.0,
+      "wind_kw": 535.8,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 85.5,
+      "water_m3": 109.06,
+      "reused_water_m3": 64.46
+    },
+    {
+      "timestamp": "2026-09-24T22:00:00+08:00",
+      "load_kw": 2656.68,
+      "pv_kw": 0.0,
+      "wind_kw": 417.63,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 86.93,
+      "water_m3": 106.38,
+      "reused_water_m3": 69.14
+    },
+    {
+      "timestamp": "2026-09-24T23:00:00+08:00",
+      "load_kw": 2638.1,
+      "pv_kw": 0.0,
+      "wind_kw": 524.35,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 82.42,
+      "water_m3": 103.17,
+      "reused_water_m3": 68.01
+    },
+    {
+      "timestamp": "2026-09-25T00:00:00+08:00",
+      "load_kw": 2842.5,
+      "pv_kw": 0.0,
+      "wind_kw": 640.81,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 84.79,
+      "water_m3": 98.02,
+      "reused_water_m3": 65.09
+    },
+    {
+      "timestamp": "2026-09-25T01:00:00+08:00",
+      "load_kw": 2967.35,
+      "pv_kw": 0.0,
+      "wind_kw": 520.95,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.91,
+      "water_m3": 97.19,
+      "reused_water_m3": 70.54
+    },
+    {
+      "timestamp": "2026-09-25T02:00:00+08:00",
+      "load_kw": 2921.81,
+      "pv_kw": 0.0,
+      "wind_kw": 402.45,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.69,
+      "water_m3": 103.15,
+      "reused_water_m3": 62.97
+    },
+    {
+      "timestamp": "2026-09-25T03:00:00+08:00",
+      "load_kw": 3023.31,
+      "pv_kw": 0.0,
+      "wind_kw": 695.74,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.77,
+      "water_m3": 97.99,
+      "reused_water_m3": 68.54
+    },
+    {
+      "timestamp": "2026-09-25T04:00:00+08:00",
+      "load_kw": 3176.16,
+      "pv_kw": 0.0,
+      "wind_kw": 431.83,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.59,
+      "water_m3": 100.21,
+      "reused_water_m3": 65.26
+    },
+    {
+      "timestamp": "2026-09-25T05:00:00+08:00",
+      "load_kw": 3084.86,
+      "pv_kw": 0.0,
+      "wind_kw": 594.36,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.91,
+      "water_m3": 105.45,
+      "reused_water_m3": 66.24
+    },
+    {
+      "timestamp": "2026-09-25T06:00:00+08:00",
+      "load_kw": 3070.15,
+      "pv_kw": 0.0,
+      "wind_kw": 503.54,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.05,
+      "water_m3": 98.32,
+      "reused_water_m3": 71.46
+    },
+    {
+      "timestamp": "2026-09-25T07:00:00+08:00",
+      "load_kw": 2936.24,
+      "pv_kw": 1245.64,
+      "wind_kw": 577.34,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 83.12,
+      "water_m3": 99.11,
+      "reused_water_m3": 60.9
+    },
+    {
+      "timestamp": "2026-09-25T08:00:00+08:00",
+      "load_kw": 4421.66,
+      "pv_kw": 2064.98,
+      "wind_kw": 707.61,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.97,
+      "water_m3": 131.38,
+      "reused_water_m3": 62.2
+    },
+    {
+      "timestamp": "2026-09-25T09:00:00+08:00",
+      "load_kw": 4475.53,
+      "pv_kw": 2545.0,
+      "wind_kw": 874.38,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.48,
+      "water_m3": 138.54,
+      "reused_water_m3": 60.3
+    },
+    {
+      "timestamp": "2026-09-25T10:00:00+08:00",
+      "load_kw": 4464.85,
+      "pv_kw": 3280.98,
+      "wind_kw": 717.04,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 101.6,
+      "water_m3": 136.2,
+      "reused_water_m3": 71.42
+    },
+    {
+      "timestamp": "2026-09-25T11:00:00+08:00",
+      "load_kw": 4147.02,
+      "pv_kw": 3888.26,
+      "wind_kw": 766.16,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.4,
+      "water_m3": 133.64,
+      "reused_water_m3": 58.41
+    },
+    {
+      "timestamp": "2026-09-25T12:00:00+08:00",
+      "load_kw": 4186.51,
+      "pv_kw": 3720.07,
+      "wind_kw": 935.1,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.89,
+      "water_m3": 139.09,
+      "reused_water_m3": 60.88
+    },
+    {
+      "timestamp": "2026-09-25T13:00:00+08:00",
+      "load_kw": 4147.92,
+      "pv_kw": 4461.45,
+      "wind_kw": 822.72,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.02,
+      "water_m3": 142.44,
+      "reused_water_m3": 60.62
+    },
+    {
+      "timestamp": "2026-09-25T14:00:00+08:00",
+      "load_kw": 3934.32,
+      "pv_kw": 3552.96,
+      "wind_kw": 928.51,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.63,
+      "water_m3": 135.55,
+      "reused_water_m3": 66.95
+    },
+    {
+      "timestamp": "2026-09-25T15:00:00+08:00",
+      "load_kw": 3954.76,
+      "pv_kw": 3060.8,
+      "wind_kw": 1070.53,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.48,
+      "water_m3": 141.91,
+      "reused_water_m3": 66.64
+    },
+    {
+      "timestamp": "2026-09-25T16:00:00+08:00",
+      "load_kw": 3973.27,
+      "pv_kw": 2233.9,
+      "wind_kw": 1026.5,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.14,
+      "water_m3": 126.7,
+      "reused_water_m3": 59.88
+    },
+    {
+      "timestamp": "2026-09-25T17:00:00+08:00",
+      "load_kw": 3718.62,
+      "pv_kw": 1003.94,
+      "wind_kw": 1032.71,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.93,
+      "water_m3": 135.22,
+      "reused_water_m3": 63.86
+    },
+    {
+      "timestamp": "2026-09-25T18:00:00+08:00",
+      "load_kw": 3714.12,
+      "pv_kw": 0.0,
+      "wind_kw": 1071.24,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.36,
+      "water_m3": 138.87,
+      "reused_water_m3": 67.03
+    },
+    {
+      "timestamp": "2026-09-25T19:00:00+08:00",
+      "load_kw": 4000.87,
+      "pv_kw": 0.0,
+      "wind_kw": 1196.86,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 101.4,
+      "water_m3": 131.29,
+      "reused_water_m3": 64.31
+    },
+    {
+      "timestamp": "2026-09-25T20:00:00+08:00",
+      "load_kw": 3730.03,
+      "pv_kw": 0.0,
+      "wind_kw": 1083.59,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 101.37,
+      "water_m3": 141.3,
+      "reused_water_m3": 71.49
+    },
+    {
+      "timestamp": "2026-09-25T21:00:00+08:00",
+      "load_kw": 2525.47,
+      "pv_kw": 0.0,
+      "wind_kw": 1312.79,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 84.16,
+      "water_m3": 106.8,
+      "reused_water_m3": 64.84
+    },
+    {
+      "timestamp": "2026-09-25T22:00:00+08:00",
+      "load_kw": 2456.45,
+      "pv_kw": 0.0,
+      "wind_kw": 1357.96,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 82.92,
+      "water_m3": 95.5,
+      "reused_water_m3": 65.53
+    },
+    {
+      "timestamp": "2026-09-25T23:00:00+08:00",
+      "load_kw": 2561.0,
+      "pv_kw": 0.0,
+      "wind_kw": 1369.97,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 87.66,
+      "water_m3": 100.99,
+      "reused_water_m3": 59.58
+    },
+    {
+      "timestamp": "2026-09-26T00:00:00+08:00",
+      "load_kw": 2626.55,
+      "pv_kw": 0.0,
+      "wind_kw": 1406.88,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.67,
+      "water_m3": 106.45,
+      "reused_water_m3": 58.58
+    },
+    {
+      "timestamp": "2026-09-26T01:00:00+08:00",
+      "load_kw": 2902.9,
+      "pv_kw": 0.0,
+      "wind_kw": 1464.46,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.02,
+      "water_m3": 106.6,
+      "reused_water_m3": 68.52
+    },
+    {
+      "timestamp": "2026-09-26T02:00:00+08:00",
+      "load_kw": 2845.27,
+      "pv_kw": 0.0,
+      "wind_kw": 1304.92,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.49,
+      "water_m3": 106.33,
+      "reused_water_m3": 64.15
+    },
+    {
+      "timestamp": "2026-09-26T03:00:00+08:00",
+      "load_kw": 3134.34,
+      "pv_kw": 0.0,
+      "wind_kw": 1238.38,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 88.11,
+      "water_m3": 101.76,
+      "reused_water_m3": 62.91
+    },
+    {
+      "timestamp": "2026-09-26T04:00:00+08:00",
+      "load_kw": 3094.57,
+      "pv_kw": 0.0,
+      "wind_kw": 1209.24,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.39,
+      "water_m3": 94.13,
+      "reused_water_m3": 60.9
+    },
+    {
+      "timestamp": "2026-09-26T05:00:00+08:00",
+      "load_kw": 2918.09,
+      "pv_kw": 0.0,
+      "wind_kw": 1230.87,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.39,
+      "water_m3": 96.47,
+      "reused_water_m3": 67.86
+    },
+    {
+      "timestamp": "2026-09-26T06:00:00+08:00",
+      "load_kw": 3002.59,
+      "pv_kw": 0.0,
+      "wind_kw": 1386.16,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.85,
+      "water_m3": 103.59,
+      "reused_water_m3": 59.33
+    },
+    {
+      "timestamp": "2026-09-26T07:00:00+08:00",
+      "load_kw": 3207.18,
+      "pv_kw": 1186.68,
+      "wind_kw": 1381.92,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 89.92,
+      "water_m3": 107.34,
+      "reused_water_m3": 59.78
+    },
+    {
+      "timestamp": "2026-09-26T08:00:00+08:00",
+      "load_kw": 4544.27,
+      "pv_kw": 1898.51,
+      "wind_kw": 1292.85,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.28,
+      "water_m3": 140.23,
+      "reused_water_m3": 67.47
+    },
+    {
+      "timestamp": "2026-09-26T09:00:00+08:00",
+      "load_kw": 4372.9,
+      "pv_kw": 3025.58,
+      "wind_kw": 1129.13,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.14,
+      "water_m3": 134.04,
+      "reused_water_m3": 66.87
+    },
+    {
+      "timestamp": "2026-09-26T10:00:00+08:00",
+      "load_kw": 4431.64,
+      "pv_kw": 3088.98,
+      "wind_kw": 1168.6,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.78,
+      "water_m3": 143.73,
+      "reused_water_m3": 63.17
+    },
+    {
+      "timestamp": "2026-09-26T11:00:00+08:00",
+      "load_kw": 4376.9,
+      "pv_kw": 3777.85,
+      "wind_kw": 976.8,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 107.74,
+      "water_m3": 139.65,
+      "reused_water_m3": 68.23
+    },
+    {
+      "timestamp": "2026-09-26T12:00:00+08:00",
+      "load_kw": 4136.7,
+      "pv_kw": 4406.29,
+      "wind_kw": 1042.88,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 100.63,
+      "water_m3": 135.69,
+      "reused_water_m3": 61.05
+    },
+    {
+      "timestamp": "2026-09-26T13:00:00+08:00",
+      "load_kw": 4044.66,
+      "pv_kw": 3613.94,
+      "wind_kw": 973.04,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.28,
+      "water_m3": 131.76,
+      "reused_water_m3": 66.09
+    },
+    {
+      "timestamp": "2026-09-26T14:00:00+08:00",
+      "load_kw": 4011.17,
+      "pv_kw": 3588.33,
+      "wind_kw": 950.92,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.83,
+      "water_m3": 125.97,
+      "reused_water_m3": 59.39
+    },
+    {
+      "timestamp": "2026-09-26T15:00:00+08:00",
+      "load_kw": 4014.57,
+      "pv_kw": 2903.09,
+      "wind_kw": 839.17,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.58,
+      "water_m3": 133.83,
+      "reused_water_m3": 58.01
+    },
+    {
+      "timestamp": "2026-09-26T16:00:00+08:00",
+      "load_kw": 4019.44,
+      "pv_kw": 1863.7,
+      "wind_kw": 961.94,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.32,
+      "water_m3": 138.0,
+      "reused_water_m3": 60.23
+    },
+    {
+      "timestamp": "2026-09-26T17:00:00+08:00",
+      "load_kw": 3979.38,
+      "pv_kw": 992.0,
+      "wind_kw": 905.14,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.5,
+      "water_m3": 132.44,
+      "reused_water_m3": 70.65
+    },
+    {
+      "timestamp": "2026-09-26T18:00:00+08:00",
+      "load_kw": 3722.97,
+      "pv_kw": 0.0,
+      "wind_kw": 754.33,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.99,
+      "water_m3": 129.68,
+      "reused_water_m3": 67.18
+    },
+    {
+      "timestamp": "2026-09-26T19:00:00+08:00",
+      "load_kw": 3906.09,
+      "pv_kw": 0.0,
+      "wind_kw": 760.7,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 101.33,
+      "water_m3": 129.52,
+      "reused_water_m3": 67.52
+    },
+    {
+      "timestamp": "2026-09-26T20:00:00+08:00",
+      "load_kw": 3715.84,
+      "pv_kw": 0.0,
+      "wind_kw": 819.41,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 109.88,
+      "water_m3": 133.45,
+      "reused_water_m3": 59.85
+    },
+    {
+      "timestamp": "2026-09-26T21:00:00+08:00",
+      "load_kw": 2386.39,
+      "pv_kw": 0.0,
+      "wind_kw": 752.29,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 81.02,
+      "water_m3": 96.27,
+      "reused_water_m3": 70.33
+    },
+    {
+      "timestamp": "2026-09-26T22:00:00+08:00",
+      "load_kw": 2473.88,
+      "pv_kw": 0.0,
+      "wind_kw": 720.47,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 81.33,
+      "water_m3": 109.86,
+      "reused_water_m3": 60.0
+    },
+    {
+      "timestamp": "2026-09-26T23:00:00+08:00",
+      "load_kw": 2676.94,
+      "pv_kw": 0.0,
+      "wind_kw": 654.14,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 84.4,
+      "water_m3": 104.45,
+      "reused_water_m3": 66.79
+    },
+    {
+      "timestamp": "2026-09-27T00:00:00+08:00",
+      "load_kw": 2638.44,
+      "pv_kw": 0.0,
+      "wind_kw": 633.3,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 88.6,
+      "water_m3": 91.73,
+      "reused_water_m3": 59.41
+    },
+    {
+      "timestamp": "2026-09-27T01:00:00+08:00",
+      "load_kw": 2913.6,
+      "pv_kw": 0.0,
+      "wind_kw": 514.72,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.63,
+      "water_m3": 96.29,
+      "reused_water_m3": 59.96
+    },
+    {
+      "timestamp": "2026-09-27T02:00:00+08:00",
+      "load_kw": 2838.63,
+      "pv_kw": 0.0,
+      "wind_kw": 542.03,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.0,
+      "water_m3": 102.15,
+      "reused_water_m3": 68.91
+    },
+    {
+      "timestamp": "2026-09-27T03:00:00+08:00",
+      "load_kw": 3037.23,
+      "pv_kw": 0.0,
+      "wind_kw": 554.65,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.02,
+      "water_m3": 100.35,
+      "reused_water_m3": 65.13
+    },
+    {
+      "timestamp": "2026-09-27T04:00:00+08:00",
+      "load_kw": 3106.44,
+      "pv_kw": 0.0,
+      "wind_kw": 359.45,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 88.98,
+      "water_m3": 109.09,
+      "reused_water_m3": 64.93
+    },
+    {
+      "timestamp": "2026-09-27T05:00:00+08:00",
+      "load_kw": 2935.17,
+      "pv_kw": 0.0,
+      "wind_kw": 512.24,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.28,
+      "water_m3": 109.55,
+      "reused_water_m3": 71.82
+    },
+    {
+      "timestamp": "2026-09-27T06:00:00+08:00",
+      "load_kw": 3208.86,
+      "pv_kw": 0.0,
+      "wind_kw": 588.41,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.68,
+      "water_m3": 97.31,
+      "reused_water_m3": 67.56
+    },
+    {
+      "timestamp": "2026-09-27T07:00:00+08:00",
+      "load_kw": 3143.17,
+      "pv_kw": 1250.88,
+      "wind_kw": 562.56,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 80.17,
+      "water_m3": 91.35,
+      "reused_water_m3": 61.67
+    },
+    {
+      "timestamp": "2026-09-27T08:00:00+08:00",
+      "load_kw": 4279.87,
+      "pv_kw": 1759.44,
+      "wind_kw": 574.68,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.07,
+      "water_m3": 137.57,
+      "reused_water_m3": 65.01
+    },
+    {
+      "timestamp": "2026-09-27T09:00:00+08:00",
+      "load_kw": 4349.21,
+      "pv_kw": 3154.87,
+      "wind_kw": 374.15,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.37,
+      "water_m3": 137.32,
+      "reused_water_m3": 61.88
+    },
+    {
+      "timestamp": "2026-09-27T10:00:00+08:00",
+      "load_kw": 4249.17,
+      "pv_kw": 3621.39,
+      "wind_kw": 426.85,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.08,
+      "water_m3": 135.73,
+      "reused_water_m3": 63.47
+    },
+    {
+      "timestamp": "2026-09-27T11:00:00+08:00",
+      "load_kw": 4275.8,
+      "pv_kw": 4498.08,
+      "wind_kw": 591.42,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.66,
+      "water_m3": 138.97,
+      "reused_water_m3": 68.22
+    },
+    {
+      "timestamp": "2026-09-27T12:00:00+08:00",
+      "load_kw": 4260.87,
+      "pv_kw": 3515.12,
+      "wind_kw": 438.64,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.34,
+      "water_m3": 134.07,
+      "reused_water_m3": 66.52
+    },
+    {
+      "timestamp": "2026-09-27T13:00:00+08:00",
+      "load_kw": 4006.15,
+      "pv_kw": 4366.26,
+      "wind_kw": 664.82,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.19,
+      "water_m3": 139.16,
+      "reused_water_m3": 67.82
+    },
+    {
+      "timestamp": "2026-09-27T14:00:00+08:00",
+      "load_kw": 3882.43,
+      "pv_kw": 4183.71,
+      "wind_kw": 633.15,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.83,
+      "water_m3": 139.42,
+      "reused_water_m3": 60.34
+    },
+    {
+      "timestamp": "2026-09-27T15:00:00+08:00",
+      "load_kw": 3804.34,
+      "pv_kw": 3237.31,
+      "wind_kw": 593.89,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.86,
+      "water_m3": 140.43,
+      "reused_water_m3": 58.41
+    },
+    {
+      "timestamp": "2026-09-27T16:00:00+08:00",
+      "load_kw": 3971.15,
+      "pv_kw": 1914.91,
+      "wind_kw": 572.35,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.12,
+      "water_m3": 136.53,
+      "reused_water_m3": 59.08
+    },
+    {
+      "timestamp": "2026-09-27T17:00:00+08:00",
+      "load_kw": 3826.57,
+      "pv_kw": 1024.76,
+      "wind_kw": 745.43,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.67,
+      "water_m3": 132.35,
+      "reused_water_m3": 61.57
+    },
+    {
+      "timestamp": "2026-09-27T18:00:00+08:00",
+      "load_kw": 3702.93,
+      "pv_kw": 0.0,
+      "wind_kw": 856.64,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.28,
+      "water_m3": 135.18,
+      "reused_water_m3": 58.62
+    },
+    {
+      "timestamp": "2026-09-27T19:00:00+08:00",
+      "load_kw": 3957.04,
+      "pv_kw": 0.0,
+      "wind_kw": 826.95,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.83,
+      "water_m3": 128.0,
+      "reused_water_m3": 71.04
+    },
+    {
+      "timestamp": "2026-09-27T20:00:00+08:00",
+      "load_kw": 3987.27,
+      "pv_kw": 0.0,
+      "wind_kw": 1006.02,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 107.41,
+      "water_m3": 133.39,
+      "reused_water_m3": 62.51
+    },
+    {
+      "timestamp": "2026-09-27T21:00:00+08:00",
+      "load_kw": 2496.93,
+      "pv_kw": 0.0,
+      "wind_kw": 859.85,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 80.78,
+      "water_m3": 97.46,
+      "reused_water_m3": 65.03
+    },
+    {
+      "timestamp": "2026-09-27T22:00:00+08:00",
+      "load_kw": 2718.62,
+      "pv_kw": 0.0,
+      "wind_kw": 1066.06,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 89.81,
+      "water_m3": 109.08,
+      "reused_water_m3": 58.96
+    },
+    {
+      "timestamp": "2026-09-27T23:00:00+08:00",
+      "load_kw": 2656.01,
+      "pv_kw": 0.0,
+      "wind_kw": 1123.58,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 83.27,
+      "water_m3": 101.06,
+      "reused_water_m3": 58.11
+    },
+    {
+      "timestamp": "2026-09-28T00:00:00+08:00",
+      "load_kw": 2654.21,
+      "pv_kw": 0.0,
+      "wind_kw": 1005.19,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.23,
+      "water_m3": 99.28,
+      "reused_water_m3": 66.28
+    },
+    {
+      "timestamp": "2026-09-28T01:00:00+08:00",
+      "load_kw": 2830.7,
+      "pv_kw": 0.0,
+      "wind_kw": 1014.5,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.0,
+      "water_m3": 105.21,
+      "reused_water_m3": 61.43
+    },
+    {
+      "timestamp": "2026-09-28T02:00:00+08:00",
+      "load_kw": 2752.04,
+      "pv_kw": 0.0,
+      "wind_kw": 1065.1,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.46,
+      "water_m3": 106.79,
+      "reused_water_m3": 70.28
+    },
+    {
+      "timestamp": "2026-09-28T03:00:00+08:00",
+      "load_kw": 3120.59,
+      "pv_kw": 0.0,
+      "wind_kw": 1228.69,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 88.49,
+      "water_m3": 104.54,
+      "reused_water_m3": 59.46
+    },
+    {
+      "timestamp": "2026-09-28T04:00:00+08:00",
+      "load_kw": 3036.67,
+      "pv_kw": 0.0,
+      "wind_kw": 1211.93,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 80.6,
+      "water_m3": 109.94,
+      "reused_water_m3": 67.96
+    },
+    {
+      "timestamp": "2026-09-28T05:00:00+08:00",
+      "load_kw": 2928.86,
+      "pv_kw": 0.0,
+      "wind_kw": 1362.46,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.2,
+      "water_m3": 104.02,
+      "reused_water_m3": 63.21
+    },
+    {
+      "timestamp": "2026-09-28T06:00:00+08:00",
+      "load_kw": 3221.86,
+      "pv_kw": 0.0,
+      "wind_kw": 1146.66,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.34,
+      "water_m3": 106.4,
+      "reused_water_m3": 59.05
+    },
+    {
+      "timestamp": "2026-09-28T07:00:00+08:00",
+      "load_kw": 3080.8,
+      "pv_kw": 1053.24,
+      "wind_kw": 1427.43,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 82.37,
+      "water_m3": 95.22,
+      "reused_water_m3": 62.41
+    },
+    {
+      "timestamp": "2026-09-28T08:00:00+08:00",
+      "load_kw": 4523.39,
+      "pv_kw": 2230.03,
+      "wind_kw": 1374.17,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.18,
+      "water_m3": 130.44,
+      "reused_water_m3": 59.05
+    },
+    {
+      "timestamp": "2026-09-28T09:00:00+08:00",
+      "load_kw": 4281.14,
+      "pv_kw": 3236.08,
+      "wind_kw": 1339.39,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.55,
+      "water_m3": 128.29,
+      "reused_water_m3": 64.52
+    },
+    {
+      "timestamp": "2026-09-28T10:00:00+08:00",
+      "load_kw": 4280.08,
+      "pv_kw": 3652.73,
+      "wind_kw": 1458.67,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.08,
+      "water_m3": 131.17,
+      "reused_water_m3": 61.71
+    },
+    {
+      "timestamp": "2026-09-28T11:00:00+08:00",
+      "load_kw": 4111.19,
+      "pv_kw": 3536.93,
+      "wind_kw": 1375.24,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.26,
+      "water_m3": 138.94,
+      "reused_water_m3": 58.56
+    },
+    {
+      "timestamp": "2026-09-28T12:00:00+08:00",
+      "load_kw": 4257.5,
+      "pv_kw": 3911.86,
+      "wind_kw": 1191.75,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.48,
+      "water_m3": 132.11,
+      "reused_water_m3": 65.19
+    },
+    {
+      "timestamp": "2026-09-28T13:00:00+08:00",
+      "load_kw": 4123.88,
+      "pv_kw": 3682.54,
+      "wind_kw": 1451.44,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 100.31,
+      "water_m3": 133.09,
+      "reused_water_m3": 64.33
+    },
+    {
+      "timestamp": "2026-09-28T14:00:00+08:00",
+      "load_kw": 4069.39,
+      "pv_kw": 3288.54,
+      "wind_kw": 1277.72,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.04,
+      "water_m3": 127.8,
+      "reused_water_m3": 58.17
+    },
+    {
+      "timestamp": "2026-09-28T15:00:00+08:00",
+      "load_kw": 4029.44,
+      "pv_kw": 3446.7,
+      "wind_kw": 1158.39,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.24,
+      "water_m3": 132.44,
+      "reused_water_m3": 66.82
+    },
+    {
+      "timestamp": "2026-09-28T16:00:00+08:00",
+      "load_kw": 3919.17,
+      "pv_kw": 2143.01,
+      "wind_kw": 1172.34,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.13,
+      "water_m3": 125.44,
+      "reused_water_m3": 58.9
+    },
+    {
+      "timestamp": "2026-09-28T17:00:00+08:00",
+      "load_kw": 3969.7,
+      "pv_kw": 1056.46,
+      "wind_kw": 1104.6,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.05,
+      "water_m3": 141.59,
+      "reused_water_m3": 62.64
+    },
+    {
+      "timestamp": "2026-09-28T18:00:00+08:00",
+      "load_kw": 3683.66,
+      "pv_kw": 0.0,
+      "wind_kw": 1083.72,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.74,
+      "water_m3": 141.43,
+      "reused_water_m3": 63.53
+    },
+    {
+      "timestamp": "2026-09-28T19:00:00+08:00",
+      "load_kw": 3690.34,
+      "pv_kw": 0.0,
+      "wind_kw": 1049.04,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.15,
+      "water_m3": 128.74,
+      "reused_water_m3": 61.92
+    },
+    {
+      "timestamp": "2026-09-28T20:00:00+08:00",
+      "load_kw": 3995.57,
+      "pv_kw": 0.0,
+      "wind_kw": 1143.78,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.46,
+      "water_m3": 130.9,
+      "reused_water_m3": 63.77
+    },
+    {
+      "timestamp": "2026-09-28T21:00:00+08:00",
+      "load_kw": 2539.95,
+      "pv_kw": 0.0,
+      "wind_kw": 1000.22,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 81.37,
+      "water_m3": 93.99,
+      "reused_water_m3": 70.39
+    },
+    {
+      "timestamp": "2026-09-28T22:00:00+08:00",
+      "load_kw": 2598.26,
+      "pv_kw": 0.0,
+      "wind_kw": 1113.15,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 87.95,
+      "water_m3": 109.79,
+      "reused_water_m3": 68.95
+    },
+    {
+      "timestamp": "2026-09-28T23:00:00+08:00",
+      "load_kw": 2622.09,
+      "pv_kw": 0.0,
+      "wind_kw": 972.6,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 89.13,
+      "water_m3": 100.05,
+      "reused_water_m3": 63.44
+    },
+    {
+      "timestamp": "2026-09-29T00:00:00+08:00",
+      "load_kw": 2647.54,
+      "pv_kw": 0.0,
+      "wind_kw": 846.65,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 88.96,
+      "water_m3": 105.57,
+      "reused_water_m3": 58.82
+    },
+    {
+      "timestamp": "2026-09-29T01:00:00+08:00",
+      "load_kw": 2990.11,
+      "pv_kw": 0.0,
+      "wind_kw": 964.36,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 90.0,
+      "water_m3": 109.48,
+      "reused_water_m3": 59.4
+    },
+    {
+      "timestamp": "2026-09-29T02:00:00+08:00",
+      "load_kw": 2960.2,
+      "pv_kw": 0.0,
+      "wind_kw": 932.75,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.17,
+      "water_m3": 91.12,
+      "reused_water_m3": 71.95
+    },
+    {
+      "timestamp": "2026-09-29T03:00:00+08:00",
+      "load_kw": 2886.49,
+      "pv_kw": 0.0,
+      "wind_kw": 881.41,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.55,
+      "water_m3": 106.78,
+      "reused_water_m3": 69.83
+    },
+    {
+      "timestamp": "2026-09-29T04:00:00+08:00",
+      "load_kw": 2923.48,
+      "pv_kw": 0.0,
+      "wind_kw": 839.71,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.98,
+      "water_m3": 108.28,
+      "reused_water_m3": 58.39
+    },
+    {
+      "timestamp": "2026-09-29T05:00:00+08:00",
+      "load_kw": 3123.28,
+      "pv_kw": 0.0,
+      "wind_kw": 724.46,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.63,
+      "water_m3": 93.76,
+      "reused_water_m3": 71.83
+    },
+    {
+      "timestamp": "2026-09-29T06:00:00+08:00",
+      "load_kw": 3192.12,
+      "pv_kw": 0.0,
+      "wind_kw": 608.02,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 84.9,
+      "water_m3": 91.81,
+      "reused_water_m3": 61.26
+    },
+    {
+      "timestamp": "2026-09-29T07:00:00+08:00",
+      "load_kw": 2969.12,
+      "pv_kw": 1088.04,
+      "wind_kw": 478.34,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 89.18,
+      "water_m3": 94.03,
+      "reused_water_m3": 59.83
+    },
+    {
+      "timestamp": "2026-09-29T08:00:00+08:00",
+      "load_kw": 4496.55,
+      "pv_kw": 2390.3,
+      "wind_kw": 697.6,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.24,
+      "water_m3": 125.44,
+      "reused_water_m3": 66.21
+    },
+    {
+      "timestamp": "2026-09-29T09:00:00+08:00",
+      "load_kw": 4509.79,
+      "pv_kw": 3230.29,
+      "wind_kw": 668.21,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.61,
+      "water_m3": 144.21,
+      "reused_water_m3": 63.23
+    },
+    {
+      "timestamp": "2026-09-29T10:00:00+08:00",
+      "load_kw": 4451.42,
+      "pv_kw": 3474.08,
+      "wind_kw": 418.66,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.02,
+      "water_m3": 127.73,
+      "reused_water_m3": 60.21
+    },
+    {
+      "timestamp": "2026-09-29T11:00:00+08:00",
+      "load_kw": 4376.4,
+      "pv_kw": 4437.47,
+      "wind_kw": 655.1,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.49,
+      "water_m3": 128.48,
+      "reused_water_m3": 71.56
+    },
+    {
+      "timestamp": "2026-09-29T12:00:00+08:00",
+      "load_kw": 4211.94,
+      "pv_kw": 4795.4,
+      "wind_kw": 586.27,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.23,
+      "water_m3": 136.78,
+      "reused_water_m3": 60.45
+    },
+    {
+      "timestamp": "2026-09-29T13:00:00+08:00",
+      "load_kw": 4005.36,
+      "pv_kw": 4290.73,
+      "wind_kw": 376.58,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.29,
+      "water_m3": 143.98,
+      "reused_water_m3": 71.28
+    },
+    {
+      "timestamp": "2026-09-29T14:00:00+08:00",
+      "load_kw": 3955.31,
+      "pv_kw": 4236.25,
+      "wind_kw": 621.22,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 100.32,
+      "water_m3": 137.05,
+      "reused_water_m3": 70.89
+    },
+    {
+      "timestamp": "2026-09-29T15:00:00+08:00",
+      "load_kw": 4073.34,
+      "pv_kw": 2654.99,
+      "wind_kw": 499.77,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.37,
+      "water_m3": 127.81,
+      "reused_water_m3": 68.43
+    },
+    {
+      "timestamp": "2026-09-29T16:00:00+08:00",
+      "load_kw": 3789.03,
+      "pv_kw": 2437.05,
+      "wind_kw": 384.09,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.85,
+      "water_m3": 126.77,
+      "reused_water_m3": 67.93
+    },
+    {
+      "timestamp": "2026-09-29T17:00:00+08:00",
+      "load_kw": 3885.42,
+      "pv_kw": 1225.09,
+      "wind_kw": 476.47,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.65,
+      "water_m3": 129.99,
+      "reused_water_m3": 58.95
+    },
+    {
+      "timestamp": "2026-09-29T18:00:00+08:00",
+      "load_kw": 3752.13,
+      "pv_kw": 0.0,
+      "wind_kw": 356.64,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.86,
+      "water_m3": 139.65,
+      "reused_water_m3": 71.57
+    },
+    {
+      "timestamp": "2026-09-29T19:00:00+08:00",
+      "load_kw": 3963.96,
+      "pv_kw": 0.0,
+      "wind_kw": 488.51,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.46,
+      "water_m3": 127.03,
+      "reused_water_m3": 64.71
+    },
+    {
+      "timestamp": "2026-09-29T20:00:00+08:00",
+      "load_kw": 3989.37,
+      "pv_kw": 0.0,
+      "wind_kw": 604.3,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 101.63,
+      "water_m3": 126.47,
+      "reused_water_m3": 69.84
+    },
+    {
+      "timestamp": "2026-09-29T21:00:00+08:00",
+      "load_kw": 2458.1,
+      "pv_kw": 0.0,
+      "wind_kw": 711.25,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 80.74,
+      "water_m3": 93.4,
+      "reused_water_m3": 63.26
+    },
+    {
+      "timestamp": "2026-09-29T22:00:00+08:00",
+      "load_kw": 2664.24,
+      "pv_kw": 0.0,
+      "wind_kw": 726.79,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 80.93,
+      "water_m3": 101.88,
+      "reused_water_m3": 66.59
+    },
+    {
+      "timestamp": "2026-09-29T23:00:00+08:00",
+      "load_kw": 2661.65,
+      "pv_kw": 0.0,
+      "wind_kw": 775.3,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 81.65,
+      "water_m3": 107.8,
+      "reused_water_m3": 60.2
+    },
+    {
+      "timestamp": "2026-09-30T00:00:00+08:00",
+      "load_kw": 2622.4,
+      "pv_kw": 0.0,
+      "wind_kw": 587.94,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.97,
+      "water_m3": 104.44,
+      "reused_water_m3": 68.22
+    },
+    {
+      "timestamp": "2026-09-30T01:00:00+08:00",
+      "load_kw": 2757.71,
+      "pv_kw": 0.0,
+      "wind_kw": 643.3,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 80.5,
+      "water_m3": 101.44,
+      "reused_water_m3": 69.76
+    },
+    {
+      "timestamp": "2026-09-30T02:00:00+08:00",
+      "load_kw": 2799.15,
+      "pv_kw": 0.0,
+      "wind_kw": 743.6,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.95,
+      "water_m3": 103.24,
+      "reused_water_m3": 66.4
+    },
+    {
+      "timestamp": "2026-09-30T03:00:00+08:00",
+      "load_kw": 2880.17,
+      "pv_kw": 0.0,
+      "wind_kw": 711.51,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.92,
+      "water_m3": 91.64,
+      "reused_water_m3": 69.81
+    },
+    {
+      "timestamp": "2026-09-30T04:00:00+08:00",
+      "load_kw": 2965.8,
+      "pv_kw": 0.0,
+      "wind_kw": 853.03,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.61,
+      "water_m3": 91.82,
+      "reused_water_m3": 65.62
+    },
+    {
+      "timestamp": "2026-09-30T05:00:00+08:00",
+      "load_kw": 2958.26,
+      "pv_kw": 0.0,
+      "wind_kw": 863.71,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 84.46,
+      "water_m3": 95.27,
+      "reused_water_m3": 64.51
+    },
+    {
+      "timestamp": "2026-09-30T06:00:00+08:00",
+      "load_kw": 2982.4,
+      "pv_kw": 0.0,
+      "wind_kw": 817.94,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.52,
+      "water_m3": 103.35,
+      "reused_water_m3": 59.2
+    },
+    {
+      "timestamp": "2026-09-30T07:00:00+08:00",
+      "load_kw": 3009.11,
+      "pv_kw": 1093.75,
+      "wind_kw": 1136.6,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 85.9,
+      "water_m3": 101.07,
+      "reused_water_m3": 69.77
+    },
+    {
+      "timestamp": "2026-09-30T08:00:00+08:00",
+      "load_kw": 4529.02,
+      "pv_kw": 2022.69,
+      "wind_kw": 1050.81,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.67,
+      "water_m3": 134.5,
+      "reused_water_m3": 70.34
+    },
+    {
+      "timestamp": "2026-09-30T09:00:00+08:00",
+      "load_kw": 4368.68,
+      "pv_kw": 2507.45,
+      "wind_kw": 1204.02,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.14,
+      "water_m3": 135.04,
+      "reused_water_m3": 70.61
+    },
+    {
+      "timestamp": "2026-09-30T10:00:00+08:00",
+      "load_kw": 4406.14,
+      "pv_kw": 3833.01,
+      "wind_kw": 1160.05,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 101.2,
+      "water_m3": 140.14,
+      "reused_water_m3": 60.42
+    },
+    {
+      "timestamp": "2026-09-30T11:00:00+08:00",
+      "load_kw": 4387.82,
+      "pv_kw": 4693.51,
+      "wind_kw": 1254.52,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 101.26,
+      "water_m3": 133.47,
+      "reused_water_m3": 71.84
+    },
+    {
+      "timestamp": "2026-09-30T12:00:00+08:00",
+      "load_kw": 4129.33,
+      "pv_kw": 4895.99,
+      "wind_kw": 1234.94,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.34,
+      "water_m3": 130.16,
+      "reused_water_m3": 70.75
+    },
+    {
+      "timestamp": "2026-09-30T13:00:00+08:00",
+      "load_kw": 4199.71,
+      "pv_kw": 3408.28,
+      "wind_kw": 1194.32,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.97,
+      "water_m3": 131.52,
+      "reused_water_m3": 61.87
+    },
+    {
+      "timestamp": "2026-09-30T14:00:00+08:00",
+      "load_kw": 3976.61,
+      "pv_kw": 4082.44,
+      "wind_kw": 1340.94,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.23,
+      "water_m3": 135.45,
+      "reused_water_m3": 63.87
+    },
+    {
+      "timestamp": "2026-09-30T15:00:00+08:00",
+      "load_kw": 3896.35,
+      "pv_kw": 2579.42,
+      "wind_kw": 1304.06,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.58,
+      "water_m3": 143.79,
+      "reused_water_m3": 70.95
+    },
+    {
+      "timestamp": "2026-09-30T16:00:00+08:00",
+      "load_kw": 3892.93,
+      "pv_kw": 1789.23,
+      "wind_kw": 1231.55,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.36,
+      "water_m3": 131.88,
+      "reused_water_m3": 63.75
+    },
+    {
+      "timestamp": "2026-09-30T17:00:00+08:00",
+      "load_kw": 3803.48,
+      "pv_kw": 1072.5,
+      "wind_kw": 1341.57,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 100.37,
+      "water_m3": 130.51,
+      "reused_water_m3": 60.01
+    },
+    {
+      "timestamp": "2026-09-30T18:00:00+08:00",
+      "load_kw": 3864.77,
+      "pv_kw": 0.0,
+      "wind_kw": 1178.64,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.9,
+      "water_m3": 131.63,
+      "reused_water_m3": 61.33
+    },
+    {
+      "timestamp": "2026-09-30T19:00:00+08:00",
+      "load_kw": 3919.54,
+      "pv_kw": 0.0,
+      "wind_kw": 1439.09,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.2,
+      "water_m3": 141.35,
+      "reused_water_m3": 62.24
+    },
+    {
+      "timestamp": "2026-09-30T20:00:00+08:00",
+      "load_kw": 3802.58,
+      "pv_kw": 0.0,
+      "wind_kw": 1376.64,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.98,
+      "water_m3": 142.38,
+      "reused_water_m3": 59.88
+    },
+    {
+      "timestamp": "2026-09-30T21:00:00+08:00",
+      "load_kw": 2675.48,
+      "pv_kw": 0.0,
+      "wind_kw": 1408.18,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 82.69,
+      "water_m3": 98.34,
+      "reused_water_m3": 67.04
+    },
+    {
+      "timestamp": "2026-09-30T22:00:00+08:00",
+      "load_kw": 2490.14,
+      "pv_kw": 0.0,
+      "wind_kw": 1395.21,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 87.41,
+      "water_m3": 105.19,
+      "reused_water_m3": 70.14
+    },
+    {
+      "timestamp": "2026-09-30T23:00:00+08:00",
+      "load_kw": 2769.9,
+      "pv_kw": 0.0,
+      "wind_kw": 1178.38,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 83.11,
+      "water_m3": 100.14,
+      "reused_water_m3": 59.9
+    },
+    {
+      "timestamp": "2026-10-01T00:00:00+08:00",
+      "load_kw": 2862.41,
+      "pv_kw": 0.0,
+      "wind_kw": 1117.36,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.93,
+      "water_m3": 106.66,
+      "reused_water_m3": 69.72
+    },
+    {
+      "timestamp": "2026-10-01T01:00:00+08:00",
+      "load_kw": 2752.66,
+      "pv_kw": 0.0,
+      "wind_kw": 1357.64,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.05,
+      "water_m3": 95.48,
+      "reused_water_m3": 69.53
+    },
+    {
+      "timestamp": "2026-10-01T02:00:00+08:00",
+      "load_kw": 2911.64,
+      "pv_kw": 0.0,
+      "wind_kw": 1088.85,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 80.31,
+      "water_m3": 97.45,
+      "reused_water_m3": 66.32
+    },
+    {
+      "timestamp": "2026-10-01T03:00:00+08:00",
+      "load_kw": 2873.1,
+      "pv_kw": 0.0,
+      "wind_kw": 1193.49,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.5,
+      "water_m3": 93.27,
+      "reused_water_m3": 70.52
+    },
+    {
+      "timestamp": "2026-10-01T04:00:00+08:00",
+      "load_kw": 3106.8,
+      "pv_kw": 0.0,
+      "wind_kw": 1065.39,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.87,
+      "water_m3": 93.26,
+      "reused_water_m3": 66.01
+    },
+    {
+      "timestamp": "2026-10-01T05:00:00+08:00",
+      "load_kw": 3207.87,
+      "pv_kw": 0.0,
+      "wind_kw": 1133.69,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.78,
+      "water_m3": 95.38,
+      "reused_water_m3": 63.73
+    },
+    {
+      "timestamp": "2026-10-01T06:00:00+08:00",
+      "load_kw": 2916.42,
+      "pv_kw": 0.0,
+      "wind_kw": 1127.02,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 80.09,
+      "water_m3": 108.23,
+      "reused_water_m3": 67.06
+    },
+    {
+      "timestamp": "2026-10-01T07:00:00+08:00",
+      "load_kw": 3091.46,
+      "pv_kw": 890.97,
+      "wind_kw": 927.92,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 88.05,
+      "water_m3": 96.11,
+      "reused_water_m3": 71.54
+    },
+    {
+      "timestamp": "2026-10-01T08:00:00+08:00",
+      "load_kw": 4472.81,
+      "pv_kw": 2026.5,
+      "wind_kw": 919.35,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.49,
+      "water_m3": 130.04,
+      "reused_water_m3": 64.53
+    },
+    {
+      "timestamp": "2026-10-01T09:00:00+08:00",
+      "load_kw": 4432.98,
+      "pv_kw": 3282.2,
+      "wind_kw": 879.05,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.02,
+      "water_m3": 135.23,
+      "reused_water_m3": 67.27
+    },
+    {
+      "timestamp": "2026-10-01T10:00:00+08:00",
+      "load_kw": 4419.85,
+      "pv_kw": 3446.88,
+      "wind_kw": 907.49,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.09,
+      "water_m3": 130.97,
+      "reused_water_m3": 59.51
+    },
+    {
+      "timestamp": "2026-10-01T11:00:00+08:00",
+      "load_kw": 4093.25,
+      "pv_kw": 4716.51,
+      "wind_kw": 859.3,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.61,
+      "water_m3": 130.22,
+      "reused_water_m3": 67.96
+    },
+    {
+      "timestamp": "2026-10-01T12:00:00+08:00",
+      "load_kw": 4275.56,
+      "pv_kw": 3869.22,
+      "wind_kw": 666.96,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.65,
+      "water_m3": 142.99,
+      "reused_water_m3": 69.28
+    },
+    {
+      "timestamp": "2026-10-01T13:00:00+08:00",
+      "load_kw": 4163.93,
+      "pv_kw": 4165.12,
+      "wind_kw": 776.57,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.81,
+      "water_m3": 139.43,
+      "reused_water_m3": 67.18
+    },
+    {
+      "timestamp": "2026-10-01T14:00:00+08:00",
+      "load_kw": 4149.19,
+      "pv_kw": 3300.73,
+      "wind_kw": 662.54,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.88,
+      "water_m3": 125.71,
+      "reused_water_m3": 67.91
+    },
+    {
+      "timestamp": "2026-10-01T15:00:00+08:00",
+      "load_kw": 3946.78,
+      "pv_kw": 2622.78,
+      "wind_kw": 716.11,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.22,
+      "water_m3": 135.69,
+      "reused_water_m3": 68.99
+    },
+    {
+      "timestamp": "2026-10-01T16:00:00+08:00",
+      "load_kw": 4002.96,
+      "pv_kw": 2208.82,
+      "wind_kw": 614.62,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.45,
+      "water_m3": 141.81,
+      "reused_water_m3": 70.27
+    },
+    {
+      "timestamp": "2026-10-01T17:00:00+08:00",
+      "load_kw": 3738.87,
+      "pv_kw": 924.88,
+      "wind_kw": 468.64,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.59,
+      "water_m3": 141.17,
+      "reused_water_m3": 68.68
+    },
+    {
+      "timestamp": "2026-10-01T18:00:00+08:00",
+      "load_kw": 3728.58,
+      "pv_kw": 0.0,
+      "wind_kw": 502.72,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.89,
+      "water_m3": 132.11,
+      "reused_water_m3": 68.42
+    },
+    {
+      "timestamp": "2026-10-01T19:00:00+08:00",
+      "load_kw": 3779.17,
+      "pv_kw": 0.0,
+      "wind_kw": 477.5,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.61,
+      "water_m3": 130.88,
+      "reused_water_m3": 69.92
+    },
+    {
+      "timestamp": "2026-10-01T20:00:00+08:00",
+      "load_kw": 3863.44,
+      "pv_kw": 0.0,
+      "wind_kw": 533.83,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 109.44,
+      "water_m3": 126.42,
+      "reused_water_m3": 70.45
+    },
+    {
+      "timestamp": "2026-10-01T21:00:00+08:00",
+      "load_kw": 2523.88,
+      "pv_kw": 0.0,
+      "wind_kw": 458.73,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 82.98,
+      "water_m3": 91.08,
+      "reused_water_m3": 69.96
+    },
+    {
+      "timestamp": "2026-10-01T22:00:00+08:00",
+      "load_kw": 2473.96,
+      "pv_kw": 0.0,
+      "wind_kw": 457.47,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 85.69,
+      "water_m3": 108.13,
+      "reused_water_m3": 64.41
+    },
+    {
+      "timestamp": "2026-10-01T23:00:00+08:00",
+      "load_kw": 2608.42,
+      "pv_kw": 0.0,
+      "wind_kw": 564.0,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 84.88,
+      "water_m3": 102.62,
+      "reused_water_m3": 60.48
+    },
+    {
+      "timestamp": "2026-10-02T00:00:00+08:00",
+      "load_kw": 2793.04,
+      "pv_kw": 0.0,
+      "wind_kw": 413.15,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.61,
+      "water_m3": 93.37,
+      "reused_water_m3": 68.7
+    },
+    {
+      "timestamp": "2026-10-02T01:00:00+08:00",
+      "load_kw": 2829.49,
+      "pv_kw": 0.0,
+      "wind_kw": 363.46,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.14,
+      "water_m3": 102.67,
+      "reused_water_m3": 63.65
+    },
+    {
+      "timestamp": "2026-10-02T02:00:00+08:00",
+      "load_kw": 3058.9,
+      "pv_kw": 0.0,
+      "wind_kw": 359.4,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.99,
+      "water_m3": 97.46,
+      "reused_water_m3": 58.2
+    },
+    {
+      "timestamp": "2026-10-02T03:00:00+08:00",
+      "load_kw": 2919.38,
+      "pv_kw": 0.0,
+      "wind_kw": 421.25,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.77,
+      "water_m3": 102.53,
+      "reused_water_m3": 61.48
+    },
+    {
+      "timestamp": "2026-10-02T04:00:00+08:00",
+      "load_kw": 3089.06,
+      "pv_kw": 0.0,
+      "wind_kw": 423.51,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.84,
+      "water_m3": 101.77,
+      "reused_water_m3": 60.34
+    },
+    {
+      "timestamp": "2026-10-02T05:00:00+08:00",
+      "load_kw": 3162.73,
+      "pv_kw": 0.0,
+      "wind_kw": 497.34,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.28,
+      "water_m3": 101.93,
+      "reused_water_m3": 62.73
+    },
+    {
+      "timestamp": "2026-10-02T06:00:00+08:00",
+      "load_kw": 3194.15,
+      "pv_kw": 0.0,
+      "wind_kw": 542.36,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.01,
+      "water_m3": 97.19,
+      "reused_water_m3": 60.64
+    },
+    {
+      "timestamp": "2026-10-02T07:00:00+08:00",
+      "load_kw": 3202.48,
+      "pv_kw": 1237.09,
+      "wind_kw": 593.84,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 82.28,
+      "water_m3": 104.54,
+      "reused_water_m3": 59.84
+    },
+    {
+      "timestamp": "2026-10-02T08:00:00+08:00",
+      "load_kw": 4502.03,
+      "pv_kw": 2148.42,
+      "wind_kw": 560.22,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.67,
+      "water_m3": 138.01,
+      "reused_water_m3": 58.52
+    },
+    {
+      "timestamp": "2026-10-02T09:00:00+08:00",
+      "load_kw": 4496.77,
+      "pv_kw": 2691.26,
+      "wind_kw": 709.61,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 100.49,
+      "water_m3": 144.89,
+      "reused_water_m3": 67.27
+    },
+    {
+      "timestamp": "2026-10-02T10:00:00+08:00",
+      "load_kw": 4359.14,
+      "pv_kw": 2995.6,
+      "wind_kw": 798.25,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 104.17,
+      "water_m3": 132.61,
+      "reused_water_m3": 65.66
+    },
+    {
+      "timestamp": "2026-10-02T11:00:00+08:00",
+      "load_kw": 4224.63,
+      "pv_kw": 3530.55,
+      "wind_kw": 843.98,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.3,
+      "water_m3": 131.02,
+      "reused_water_m3": 67.26
+    },
+    {
+      "timestamp": "2026-10-02T12:00:00+08:00",
+      "load_kw": 4201.99,
+      "pv_kw": 3826.87,
+      "wind_kw": 862.63,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.37,
+      "water_m3": 141.61,
+      "reused_water_m3": 59.47
+    },
+    {
+      "timestamp": "2026-10-02T13:00:00+08:00",
+      "load_kw": 4137.18,
+      "pv_kw": 3480.3,
+      "wind_kw": 761.5,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.06,
+      "water_m3": 128.97,
+      "reused_water_m3": 60.8
+    },
+    {
+      "timestamp": "2026-10-02T14:00:00+08:00",
+      "load_kw": 3914.16,
+      "pv_kw": 3636.46,
+      "wind_kw": 834.44,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.03,
+      "water_m3": 130.91,
+      "reused_water_m3": 58.55
+    },
+    {
+      "timestamp": "2026-10-02T15:00:00+08:00",
+      "load_kw": 3922.56,
+      "pv_kw": 2641.26,
+      "wind_kw": 1100.23,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.31,
+      "water_m3": 125.05,
+      "reused_water_m3": 67.4
+    },
+    {
+      "timestamp": "2026-10-02T16:00:00+08:00",
+      "load_kw": 4003.07,
+      "pv_kw": 2328.9,
+      "wind_kw": 1066.48,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.49,
+      "water_m3": 126.8,
+      "reused_water_m3": 65.16
+    },
+    {
+      "timestamp": "2026-10-02T17:00:00+08:00",
+      "load_kw": 3912.44,
+      "pv_kw": 926.29,
+      "wind_kw": 986.59,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.31,
+      "water_m3": 144.77,
+      "reused_water_m3": 62.14
+    },
+    {
+      "timestamp": "2026-10-02T18:00:00+08:00",
+      "load_kw": 3818.57,
+      "pv_kw": 0.0,
+      "wind_kw": 1004.31,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.39,
+      "water_m3": 130.81,
+      "reused_water_m3": 69.22
+    },
+    {
+      "timestamp": "2026-10-02T19:00:00+08:00",
+      "load_kw": 3780.97,
+      "pv_kw": 0.0,
+      "wind_kw": 1020.0,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 107.58,
+      "water_m3": 125.92,
+      "reused_water_m3": 69.93
+    },
+    {
+      "timestamp": "2026-10-02T20:00:00+08:00",
+      "load_kw": 3925.15,
+      "pv_kw": 0.0,
+      "wind_kw": 1135.37,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 104.38,
+      "water_m3": 137.44,
+      "reused_water_m3": 70.3
+    },
+    {
+      "timestamp": "2026-10-02T21:00:00+08:00",
+      "load_kw": 2393.47,
+      "pv_kw": 0.0,
+      "wind_kw": 1116.15,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 84.01,
+      "water_m3": 109.25,
+      "reused_water_m3": 61.81
+    },
+    {
+      "timestamp": "2026-10-02T22:00:00+08:00",
+      "load_kw": 2553.43,
+      "pv_kw": 0.0,
+      "wind_kw": 1330.61,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 86.49,
+      "water_m3": 105.94,
+      "reused_water_m3": 59.58
+    },
+    {
+      "timestamp": "2026-10-02T23:00:00+08:00",
+      "load_kw": 2729.95,
+      "pv_kw": 0.0,
+      "wind_kw": 1398.52,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 81.59,
+      "water_m3": 98.32,
+      "reused_water_m3": 66.27
+    },
+    {
+      "timestamp": "2026-10-03T00:00:00+08:00",
+      "load_kw": 2846.72,
+      "pv_kw": 0.0,
+      "wind_kw": 1190.79,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.8,
+      "water_m3": 97.17,
+      "reused_water_m3": 58.4
+    },
+    {
+      "timestamp": "2026-10-03T01:00:00+08:00",
+      "load_kw": 2891.85,
+      "pv_kw": 0.0,
+      "wind_kw": 1444.31,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.31,
+      "water_m3": 108.41,
+      "reused_water_m3": 59.58
+    },
+    {
+      "timestamp": "2026-10-03T02:00:00+08:00",
+      "load_kw": 2881.61,
+      "pv_kw": 0.0,
+      "wind_kw": 1241.67,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.14,
+      "water_m3": 104.09,
+      "reused_water_m3": 67.49
+    },
+    {
+      "timestamp": "2026-10-03T03:00:00+08:00",
+      "load_kw": 3061.88,
+      "pv_kw": 0.0,
+      "wind_kw": 1338.5,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.78,
+      "water_m3": 103.4,
+      "reused_water_m3": 62.74
+    },
+    {
+      "timestamp": "2026-10-03T04:00:00+08:00",
+      "load_kw": 3034.52,
+      "pv_kw": 0.0,
+      "wind_kw": 1198.21,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.62,
+      "water_m3": 94.97,
+      "reused_water_m3": 62.84
+    },
+    {
+      "timestamp": "2026-10-03T05:00:00+08:00",
+      "load_kw": 3115.51,
+      "pv_kw": 0.0,
+      "wind_kw": 1416.81,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.58,
+      "water_m3": 109.76,
+      "reused_water_m3": 58.76
+    },
+    {
+      "timestamp": "2026-10-03T06:00:00+08:00",
+      "load_kw": 3115.89,
+      "pv_kw": 0.0,
+      "wind_kw": 1410.1,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 88.52,
+      "water_m3": 107.39,
+      "reused_water_m3": 59.05
+    },
+    {
+      "timestamp": "2026-10-03T07:00:00+08:00",
+      "load_kw": 3056.42,
+      "pv_kw": 979.4,
+      "wind_kw": 1431.84,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 80.5,
+      "water_m3": 94.45,
+      "reused_water_m3": 67.01
+    },
+    {
+      "timestamp": "2026-10-03T08:00:00+08:00",
+      "load_kw": 4396.18,
+      "pv_kw": 1887.72,
+      "wind_kw": 1259.05,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.01,
+      "water_m3": 133.96,
+      "reused_water_m3": 69.99
+    },
+    {
+      "timestamp": "2026-10-03T09:00:00+08:00",
+      "load_kw": 4359.34,
+      "pv_kw": 2548.77,
+      "wind_kw": 1246.48,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.53,
+      "water_m3": 127.05,
+      "reused_water_m3": 63.77
+    },
+    {
+      "timestamp": "2026-10-03T10:00:00+08:00",
+      "load_kw": 4328.28,
+      "pv_kw": 2970.68,
+      "wind_kw": 1096.2,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.04,
+      "water_m3": 137.38,
+      "reused_water_m3": 62.26
+    },
+    {
+      "timestamp": "2026-10-03T11:00:00+08:00",
+      "load_kw": 4235.49,
+      "pv_kw": 3606.84,
+      "wind_kw": 1238.11,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 109.5,
+      "water_m3": 132.27,
+      "reused_water_m3": 58.76
+    },
+    {
+      "timestamp": "2026-10-03T12:00:00+08:00",
+      "load_kw": 4061.33,
+      "pv_kw": 4098.06,
+      "wind_kw": 1168.91,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.2,
+      "water_m3": 134.46,
+      "reused_water_m3": 67.2
+    },
+    {
+      "timestamp": "2026-10-03T13:00:00+08:00",
+      "load_kw": 4136.27,
+      "pv_kw": 3475.03,
+      "wind_kw": 1189.76,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.22,
+      "water_m3": 131.83,
+      "reused_water_m3": 69.62
+    },
+    {
+      "timestamp": "2026-10-03T14:00:00+08:00",
+      "load_kw": 4138.62,
+      "pv_kw": 3342.18,
+      "wind_kw": 1077.05,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.02,
+      "water_m3": 125.92,
+      "reused_water_m3": 60.3
+    },
+    {
+      "timestamp": "2026-10-03T15:00:00+08:00",
+      "load_kw": 3808.67,
+      "pv_kw": 3170.51,
+      "wind_kw": 1093.3,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.07,
+      "water_m3": 137.22,
+      "reused_water_m3": 60.63
+    },
+    {
+      "timestamp": "2026-10-03T16:00:00+08:00",
+      "load_kw": 4010.54,
+      "pv_kw": 2003.78,
+      "wind_kw": 968.77,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.81,
+      "water_m3": 139.34,
+      "reused_water_m3": 59.51
+    },
+    {
+      "timestamp": "2026-10-03T17:00:00+08:00",
+      "load_kw": 3813.53,
+      "pv_kw": 1240.3,
+      "wind_kw": 1036.71,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.89,
+      "water_m3": 140.44,
+      "reused_water_m3": 64.31
+    },
+    {
+      "timestamp": "2026-10-03T18:00:00+08:00",
+      "load_kw": 3880.71,
+      "pv_kw": 0.0,
+      "wind_kw": 779.24,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 104.99,
+      "water_m3": 135.61,
+      "reused_water_m3": 58.68
+    },
+    {
+      "timestamp": "2026-10-03T19:00:00+08:00",
+      "load_kw": 3980.2,
+      "pv_kw": 0.0,
+      "wind_kw": 837.24,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.08,
+      "water_m3": 143.42,
+      "reused_water_m3": 60.48
+    },
+    {
+      "timestamp": "2026-10-03T20:00:00+08:00",
+      "load_kw": 3898.01,
+      "pv_kw": 0.0,
+      "wind_kw": 685.1,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.87,
+      "water_m3": 137.01,
+      "reused_water_m3": 70.36
+    },
+    {
+      "timestamp": "2026-10-03T21:00:00+08:00",
+      "load_kw": 2525.04,
+      "pv_kw": 0.0,
+      "wind_kw": 895.94,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 89.16,
+      "water_m3": 105.25,
+      "reused_water_m3": 61.83
+    },
+    {
+      "timestamp": "2026-10-03T22:00:00+08:00",
+      "load_kw": 2738.35,
+      "pv_kw": 0.0,
+      "wind_kw": 695.27,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 81.33,
+      "water_m3": 98.25,
+      "reused_water_m3": 67.8
+    },
+    {
+      "timestamp": "2026-10-03T23:00:00+08:00",
+      "load_kw": 2746.67,
+      "pv_kw": 0.0,
+      "wind_kw": 729.54,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 88.61,
+      "water_m3": 104.24,
+      "reused_water_m3": 71.1
+    },
+    {
+      "timestamp": "2026-10-04T00:00:00+08:00",
+      "load_kw": 2792.43,
+      "pv_kw": 0.0,
+      "wind_kw": 668.86,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.91,
+      "water_m3": 96.91,
+      "reused_water_m3": 67.41
+    },
+    {
+      "timestamp": "2026-10-04T01:00:00+08:00",
+      "load_kw": 2986.85,
+      "pv_kw": 0.0,
+      "wind_kw": 734.94,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.04,
+      "water_m3": 103.89,
+      "reused_water_m3": 62.51
+    },
+    {
+      "timestamp": "2026-10-04T02:00:00+08:00",
+      "load_kw": 2786.93,
+      "pv_kw": 0.0,
+      "wind_kw": 561.12,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.71,
+      "water_m3": 103.34,
+      "reused_water_m3": 63.84
+    },
+    {
+      "timestamp": "2026-10-04T03:00:00+08:00",
+      "load_kw": 3055.59,
+      "pv_kw": 0.0,
+      "wind_kw": 476.46,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 88.47,
+      "water_m3": 106.17,
+      "reused_water_m3": 65.32
+    },
+    {
+      "timestamp": "2026-10-04T04:00:00+08:00",
+      "load_kw": 2875.22,
+      "pv_kw": 0.0,
+      "wind_kw": 569.86,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.0,
+      "water_m3": 105.0,
+      "reused_water_m3": 60.25
+    },
+    {
+      "timestamp": "2026-10-04T05:00:00+08:00",
+      "load_kw": 2990.81,
+      "pv_kw": 0.0,
+      "wind_kw": 603.4,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.91,
+      "water_m3": 95.9,
+      "reused_water_m3": 68.55
+    },
+    {
+      "timestamp": "2026-10-04T06:00:00+08:00",
+      "load_kw": 2920.34,
+      "pv_kw": 0.0,
+      "wind_kw": 370.05,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 88.68,
+      "water_m3": 104.79,
+      "reused_water_m3": 70.11
+    },
+    {
+      "timestamp": "2026-10-04T07:00:00+08:00",
+      "load_kw": 3136.67,
+      "pv_kw": 1101.29,
+      "wind_kw": 403.37,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 87.84,
+      "water_m3": 105.98,
+      "reused_water_m3": 62.03
+    },
+    {
+      "timestamp": "2026-10-04T08:00:00+08:00",
+      "load_kw": 4479.77,
+      "pv_kw": 2395.97,
+      "wind_kw": 446.29,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.57,
+      "water_m3": 144.52,
+      "reused_water_m3": 62.38
+    },
+    {
+      "timestamp": "2026-10-04T09:00:00+08:00",
+      "load_kw": 4392.95,
+      "pv_kw": 2438.85,
+      "wind_kw": 408.55,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.21,
+      "water_m3": 140.62,
+      "reused_water_m3": 70.18
+    },
+    {
+      "timestamp": "2026-10-04T10:00:00+08:00",
+      "load_kw": 4415.59,
+      "pv_kw": 4130.84,
+      "wind_kw": 552.79,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.48,
+      "water_m3": 140.1,
+      "reused_water_m3": 65.65
+    },
+    {
+      "timestamp": "2026-10-04T11:00:00+08:00",
+      "load_kw": 4265.91,
+      "pv_kw": 4415.18,
+      "wind_kw": 643.99,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.94,
+      "water_m3": 128.55,
+      "reused_water_m3": 67.56
+    },
+    {
+      "timestamp": "2026-10-04T12:00:00+08:00",
+      "load_kw": 4049.83,
+      "pv_kw": 3685.48,
+      "wind_kw": 527.02,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.77,
+      "water_m3": 133.57,
+      "reused_water_m3": 65.79
+    },
+    {
+      "timestamp": "2026-10-04T13:00:00+08:00",
+      "load_kw": 3948.8,
+      "pv_kw": 4142.33,
+      "wind_kw": 472.2,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.31,
+      "water_m3": 139.19,
+      "reused_water_m3": 60.17
+    },
+    {
+      "timestamp": "2026-10-04T14:00:00+08:00",
+      "load_kw": 3879.19,
+      "pv_kw": 3381.19,
+      "wind_kw": 438.14,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.32,
+      "water_m3": 137.31,
+      "reused_water_m3": 67.27
+    },
+    {
+      "timestamp": "2026-10-04T15:00:00+08:00",
+      "load_kw": 3920.7,
+      "pv_kw": 3020.64,
+      "wind_kw": 561.54,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.84,
+      "water_m3": 131.36,
+      "reused_water_m3": 61.08
+    },
+    {
+      "timestamp": "2026-10-04T16:00:00+08:00",
+      "load_kw": 3771.71,
+      "pv_kw": 1765.11,
+      "wind_kw": 640.53,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.16,
+      "water_m3": 135.74,
+      "reused_water_m3": 59.29
+    },
+    {
+      "timestamp": "2026-10-04T17:00:00+08:00",
+      "load_kw": 3751.69,
+      "pv_kw": 968.92,
+      "wind_kw": 626.65,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.61,
+      "water_m3": 129.37,
+      "reused_water_m3": 68.54
+    },
+    {
+      "timestamp": "2026-10-04T18:00:00+08:00",
+      "load_kw": 3839.76,
+      "pv_kw": 0.0,
+      "wind_kw": 815.04,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 109.81,
+      "water_m3": 125.18,
+      "reused_water_m3": 67.37
+    },
+    {
+      "timestamp": "2026-10-04T19:00:00+08:00",
+      "load_kw": 3823.52,
+      "pv_kw": 0.0,
+      "wind_kw": 795.13,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.21,
+      "water_m3": 144.18,
+      "reused_water_m3": 67.56
+    },
+    {
+      "timestamp": "2026-10-04T20:00:00+08:00",
+      "load_kw": 3815.57,
+      "pv_kw": 0.0,
+      "wind_kw": 939.32,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.86,
+      "water_m3": 135.8,
+      "reused_water_m3": 61.96
+    },
+    {
+      "timestamp": "2026-10-04T21:00:00+08:00",
+      "load_kw": 2655.35,
+      "pv_kw": 0.0,
+      "wind_kw": 814.28,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 88.03,
+      "water_m3": 98.91,
+      "reused_water_m3": 58.61
+    },
+    {
+      "timestamp": "2026-10-04T22:00:00+08:00",
+      "load_kw": 2717.45,
+      "pv_kw": 0.0,
+      "wind_kw": 902.52,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 89.48,
+      "water_m3": 93.35,
+      "reused_water_m3": 71.39
+    },
+    {
+      "timestamp": "2026-10-04T23:00:00+08:00",
+      "load_kw": 2679.33,
+      "pv_kw": 0.0,
+      "wind_kw": 814.57,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 86.7,
+      "water_m3": 105.47,
+      "reused_water_m3": 70.11
+    },
+    {
+      "timestamp": "2026-10-05T00:00:00+08:00",
+      "load_kw": 2725.75,
+      "pv_kw": 0.0,
+      "wind_kw": 1002.28,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.03,
+      "water_m3": 109.52,
+      "reused_water_m3": 68.85
+    },
+    {
+      "timestamp": "2026-10-05T01:00:00+08:00",
+      "load_kw": 2879.72,
+      "pv_kw": 0.0,
+      "wind_kw": 1109.93,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.54,
+      "water_m3": 99.18,
+      "reused_water_m3": 62.64
+    },
+    {
+      "timestamp": "2026-10-05T02:00:00+08:00",
+      "load_kw": 2778.01,
+      "pv_kw": 0.0,
+      "wind_kw": 1167.36,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 85.58,
+      "water_m3": 101.5,
+      "reused_water_m3": 61.19
+    },
+    {
+      "timestamp": "2026-10-05T03:00:00+08:00",
+      "load_kw": 2899.04,
+      "pv_kw": 0.0,
+      "wind_kw": 1159.18,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 84.33,
+      "water_m3": 90.34,
+      "reused_water_m3": 67.43
+    },
+    {
+      "timestamp": "2026-10-05T04:00:00+08:00",
+      "load_kw": 3038.28,
+      "pv_kw": 0.0,
+      "wind_kw": 1193.92,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.56,
+      "water_m3": 101.71,
+      "reused_water_m3": 67.81
+    },
+    {
+      "timestamp": "2026-10-05T05:00:00+08:00",
+      "load_kw": 2922.32,
+      "pv_kw": 0.0,
+      "wind_kw": 1075.38,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.87,
+      "water_m3": 96.03,
+      "reused_water_m3": 59.21
+    },
+    {
+      "timestamp": "2026-10-05T06:00:00+08:00",
+      "load_kw": 3154.89,
+      "pv_kw": 0.0,
+      "wind_kw": 1193.57,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.61,
+      "water_m3": 99.48,
+      "reused_water_m3": 65.47
+    },
+    {
+      "timestamp": "2026-10-05T07:00:00+08:00",
+      "load_kw": 2942.74,
+      "pv_kw": 1036.51,
+      "wind_kw": 1341.77,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 85.46,
+      "water_m3": 109.2,
+      "reused_water_m3": 60.02
+    },
+    {
+      "timestamp": "2026-10-05T08:00:00+08:00",
+      "load_kw": 4483.86,
+      "pv_kw": 2386.91,
+      "wind_kw": 1364.17,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.29,
+      "water_m3": 132.46,
+      "reused_water_m3": 71.29
+    },
+    {
+      "timestamp": "2026-10-05T09:00:00+08:00",
+      "load_kw": 4393.4,
+      "pv_kw": 3002.34,
+      "wind_kw": 1181.15,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 100.05,
+      "water_m3": 136.93,
+      "reused_water_m3": 65.52
+    },
+    {
+      "timestamp": "2026-10-05T10:00:00+08:00",
+      "load_kw": 4453.03,
+      "pv_kw": 3358.36,
+      "wind_kw": 1382.31,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 109.04,
+      "water_m3": 131.88,
+      "reused_water_m3": 63.78
+    },
+    {
+      "timestamp": "2026-10-05T11:00:00+08:00",
+      "load_kw": 4279.52,
+      "pv_kw": 4040.9,
+      "wind_kw": 1214.73,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 102.21,
+      "water_m3": 141.69,
+      "reused_water_m3": 60.72
+    },
+    {
+      "timestamp": "2026-10-05T12:00:00+08:00",
+      "load_kw": 4048.03,
+      "pv_kw": 4605.5,
+      "wind_kw": 1425.6,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.51,
+      "water_m3": 143.65,
+      "reused_water_m3": 71.92
+    },
+    {
+      "timestamp": "2026-10-05T13:00:00+08:00",
+      "load_kw": 4054.78,
+      "pv_kw": 4093.6,
+      "wind_kw": 1255.42,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 100.67,
+      "water_m3": 126.96,
+      "reused_water_m3": 68.16
+    },
+    {
+      "timestamp": "2026-10-05T14:00:00+08:00",
+      "load_kw": 3985.9,
+      "pv_kw": 3391.66,
+      "wind_kw": 1199.84,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.55,
+      "water_m3": 127.0,
+      "reused_water_m3": 66.67
+    },
+    {
+      "timestamp": "2026-10-05T15:00:00+08:00",
+      "load_kw": 4051.76,
+      "pv_kw": 2755.7,
+      "wind_kw": 1284.64,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.16,
+      "water_m3": 131.11,
+      "reused_water_m3": 66.18
+    },
+    {
+      "timestamp": "2026-10-05T16:00:00+08:00",
+      "load_kw": 3893.85,
+      "pv_kw": 1982.9,
+      "wind_kw": 1227.49,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.28,
+      "water_m3": 125.1,
+      "reused_water_m3": 61.45
+    },
+    {
+      "timestamp": "2026-10-05T17:00:00+08:00",
+      "load_kw": 3751.79,
+      "pv_kw": 1169.22,
+      "wind_kw": 1241.85,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.4,
+      "water_m3": 127.69,
+      "reused_water_m3": 68.26
+    },
+    {
+      "timestamp": "2026-10-05T18:00:00+08:00",
+      "load_kw": 3950.92,
+      "pv_kw": 0.0,
+      "wind_kw": 1192.61,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.05,
+      "water_m3": 136.03,
+      "reused_water_m3": 60.46
+    },
+    {
+      "timestamp": "2026-10-05T19:00:00+08:00",
+      "load_kw": 3875.02,
+      "pv_kw": 0.0,
+      "wind_kw": 1312.45,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 101.4,
+      "water_m3": 135.77,
+      "reused_water_m3": 61.69
+    },
+    {
+      "timestamp": "2026-10-05T20:00:00+08:00",
+      "load_kw": 3996.5,
+      "pv_kw": 0.0,
+      "wind_kw": 1043.54,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.19,
+      "water_m3": 135.14,
+      "reused_water_m3": 58.44
+    },
+    {
+      "timestamp": "2026-10-05T21:00:00+08:00",
+      "load_kw": 2549.93,
+      "pv_kw": 0.0,
+      "wind_kw": 1160.67,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 89.06,
+      "water_m3": 101.03,
+      "reused_water_m3": 65.61
+    },
+    {
+      "timestamp": "2026-10-05T22:00:00+08:00",
+      "load_kw": 2749.59,
+      "pv_kw": 0.0,
+      "wind_kw": 1176.08,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 83.66,
+      "water_m3": 94.47,
+      "reused_water_m3": 68.81
+    },
+    {
+      "timestamp": "2026-10-05T23:00:00+08:00",
+      "load_kw": 2741.81,
+      "pv_kw": 0.0,
+      "wind_kw": 1040.4,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 85.1,
+      "water_m3": 97.94,
+      "reused_water_m3": 65.03
+    },
+    {
+      "timestamp": "2026-10-06T00:00:00+08:00",
+      "load_kw": 2802.06,
+      "pv_kw": 0.0,
+      "wind_kw": 1098.57,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.14,
+      "water_m3": 93.32,
+      "reused_water_m3": 65.2
+    },
+    {
+      "timestamp": "2026-10-06T01:00:00+08:00",
+      "load_kw": 2815.61,
+      "pv_kw": 0.0,
+      "wind_kw": 1095.52,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.59,
+      "water_m3": 109.35,
+      "reused_water_m3": 68.3
+    },
+    {
+      "timestamp": "2026-10-06T02:00:00+08:00",
+      "load_kw": 2904.72,
+      "pv_kw": 0.0,
+      "wind_kw": 830.09,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 84.88,
+      "water_m3": 91.26,
+      "reused_water_m3": 63.17
+    },
+    {
+      "timestamp": "2026-10-06T03:00:00+08:00",
+      "load_kw": 2829.97,
+      "pv_kw": 0.0,
+      "wind_kw": 990.13,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.61,
+      "water_m3": 99.39,
+      "reused_water_m3": 64.37
+    },
+    {
+      "timestamp": "2026-10-06T04:00:00+08:00",
+      "load_kw": 2881.99,
+      "pv_kw": 0.0,
+      "wind_kw": 768.8,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.04,
+      "water_m3": 100.43,
+      "reused_water_m3": 69.62
+    },
+    {
+      "timestamp": "2026-10-06T05:00:00+08:00",
+      "load_kw": 3166.26,
+      "pv_kw": 0.0,
+      "wind_kw": 789.62,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.74,
+      "water_m3": 103.07,
+      "reused_water_m3": 63.11
+    },
+    {
+      "timestamp": "2026-10-06T06:00:00+08:00",
+      "load_kw": 3119.07,
+      "pv_kw": 0.0,
+      "wind_kw": 737.57,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.76,
+      "water_m3": 108.14,
+      "reused_water_m3": 65.23
+    },
+    {
+      "timestamp": "2026-10-06T07:00:00+08:00",
+      "load_kw": 3012.02,
+      "pv_kw": 1217.89,
+      "wind_kw": 686.95,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 84.82,
+      "water_m3": 102.08,
+      "reused_water_m3": 65.03
+    },
+    {
+      "timestamp": "2026-10-06T08:00:00+08:00",
+      "load_kw": 4311.6,
+      "pv_kw": 1836.72,
+      "wind_kw": 524.92,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.43,
+      "water_m3": 129.23,
+      "reused_water_m3": 60.62
+    },
+    {
+      "timestamp": "2026-10-06T09:00:00+08:00",
+      "load_kw": 4332.19,
+      "pv_kw": 3170.97,
+      "wind_kw": 501.25,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.3,
+      "water_m3": 141.22,
+      "reused_water_m3": 68.08
+    },
+    {
+      "timestamp": "2026-10-06T10:00:00+08:00",
+      "load_kw": 4304.09,
+      "pv_kw": 3580.03,
+      "wind_kw": 496.43,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 101.61,
+      "water_m3": 141.67,
+      "reused_water_m3": 58.31
+    },
+    {
+      "timestamp": "2026-10-06T11:00:00+08:00",
+      "load_kw": 4086.63,
+      "pv_kw": 4127.43,
+      "wind_kw": 452.94,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.3,
+      "water_m3": 125.78,
+      "reused_water_m3": 66.01
+    },
+    {
+      "timestamp": "2026-10-06T12:00:00+08:00",
+      "load_kw": 4007.89,
+      "pv_kw": 3809.64,
+      "wind_kw": 434.24,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.58,
+      "water_m3": 136.99,
+      "reused_water_m3": 65.89
+    },
+    {
+      "timestamp": "2026-10-06T13:00:00+08:00",
+      "load_kw": 3913.14,
+      "pv_kw": 4334.82,
+      "wind_kw": 558.95,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.83,
+      "water_m3": 126.71,
+      "reused_water_m3": 64.29
+    },
+    {
+      "timestamp": "2026-10-06T14:00:00+08:00",
+      "load_kw": 4147.69,
+      "pv_kw": 4074.59,
+      "wind_kw": 396.6,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.3,
+      "water_m3": 137.02,
+      "reused_water_m3": 69.12
+    },
+    {
+      "timestamp": "2026-10-06T15:00:00+08:00",
+      "load_kw": 4026.27,
+      "pv_kw": 2614.44,
+      "wind_kw": 533.31,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.65,
+      "water_m3": 139.48,
+      "reused_water_m3": 62.8
+    },
+    {
+      "timestamp": "2026-10-06T16:00:00+08:00",
+      "load_kw": 3857.98,
+      "pv_kw": 2149.09,
+      "wind_kw": 399.46,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.85,
+      "water_m3": 127.17,
+      "reused_water_m3": 60.83
+    },
+    {
+      "timestamp": "2026-10-06T17:00:00+08:00",
+      "load_kw": 3955.97,
+      "pv_kw": 1079.64,
+      "wind_kw": 456.73,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.5,
+      "water_m3": 126.93,
+      "reused_water_m3": 64.66
+    },
+    {
+      "timestamp": "2026-10-06T18:00:00+08:00",
+      "load_kw": 3866.72,
+      "pv_kw": 0.0,
+      "wind_kw": 571.4,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.03,
+      "water_m3": 127.35,
+      "reused_water_m3": 64.75
+    },
+    {
+      "timestamp": "2026-10-06T19:00:00+08:00",
+      "load_kw": 3722.61,
+      "pv_kw": 0.0,
+      "wind_kw": 595.04,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.97,
+      "water_m3": 140.5,
+      "reused_water_m3": 67.09
+    },
+    {
+      "timestamp": "2026-10-06T20:00:00+08:00",
+      "load_kw": 3879.93,
+      "pv_kw": 0.0,
+      "wind_kw": 375.34,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.3,
+      "water_m3": 129.59,
+      "reused_water_m3": 69.23
+    },
+    {
+      "timestamp": "2026-10-06T21:00:00+08:00",
+      "load_kw": 2616.38,
+      "pv_kw": 0.0,
+      "wind_kw": 559.33,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 87.41,
+      "water_m3": 105.23,
+      "reused_water_m3": 67.75
+    },
+    {
+      "timestamp": "2026-10-06T22:00:00+08:00",
+      "load_kw": 2461.27,
+      "pv_kw": 0.0,
+      "wind_kw": 550.59,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 82.33,
+      "water_m3": 107.18,
+      "reused_water_m3": 61.97
+    },
+    {
+      "timestamp": "2026-10-06T23:00:00+08:00",
+      "load_kw": 2787.74,
+      "pv_kw": 0.0,
+      "wind_kw": 493.21,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 87.09,
+      "water_m3": 105.79,
+      "reused_water_m3": 66.09
+    },
+    {
+      "timestamp": "2026-10-07T00:00:00+08:00",
+      "load_kw": 2627.71,
+      "pv_kw": 0.0,
+      "wind_kw": 665.79,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.88,
+      "water_m3": 96.32,
+      "reused_water_m3": 63.07
+    },
+    {
+      "timestamp": "2026-10-07T01:00:00+08:00",
+      "load_kw": 2722.35,
+      "pv_kw": 0.0,
+      "wind_kw": 581.9,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 88.55,
+      "water_m3": 98.47,
+      "reused_water_m3": 63.12
+    },
+    {
+      "timestamp": "2026-10-07T02:00:00+08:00",
+      "load_kw": 2838.18,
+      "pv_kw": 0.0,
+      "wind_kw": 771.7,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 84.13,
+      "water_m3": 105.68,
+      "reused_water_m3": 64.75
+    },
+    {
+      "timestamp": "2026-10-07T03:00:00+08:00",
+      "load_kw": 2934.74,
+      "pv_kw": 0.0,
+      "wind_kw": 663.27,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.07,
+      "water_m3": 96.89,
+      "reused_water_m3": 67.88
+    },
+    {
+      "timestamp": "2026-10-07T04:00:00+08:00",
+      "load_kw": 3102.58,
+      "pv_kw": 0.0,
+      "wind_kw": 828.85,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.48,
+      "water_m3": 98.93,
+      "reused_water_m3": 67.79
+    },
+    {
+      "timestamp": "2026-10-07T05:00:00+08:00",
+      "load_kw": 2950.87,
+      "pv_kw": 0.0,
+      "wind_kw": 796.63,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 83.38,
+      "water_m3": 101.01,
+      "reused_water_m3": 67.76
+    },
+    {
+      "timestamp": "2026-10-07T06:00:00+08:00",
+      "load_kw": 3136.17,
+      "pv_kw": 0.0,
+      "wind_kw": 1012.14,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 80.05,
+      "water_m3": 91.82,
+      "reused_water_m3": 60.03
+    },
+    {
+      "timestamp": "2026-10-07T07:00:00+08:00",
+      "load_kw": 3195.37,
+      "pv_kw": 1053.39,
+      "wind_kw": 788.63,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 82.22,
+      "water_m3": 91.6,
+      "reused_water_m3": 58.53
+    },
+    {
+      "timestamp": "2026-10-07T08:00:00+08:00",
+      "load_kw": 4390.11,
+      "pv_kw": 2438.57,
+      "wind_kw": 1000.0,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.21,
+      "water_m3": 139.23,
+      "reused_water_m3": 66.36
+    },
+    {
+      "timestamp": "2026-10-07T09:00:00+08:00",
+      "load_kw": 4518.9,
+      "pv_kw": 3277.96,
+      "wind_kw": 1053.48,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 104.39,
+      "water_m3": 129.03,
+      "reused_water_m3": 67.2
+    },
+    {
+      "timestamp": "2026-10-07T10:00:00+08:00",
+      "load_kw": 4407.25,
+      "pv_kw": 3334.57,
+      "wind_kw": 915.7,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 106.0,
+      "water_m3": 135.32,
+      "reused_water_m3": 61.24
+    },
+    {
+      "timestamp": "2026-10-07T11:00:00+08:00",
+      "load_kw": 4127.06,
+      "pv_kw": 3364.33,
+      "wind_kw": 1019.69,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.0,
+      "water_m3": 128.15,
+      "reused_water_m3": 71.96
+    },
+    {
+      "timestamp": "2026-10-07T12:00:00+08:00",
+      "load_kw": 4239.5,
+      "pv_kw": 3949.1,
+      "wind_kw": 1106.31,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.86,
+      "water_m3": 135.35,
+      "reused_water_m3": 68.32
+    },
+    {
+      "timestamp": "2026-10-07T13:00:00+08:00",
+      "load_kw": 3929.14,
+      "pv_kw": 3441.15,
+      "wind_kw": 1110.04,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.3,
+      "water_m3": 143.3,
+      "reused_water_m3": 62.87
+    },
+    {
+      "timestamp": "2026-10-07T14:00:00+08:00",
+      "load_kw": 4138.25,
+      "pv_kw": 3322.48,
+      "wind_kw": 1240.13,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 101.95,
+      "water_m3": 143.59,
+      "reused_water_m3": 66.05
+    },
+    {
+      "timestamp": "2026-10-07T15:00:00+08:00",
+      "load_kw": 3847.28,
+      "pv_kw": 2848.57,
+      "wind_kw": 1119.9,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 100.72,
+      "water_m3": 130.89,
+      "reused_water_m3": 71.26
+    },
+    {
+      "timestamp": "2026-10-07T16:00:00+08:00",
+      "load_kw": 3969.81,
+      "pv_kw": 2418.18,
+      "wind_kw": 1376.36,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.13,
+      "water_m3": 136.5,
+      "reused_water_m3": 67.72
+    },
+    {
+      "timestamp": "2026-10-07T17:00:00+08:00",
+      "load_kw": 3990.04,
+      "pv_kw": 1102.01,
+      "wind_kw": 1365.6,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 107.57,
+      "water_m3": 144.22,
+      "reused_water_m3": 64.42
+    },
+    {
+      "timestamp": "2026-10-07T18:00:00+08:00",
+      "load_kw": 3817.43,
+      "pv_kw": 0.0,
+      "wind_kw": 1159.15,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 101.16,
+      "water_m3": 126.35,
+      "reused_water_m3": 66.87
+    },
+    {
+      "timestamp": "2026-10-07T19:00:00+08:00",
+      "load_kw": 3999.05,
+      "pv_kw": 0.0,
+      "wind_kw": 1231.32,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.16,
+      "water_m3": 144.11,
+      "reused_water_m3": 65.23
+    },
+    {
+      "timestamp": "2026-10-07T20:00:00+08:00",
+      "load_kw": 3715.98,
+      "pv_kw": 0.0,
+      "wind_kw": 1243.13,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.93,
+      "water_m3": 138.47,
+      "reused_water_m3": 69.5
+    },
+    {
+      "timestamp": "2026-10-07T21:00:00+08:00",
+      "load_kw": 2388.06,
+      "pv_kw": 0.0,
+      "wind_kw": 1312.77,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 83.54,
+      "water_m3": 107.89,
+      "reused_water_m3": 61.77
+    },
+    {
+      "timestamp": "2026-10-07T22:00:00+08:00",
+      "load_kw": 2733.08,
+      "pv_kw": 0.0,
+      "wind_kw": 1438.75,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 84.99,
+      "water_m3": 93.99,
+      "reused_water_m3": 68.3
+    },
+    {
+      "timestamp": "2026-10-07T23:00:00+08:00",
+      "load_kw": 2786.46,
+      "pv_kw": 0.0,
+      "wind_kw": 1217.44,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 82.5,
+      "water_m3": 102.37,
+      "reused_water_m3": 60.18
+    },
+    {
+      "timestamp": "2026-10-08T00:00:00+08:00",
+      "load_kw": 2624.14,
+      "pv_kw": 0.0,
+      "wind_kw": 1345.18,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.63,
+      "water_m3": 102.28,
+      "reused_water_m3": 68.7
+    },
+    {
+      "timestamp": "2026-10-08T01:00:00+08:00",
+      "load_kw": 2846.09,
+      "pv_kw": 0.0,
+      "wind_kw": 1268.11,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 86.21,
+      "water_m3": 99.85,
+      "reused_water_m3": 71.8
+    },
+    {
+      "timestamp": "2026-10-08T02:00:00+08:00",
+      "load_kw": 3037.04,
+      "pv_kw": 0.0,
+      "wind_kw": 1247.04,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 89.84,
+      "water_m3": 108.32,
+      "reused_water_m3": 61.92
+    },
+    {
+      "timestamp": "2026-10-08T03:00:00+08:00",
+      "load_kw": 2887.34,
+      "pv_kw": 0.0,
+      "wind_kw": 1088.11,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 87.99,
+      "water_m3": 99.57,
+      "reused_water_m3": 65.57
+    },
+    {
+      "timestamp": "2026-10-08T04:00:00+08:00",
+      "load_kw": 3027.92,
+      "pv_kw": 0.0,
+      "wind_kw": 1245.87,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 81.75,
+      "water_m3": 109.53,
+      "reused_water_m3": 67.78
+    },
+    {
+      "timestamp": "2026-10-08T05:00:00+08:00",
+      "load_kw": 3046.32,
+      "pv_kw": 0.0,
+      "wind_kw": 1008.03,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.11,
+      "water_m3": 101.62,
+      "reused_water_m3": 62.56
+    },
+    {
+      "timestamp": "2026-10-08T06:00:00+08:00",
+      "load_kw": 3106.09,
+      "pv_kw": 0.0,
+      "wind_kw": 1130.44,
+      "price_cny_kwh": 0.32,
+      "gas_m3": 82.37,
+      "water_m3": 99.43,
+      "reused_water_m3": 66.58
+    },
+    {
+      "timestamp": "2026-10-08T07:00:00+08:00",
+      "load_kw": 3016.19,
+      "pv_kw": 1077.51,
+      "wind_kw": 987.75,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 87.01,
+      "water_m3": 97.45,
+      "reused_water_m3": 69.96
+    },
+    {
+      "timestamp": "2026-10-08T08:00:00+08:00",
+      "load_kw": 4356.61,
+      "pv_kw": 1847.22,
+      "wind_kw": 920.5,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.76,
+      "water_m3": 129.57,
+      "reused_water_m3": 59.4
+    },
+    {
+      "timestamp": "2026-10-08T09:00:00+08:00",
+      "load_kw": 4302.66,
+      "pv_kw": 2670.48,
+      "wind_kw": 965.77,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.81,
+      "water_m3": 127.92,
+      "reused_water_m3": 71.43
+    },
+    {
+      "timestamp": "2026-10-08T10:00:00+08:00",
+      "load_kw": 4197.86,
+      "pv_kw": 3996.13,
+      "wind_kw": 842.98,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 105.0,
+      "water_m3": 144.91,
+      "reused_water_m3": 69.89
+    },
+    {
+      "timestamp": "2026-10-08T11:00:00+08:00",
+      "load_kw": 4238.26,
+      "pv_kw": 4336.26,
+      "wind_kw": 978.99,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.0,
+      "water_m3": 136.24,
+      "reused_water_m3": 65.95
+    },
+    {
+      "timestamp": "2026-10-08T12:00:00+08:00",
+      "load_kw": 4117.49,
+      "pv_kw": 4445.1,
+      "wind_kw": 714.88,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 108.14,
+      "water_m3": 134.53,
+      "reused_water_m3": 66.82
+    },
+    {
+      "timestamp": "2026-10-08T13:00:00+08:00",
+      "load_kw": 4051.13,
+      "pv_kw": 3788.31,
+      "wind_kw": 759.29,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 105.6,
+      "water_m3": 143.64,
+      "reused_water_m3": 61.61
+    },
+    {
+      "timestamp": "2026-10-08T14:00:00+08:00",
+      "load_kw": 3836.35,
+      "pv_kw": 3124.81,
+      "wind_kw": 866.56,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 109.63,
+      "water_m3": 128.98,
+      "reused_water_m3": 66.06
+    },
+    {
+      "timestamp": "2026-10-08T15:00:00+08:00",
+      "load_kw": 3971.45,
+      "pv_kw": 2606.8,
+      "wind_kw": 797.57,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 103.55,
+      "water_m3": 138.46,
+      "reused_water_m3": 64.82
+    },
+    {
+      "timestamp": "2026-10-08T16:00:00+08:00",
+      "load_kw": 3948.56,
+      "pv_kw": 2368.88,
+      "wind_kw": 637.22,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 102.87,
+      "water_m3": 137.63,
+      "reused_water_m3": 60.03
+    },
+    {
+      "timestamp": "2026-10-08T17:00:00+08:00",
+      "load_kw": 3734.53,
+      "pv_kw": 1195.06,
+      "wind_kw": 586.34,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 106.31,
+      "water_m3": 136.43,
+      "reused_water_m3": 69.88
+    },
+    {
+      "timestamp": "2026-10-08T18:00:00+08:00",
+      "load_kw": 3692.83,
+      "pv_kw": 0.0,
+      "wind_kw": 519.08,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 103.17,
+      "water_m3": 130.83,
+      "reused_water_m3": 61.74
+    },
+    {
+      "timestamp": "2026-10-08T19:00:00+08:00",
+      "load_kw": 3887.19,
+      "pv_kw": 0.0,
+      "wind_kw": 553.27,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 108.63,
+      "water_m3": 132.26,
+      "reused_water_m3": 66.22
+    },
+    {
+      "timestamp": "2026-10-08T20:00:00+08:00",
+      "load_kw": 4021.84,
+      "pv_kw": 0.0,
+      "wind_kw": 448.22,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 100.23,
+      "water_m3": 139.56,
+      "reused_water_m3": 67.27
+    },
+    {
+      "timestamp": "2026-10-08T21:00:00+08:00",
+      "load_kw": 2664.67,
+      "pv_kw": 0.0,
+      "wind_kw": 394.73,
+      "price_cny_kwh": 1.12,
+      "gas_m3": 81.67,
+      "water_m3": 92.06,
+      "reused_water_m3": 58.89
+    },
+    {
+      "timestamp": "2026-10-08T22:00:00+08:00",
+      "load_kw": 2711.18,
+      "pv_kw": 0.0,
+      "wind_kw": 360.96,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 83.97,
+      "water_m3": 105.3,
+      "reused_water_m3": 59.17
+    },
+    {
+      "timestamp": "2026-10-08T23:00:00+08:00",
+      "load_kw": 2591.16,
+      "pv_kw": 0.0,
+      "wind_kw": 536.73,
+      "price_cny_kwh": 0.68,
+      "gas_m3": 88.85,
+      "water_m3": 96.19,
+      "reused_water_m3": 61.46
+    }
+  ]
+}

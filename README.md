@@ -2,6 +2,27 @@
 
 零碳园区智慧能源与水务多智能体协作平台 —— 融合物理建模、时序预测与知识图谱，覆盖"源网荷储碳"全链路的一体化管理系统。
 
+## V2 园区分析工作台
+
+新增「青屿 ZERO」统一工作台：深色能碳驾驶舱、可播放的小时能源流、七 Agent 依赖图与事件回放、节点证据、历史运行、储能情景沙盘、碳与资源分析、数据质量及资产台账。
+
+新工作台使用根目录 `data/operations.json` 的 720 条可复现模拟记录，运行存入 `data/operations_runs.db`。数据日期明确显示，排放因子与收益口径明确标注。Agent 为确定性领域计算，不需 LLM Key；原有专业应用继续保留。
+
+![园区工作台总览](figure/operations-overview.png)
+
+```bash
+python scripts/generate_operations_data.py
+python -m unittest discover -s tests -v
+python run.py run
+# 另一个终端
+cd frontend
+npm run dev
+```
+
+访问 `http://localhost:5173`。首次启动先安装下文依赖。完整架构、API、计算公式、测试及局限见 [工作台架构说明](docs/operations-architecture.md)。
+
+以下为原有专业模块说明，相关历史演示数据与新工作台的数据口径相互独立。
+
 ## 系统架构
 
 ![系统架构](figure/0%20系统架构.png)

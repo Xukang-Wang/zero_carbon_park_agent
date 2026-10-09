@@ -1,5 +1,14 @@
 # ── 环境 & 配置 ──
 .env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.json
+.aws/
+.codex/
+.agents/
 *.log
 
 # ── Python ──
@@ -19,7 +28,11 @@ env/
 
 # ── 数据库 & 数据 ──
 *.db
+*.db-*
+*.sqlite
+*.sqlite-*
 *.sqlite3
+*.sqlite3-*
 data/*.db
 
 # ── IDE ──
@@ -41,3 +54,5 @@ Thumbs.db
 # ── 模型文件（较大，建议单独管理） ──
 data/models/*.pth
 data/models/*.pt
+# Local analytical run history
+data/operations_runs.db*

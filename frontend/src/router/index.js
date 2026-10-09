@@ -1,21 +1,25 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Dashboard from '../views/Dashboard.vue'
-import WaterMonitor from '../views/WaterMonitor.vue'
-import CarbonTracker from '../views/CarbonTracker.vue'
-import GraphView from '../views/GraphView.vue'
-import AlertCenter from '../views/AlertCenter.vue'
-import AgentWorkflow from '../views/AgentWorkflow.vue'
-import EnergyView from '../views/EnergyView.vue'
-import StorageView from '../views/StorageView.vue'
-import VPPView from '../views/VPPView.vue'
-import CarbonAssetView from '../views/CarbonAssetView.vue'
-import EvaluationView from '../views/EvaluationView.vue'
-import EconomicView from '../views/EconomicView.vue'
-import BiomassView from '../views/BiomassView.vue'
-import ParkMonitor from '../views/ParkMonitor.vue'
+import OperationsCenter from '../views/OperationsCenter.vue'
+const WaterMonitor = () => import('../views/WaterMonitor.vue')
+const CarbonTracker = () => import('../views/CarbonTracker.vue')
+const GraphView = () => import('../views/GraphView.vue')
+const AlertCenter = () => import('../views/AlertCenter.vue')
+const AgentWorkflow = () => import('../views/AgentWorkflow.vue')
+const EnergyView = () => import('../views/EnergyView.vue')
+const StorageView = () => import('../views/StorageView.vue')
+const VPPView = () => import('../views/VPPView.vue')
+const CarbonAssetView = () => import('../views/CarbonAssetView.vue')
+const EvaluationView = () => import('../views/EvaluationView.vue')
+const EconomicView = () => import('../views/EconomicView.vue')
+const BiomassView = () => import('../views/BiomassView.vue')
+const ParkMonitor = () => import('../views/ParkMonitor.vue')
 
 const routes = [
-  { path: '/', component: Dashboard },
+  { path: '/', component: OperationsCenter },
+  { path: '/agents', component: OperationsCenter },
+  { path: '/scenarios', component: OperationsCenter },
+  { path: '/carbon-analysis', component: OperationsCenter },
+  { path: '/data-center', component: OperationsCenter },
   { path: '/water', component: WaterMonitor },
   { path: '/carbon', component: CarbonTracker },
   { path: '/graph', component: GraphView },
@@ -34,4 +38,5 @@ const routes = [
 export default createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior: () => ({ top: 0 }),
 })

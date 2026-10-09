@@ -32,8 +32,8 @@ async def lifespan(app: FastAPI):
 
     # 初始化知识图谱
     try:
-        from graph.graph_builder import init_knowledge_graph
-        init_knowledge_graph()
+        from graph.graph_builder import get_knowledge_graph
+        get_knowledge_graph()
     except Exception as e:
         print(f"  知识图谱初始化: {e}")
 
@@ -106,6 +106,8 @@ app.include_router(industrial_energy_router)
 app.include_router(ccus_router)
 app.include_router(nl_interaction_router)
 app.include_router(park_router)
+from backend.api.operations import router as operations_router
+app.include_router(operations_router)
 
 
 @app.get("/")
