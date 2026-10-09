@@ -149,6 +149,3 @@ python run.py demo        # 运行水质异常处置完整工作流
 
 ---
 
-## 页面预览
-
-![前端展示](figure/%E5%89%8D%E7%AB%AF%E5%B1%95%E7%A4%BA.png)
